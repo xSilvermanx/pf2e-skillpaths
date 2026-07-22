@@ -1,0 +1,87 @@
+{
+  "name": "Remedies (Medicine) Path - Expert",
+  "type": "feat",
+  "system": {
+    "description": {
+      "value": "<p>You intensified your training in Remedies (Medicine), acquiring advanced techniques and improving existing ones.</p><p>Gain the following expert feats: @UUID[Compendium.pf2e.feats-srd.Item.EmIV9haKFrBRB43E]{Pei Zing Adept}, @UUID[Compendium.pf2e-skillpaths.pf2e-skillpath-compendium.Item.7ROt6RmzC1mWDvRH]{Residual Remedy}.</p><p><strong>Skill Potency</strong></p><p>You gain a +1 item bonus to Medicine checks involving Prepare Elemental Medicine.</p>",
+      "gm": ""
+    },
+    "publication": {
+      "title": "PF2e Skill Feat Revamp",
+      "authors": "Sebastian",
+      "license": "ORC",
+      "remaster": true
+    },
+    "rules": [
+      {
+        "key": "FlatModifier",
+        "label": "Skill Potency - Prepare Elemental Medicine",
+        "slug": "skillpaths-medicine-remedies-potency-1",
+        "type": "item",
+        "value": 1,
+        "selector": "medicine"
+      },
+      {
+        "key": "GrantItem",
+        "uuid": "Compendium.pf2e.feats-srd.Item.EmIV9haKFrBRB43E",
+        "allowDuplicate": false,
+        "onDeleteActions": {
+          "granter": "cascade",
+          "grantee": "restrict"
+        }
+      },
+      {
+        "key": "GrantItem",
+        "uuid": "Compendium.pf2e-skillpaths.pf2e-skillpath-compendium.Item.7ROt6RmzC1mWDvRH",
+        "allowDuplicate": false,
+        "onDeleteActions": {
+          "granter": "cascade",
+          "grantee": "restrict"
+        }
+      }
+    ],
+    "slug": "skillpaths-medicine-remedies-expert",
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "general",
+        "skill",
+        "skillpath"
+      ],
+      "rarity": "common"
+    },
+    "level": {
+      "value": 3
+    },
+    "category": "skill",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": [
+        {
+          "value": "expert in Medicine"
+        },
+        {
+          "value": "Remedies (Medicine) Path - Trained"
+        }
+      ]
+    },
+    "subfeatures": {
+      "proficiencies": {},
+      "senses": {},
+      "suppressedFeatures": []
+    }
+  },
+  "img": "icons/sundries/books/book-red-exclamation.webp",
+  "folder": "wuXEfcfvooGNZV29",
+  "flags": {},
+  "effects": [],
+  "_id": "PHrmIBi5QNtdHS4d",
+  "_key": "!items!PHrmIBi5QNtdHS4d"
+}

@@ -1,0 +1,77 @@
+{
+  "_id": "GdZLxDtFXaQI3Fop",
+  "folder": "nau9DRWvDo59JfOZ",
+  "img": "icons/sundries/books/book-red-exclamation.webp",
+  "name": "Expeditious Search",
+  "system": {
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "category": "general",
+    "description": {
+      "value": "<p>You have a system that lets you search at great speed, finding details and secrets twice as quickly as others can. When Searching, you take half as long as usual to @UUID[Compendium.pf2e.actionspf2e.Item.TiNDYUGlMmxzxBYU]{Search} a given area. This means that while exploring, you double the Speed you can move while ensuring you've Searched an area before walking into it (up to half your Speed). If you're legendary in Perception, you instead Search areas four times as quickly.</p>",
+      "gm": ""
+    },
+    "level": {
+      "value": 7
+    },
+    "prerequisites": {
+      "value": [
+        {
+          "value": "master in Perception"
+        }
+      ]
+    },
+    "publication": {
+      "license": "ORC",
+      "remaster": true,
+      "title": "Pathfinder Player Core",
+      "authors": ""
+    },
+    "rules": [],
+    "traits": {
+      "rarity": "common",
+      "value": [
+        "general",
+        "skillpath"
+      ],
+      "otherTags": []
+    },
+    "slug": "expeditious-search",
+    "_migration": {
+      "version": 0.959,
+      "previous": null
+    },
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "subfeatures": {
+      "proficiencies": {},
+      "senses": {},
+      "suppressedFeatures": []
+    },
+    "location": null
+  },
+  "type": "feat",
+  "_stats": {
+    "coreVersion": "14.364",
+    "systemId": "pf2e",
+    "systemVersion": "8.2.0",
+    "compendiumSource": "Compendium.pf2e.feats-srd.Item.GdZLxDtFXaQI3Fop",
+    "createdTime": 1784373455033,
+    "modifiedTime": 1784373455033,
+    "lastModifiedBy": "cDVClG5j3LgTcqta",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "effects": [],
+  "ownership": {
+    "default": 0,
+    "cDVClG5j3LgTcqta": 3
+  },
+  "flags": {},
+  "sort": 1700000,
+  "_key": "!items!GdZLxDtFXaQI3Fop"
+}

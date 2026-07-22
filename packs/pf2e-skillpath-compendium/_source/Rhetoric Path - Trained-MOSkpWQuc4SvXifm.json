@@ -1,0 +1,79 @@
+{
+  "name": "Rhetoric Path - Trained",
+  "type": "feat",
+  "system": {
+    "description": {
+      "value": "<p><strong>Skill Path:</strong> Rhetoric</p><p>You have mastered the ability to impress people with words alone.</p><hr /><p>While developing your skills in Diplomacy you chose to focus specifically on Rhetoric, learning basic techniques.You gain the following trained feats: @UUID[Compendium.pf2e.feats-srd.Item.KpFetnUqTiweypZk]{Group Impression}, @UUID[Compendium.pf2e.feats-srd.Item.6ON8DjFXSMITZleX]{No Cause for Alarm}.</p><p>This path focuses on @UUID[Compendium.pf2e.actionspf2e.Item.OX4fy22hQgUHDr0q]{Make an Impression}.</p><p><strong>Path Progression</strong></p><ul><li><strong>Trained:</strong> @UUID[Compendium.pf2e.feats-srd.Item.KpFetnUqTiweypZk]{Group Impression}, @UUID[Compendium.pf2e.feats-srd.Item.6ON8DjFXSMITZleX]{No Cause for Alarm}</li><li><strong>Expert:</strong> @UUID[Compendium.pf2e.feats-srd.Item.cc8O47KFsODReoBe]{Glad-Hand}</li><li><strong>Master:</strong> @UUID[Compendium.pf2e.feats-srd.Item.YgbcLfAEdi4xxvX5]{Evangelize}</li><li><strong>Legendary:</strong> @UUID[Compendium.pf2e.feats-srd.Item.A0TNeMNvyY8QpmLz]{Legendary Negotiation}</li></ul>",
+      "gm": ""
+    },
+    "publication": {
+      "title": "PF2e Skill Feat Revamp",
+      "authors": "Sebastian",
+      "license": "ORC",
+      "remaster": true
+    },
+    "rules": [
+      {
+        "key": "GrantItem",
+        "uuid": "Compendium.pf2e.feats-srd.Item.KpFetnUqTiweypZk",
+        "allowDuplicate": false,
+        "onDeleteActions": {
+          "granter": "cascade",
+          "grantee": "restrict"
+        }
+      },
+      {
+        "key": "GrantItem",
+        "uuid": "Compendium.pf2e.feats-srd.Item.6ON8DjFXSMITZleX",
+        "allowDuplicate": false,
+        "onDeleteActions": {
+          "granter": "cascade",
+          "grantee": "restrict"
+        }
+      }
+    ],
+    "slug": "skillpaths-diplomacy-rhetoric-trained",
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "general",
+        "skill",
+        "skillpath"
+      ],
+      "rarity": "common"
+    },
+    "level": {
+      "value": 1
+    },
+    "category": "skill",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": [
+        {
+          "value": "trained in Diplomacy"
+        },
+        {
+          "value": "Diplomacy - Base"
+        }
+      ]
+    },
+    "subfeatures": {
+      "proficiencies": {},
+      "senses": {},
+      "suppressedFeatures": []
+    }
+  },
+  "img": "icons/sundries/books/book-red-exclamation.webp",
+  "folder": "IbjZ8SgNevwjxOCF",
+  "flags": {},
+  "effects": [],
+  "_id": "MOSkpWQuc4SvXifm",
+  "_key": "!items!MOSkpWQuc4SvXifm"
+}

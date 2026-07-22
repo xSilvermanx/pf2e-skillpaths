@@ -1,0 +1,23 @@
+{
+  "type": "Item",
+  "folder": null,
+  "name": "Skill Feats - Changed General Feats",
+  "color": null,
+  "sorting": "a",
+  "_id": "LCegFaV93MxkKEKT",
+  "description": "",
+  "sort": 200000,
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.364",
+    "systemId": "pf2e",
+    "systemVersion": "8.2.0",
+    "createdTime": 1784373503795,
+    "modifiedTime": 1784373503795,
+    "lastModifiedBy": "cDVClG5j3LgTcqta",
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!folders!LCegFaV93MxkKEKT"
+}

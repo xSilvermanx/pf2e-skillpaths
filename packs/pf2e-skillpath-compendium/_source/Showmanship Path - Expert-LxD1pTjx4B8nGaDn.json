@@ -1,0 +1,85 @@
+{
+  "name": "Showmanship Path - Expert",
+  "type": "feat",
+  "system": {
+    "description": {
+      "value": "<p>You intensified your training in Showmanship, acquiring advanced techniques and improving existing ones.</p><p>Gain the following expert feats: @UUID[Compendium.pf2e.feats-srd.Item.NUHosufuAhQCnF7N]{Triumphant Boast}.</p><p><strong>Skill Potency</strong></p><p>You gain a +1 item bonus to Performance checks involving @UUID[Compendium.pf2e.actionspf2e.Item.EEDElIyin4z60PXx]{Perform}.</p>",
+      "gm": ""
+    },
+    "publication": {
+      "title": "PF2e Skill Feat Revamp",
+      "authors": "Sebastian",
+      "license": "ORC",
+      "remaster": true
+    },
+    "rules": [
+      {
+        "key": "FlatModifier",
+        "label": "Skill Potency - Performance Checks in Specialty",
+        "slug": "skillpaths-performance-showmanship-potency-1",
+        "type": "item",
+        "value": 1,
+        "selector": "performance",
+        "predicate": [
+          {
+            "or": [
+              "action:perform"
+            ]
+          }
+        ]
+      },
+      {
+        "key": "GrantItem",
+        "uuid": "Compendium.pf2e.feats-srd.Item.NUHosufuAhQCnF7N",
+        "allowDuplicate": false,
+        "onDeleteActions": {
+          "granter": "cascade",
+          "grantee": "restrict"
+        }
+      }
+    ],
+    "slug": "skillpaths-performance-showmanship-expert",
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "general",
+        "skill",
+        "skillpath"
+      ],
+      "rarity": "common"
+    },
+    "level": {
+      "value": 3
+    },
+    "category": "skill",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": [
+        {
+          "value": "expert in Performance"
+        },
+        {
+          "value": "Showmanship Path - Trained"
+        }
+      ]
+    },
+    "subfeatures": {
+      "proficiencies": {},
+      "senses": {},
+      "suppressedFeatures": []
+    }
+  },
+  "img": "icons/sundries/books/book-red-exclamation.webp",
+  "folder": "Xa54iFZZQhO1NcsA",
+  "flags": {},
+  "effects": [],
+  "_id": "LxD1pTjx4B8nGaDn",
+  "_key": "!items!LxD1pTjx4B8nGaDn"
+}

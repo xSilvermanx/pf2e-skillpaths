@@ -1,0 +1,79 @@
+{
+  "name": "Shrouded Subterfuge Path - Trained",
+  "type": "feat",
+  "system": {
+    "description": {
+      "value": "<p><strong>Skill Path:</strong> Shrouded Subterfuge</p><p>You use the fanatism of Cults and Faiths to Lie and decieve them.</p><hr /><p>While developing your skills in Occultism you chose to focus specifically on Shrouded Subterfuge, learning basic techniques.You gain the following trained feats: @UUID[Compendium.pf2e.feats-srd.Item.r7cgrrHh75R8UEqN]{Deceptive Worship}, @UUID[Compendium.pf2e.feats-srd.Item.lEgYzFHransLkSvI]{Schooled in Secrets}.</p><p>This path focuses on @UUID[Compendium.pf2e.actionspf2e.Item.AJstokjdG6iDjVjE]{Impersonate}, @UUID[Compendium.pf2e.actionspf2e.Item.ewwCglB7XOPLUz72]{Lie}, @UUID[Compendium.pf2e.actionspf2e.Item.plBGdZhqq5JBl1D8]{Gather Information}.</p><p><strong>Path Progression</strong></p><ul><li><strong>Trained:</strong> @UUID[Compendium.pf2e.feats-srd.Item.r7cgrrHh75R8UEqN]{Deceptive Worship}, @UUID[Compendium.pf2e.feats-srd.Item.lEgYzFHransLkSvI]{Schooled in Secrets}</li><li><strong>Expert:</strong> @UUID[Compendium.pf2e-skillpaths.pf2e-skillpath-compendium.Item.9o2VSlMQVPB4LN09]{Bizarre Magic}</li><li><strong>Master:</strong> @UUID[Compendium.pf2e.feats-srd.Item.u96anl3ACNhBqnbT]{Go with the Flow}</li></ul>",
+      "gm": ""
+    },
+    "publication": {
+      "title": "PF2e Skill Feat Revamp",
+      "authors": "Sebastian",
+      "license": "ORC",
+      "remaster": true
+    },
+    "rules": [
+      {
+        "key": "GrantItem",
+        "uuid": "Compendium.pf2e.feats-srd.Item.r7cgrrHh75R8UEqN",
+        "allowDuplicate": false,
+        "onDeleteActions": {
+          "granter": "cascade",
+          "grantee": "restrict"
+        }
+      },
+      {
+        "key": "GrantItem",
+        "uuid": "Compendium.pf2e.feats-srd.Item.lEgYzFHransLkSvI",
+        "allowDuplicate": false,
+        "onDeleteActions": {
+          "granter": "cascade",
+          "grantee": "restrict"
+        }
+      }
+    ],
+    "slug": "skillpaths-occultism-shrouded-subterfuge-trained",
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "general",
+        "skill",
+        "skillpath"
+      ],
+      "rarity": "common"
+    },
+    "level": {
+      "value": 1
+    },
+    "category": "skill",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": [
+        {
+          "value": "trained in Occultism"
+        },
+        {
+          "value": "Occultism - Base"
+        }
+      ]
+    },
+    "subfeatures": {
+      "proficiencies": {},
+      "senses": {},
+      "suppressedFeatures": []
+    }
+  },
+  "img": "icons/sundries/books/book-red-exclamation.webp",
+  "folder": "G7AF3O2QsYVPLQme",
+  "flags": {},
+  "effects": [],
+  "_id": "PmmCAs9ljPQbu0h9",
+  "_key": "!items!PmmCAs9ljPQbu0h9"
+}

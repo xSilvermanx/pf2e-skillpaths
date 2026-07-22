@@ -1,0 +1,96 @@
+{
+  "name": "Diplomacy - Base",
+  "type": "feat",
+  "system": {
+    "description": {
+      "value": "<p>You have started to develop Diplomacy beyond other skills, delving deeper into its possibilities.</p><p><strong>Core Feats</strong></p><ul><li>@UUID[Compendium.pf2e.feats-srd.Item.0GF2j54roPFIDmXf]{Bon Mot}</li></ul><p>Choose one Skill Path and gain that path's Trained feat.</p><p><strong>Available Skill Paths</strong></p><ul><li><strong>@UUID[Compendium.pf2e-skillpaths.pf2e-skillpath-compendium.Item.AHCnDEptOM5CZyME]{Favors Path - Trained}</strong>: You know how to charm people into doing whatever you ask of them.</li><li><strong>@UUID[Compendium.pf2e-skillpaths.pf2e-skillpath-compendium.Item.MOSkpWQuc4SvXifm]{Rhetoric Path - Trained}</strong>: You have mastered the ability to impress people with words alone.</li><li><strong>@UUID[Compendium.pf2e-skillpaths.pf2e-skillpath-compendium.Item.thvXwYPDCnm4KG4C]{Connections Path - Trained}</strong>: You are excellent in exploiting your contacts for whatever information you need.</li></ul>",
+      "gm": ""
+    },
+    "publication": {
+      "title": "PF2e Skill Feat Revamp",
+      "authors": "Sebastian",
+      "license": "ORC",
+      "remaster": true
+    },
+    "rules": [
+      {
+        "key": "GrantItem",
+        "uuid": "Compendium.pf2e.feats-srd.Item.0GF2j54roPFIDmXf",
+        "allowDuplicate": false,
+        "onDeleteActions": {
+          "granter": "cascade",
+          "grantee": "restrict"
+        }
+      },
+      {
+        "key": "ChoiceSet",
+        "flag": "diplomacySkillpathChoice",
+        "prompt": "Choose a skill path.",
+        "adjustName": false,
+        "choices": [
+          {
+            "label": "Favors",
+            "value": "Compendium.pf2e-skillpaths.pf2e-skillpath-compendium.Item.AHCnDEptOM5CZyME"
+          },
+          {
+            "label": "Rhetoric",
+            "value": "Compendium.pf2e-skillpaths.pf2e-skillpath-compendium.Item.MOSkpWQuc4SvXifm"
+          },
+          {
+            "label": "Connections",
+            "value": "Compendium.pf2e-skillpaths.pf2e-skillpath-compendium.Item.thvXwYPDCnm4KG4C"
+          }
+        ]
+      },
+      {
+        "key": "GrantItem",
+        "uuid": "{item|flags.pf2e.rulesSelections.diplomacySkillpathChoice}",
+        "allowDuplicate": false,
+        "onDeleteActions": {
+          "granter": "cascade",
+          "grantee": "restrict"
+        }
+      }
+    ],
+    "slug": "skillpaths-diplomacy-base",
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "general",
+        "skill",
+        "skillpath"
+      ],
+      "rarity": "common"
+    },
+    "level": {
+      "value": 1
+    },
+    "category": "skill",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": [
+        {
+          "value": "trained in Diplomacy"
+        }
+      ]
+    },
+    "subfeatures": {
+      "proficiencies": {},
+      "senses": {},
+      "suppressedFeatures": []
+    }
+  },
+  "img": "icons/sundries/books/book-red-exclamation.webp",
+  "folder": "IbjZ8SgNevwjxOCF",
+  "flags": {},
+  "effects": [],
+  "_id": "w1pcAwyg934c4fhV",
+  "_key": "!items!w1pcAwyg934c4fhV"
+}

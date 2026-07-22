@@ -1,0 +1,79 @@
+{
+  "name": "Jumping Path - Trained",
+  "type": "feat",
+  "system": {
+    "description": {
+      "value": "<p><strong>Skill Path:</strong> Jumping</p><p>Thanks to your thorough training your jumping ability is extraordinary.</p><hr /><p>While developing your skills in Athletics you chose to focus specifically on Jumping, learning basic techniques.You gain the following trained feats: @UUID[Compendium.pf2e.feats-srd.Item.ZBhvJ9O8MvBFAlhq]{Quick Jump}, @UUID[Compendium.pf2e.feats-srd.Item.FJK7JTLSgugRIlvS]{Rapid Mantel}.</p><p>This path focuses on @UUID[Compendium.pf2e.actionspf2e.Item.2HJ4yuEFY1Cast4h]{High Jump}, @UUID[Compendium.pf2e.actionspf2e.Item.JUvAvruz7yRQXfz2]{Long Jump}, @UUID[Compendium.pf2e.actionspf2e.Item.d5I6018Mci2SWokk]{Leap}.</p><p><strong>Path Progression</strong></p><ul><li><strong>Trained:</strong> @UUID[Compendium.pf2e.feats-srd.Item.ZBhvJ9O8MvBFAlhq]{Quick Jump}, @UUID[Compendium.pf2e.feats-srd.Item.FJK7JTLSgugRIlvS]{Rapid Mantel}</li><li><strong>Expert:</strong> @UUID[Compendium.pf2e.feats-srd.Item.HJYQlmGTdtyGWr6a]{Powerful Leap}</li><li><strong>Master:</strong> @UUID[Compendium.pf2e.feats-srd.Item.X8iSUF1m0eezmrjs]{Wall Jump}</li></ul>",
+      "gm": ""
+    },
+    "publication": {
+      "title": "PF2e Skill Feat Revamp",
+      "authors": "Sebastian",
+      "license": "ORC",
+      "remaster": true
+    },
+    "rules": [
+      {
+        "key": "GrantItem",
+        "uuid": "Compendium.pf2e.feats-srd.Item.ZBhvJ9O8MvBFAlhq",
+        "allowDuplicate": false,
+        "onDeleteActions": {
+          "granter": "cascade",
+          "grantee": "restrict"
+        }
+      },
+      {
+        "key": "GrantItem",
+        "uuid": "Compendium.pf2e.feats-srd.Item.FJK7JTLSgugRIlvS",
+        "allowDuplicate": false,
+        "onDeleteActions": {
+          "granter": "cascade",
+          "grantee": "restrict"
+        }
+      }
+    ],
+    "slug": "skillpaths-athletics-jumping-trained",
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "general",
+        "skill",
+        "skillpath"
+      ],
+      "rarity": "common"
+    },
+    "level": {
+      "value": 1
+    },
+    "category": "skill",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": [
+        {
+          "value": "trained in Athletics"
+        },
+        {
+          "value": "Athletics - Base"
+        }
+      ]
+    },
+    "subfeatures": {
+      "proficiencies": {},
+      "senses": {},
+      "suppressedFeatures": []
+    }
+  },
+  "img": "icons/sundries/books/book-red-exclamation.webp",
+  "folder": "4a13FbltoiyxbOe2",
+  "flags": {},
+  "effects": [],
+  "_id": "DP9HZpKiMLumpv5N",
+  "_key": "!items!DP9HZpKiMLumpv5N"
+}

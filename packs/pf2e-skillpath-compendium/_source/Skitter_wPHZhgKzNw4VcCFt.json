@@ -1,0 +1,80 @@
+{
+  "_id": "wPHZhgKzNw4VcCFt",
+  "folder": "nau9DRWvDo59JfOZ",
+  "img": "icons/sundries/books/book-red-exclamation.webp",
+  "name": "Skitter",
+  "system": {
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "category": "general",
+    "description": {
+      "value": "<p>You can scoot swiftly across the ground. You can @UUID[Compendium.pf2e.actionspf2e.Item.Tj055UcNm6UEgtCg]{Crawl} up to half your Speed.</p>",
+      "gm": ""
+    },
+    "level": {
+      "value": 3
+    },
+    "prerequisites": {
+      "value": [
+        {
+          "value": "Dexterity +3"
+        },
+        {
+          "value": "Fleet"
+        }
+      ]
+    },
+    "publication": {
+      "license": "OGL",
+      "remaster": false,
+      "title": "Pathfinder Advanced Player's Guide",
+      "authors": ""
+    },
+    "rules": [],
+    "traits": {
+      "rarity": "common",
+      "value": [
+        "general",
+        "skillpath"
+      ],
+      "otherTags": []
+    },
+    "slug": "skitter",
+    "_migration": {
+      "version": 0.959,
+      "previous": null
+    },
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "subfeatures": {
+      "proficiencies": {},
+      "senses": {},
+      "suppressedFeatures": []
+    },
+    "location": null
+  },
+  "type": "feat",
+  "_stats": {
+    "coreVersion": "14.364",
+    "systemId": "pf2e",
+    "systemVersion": "8.2.0",
+    "compendiumSource": "Compendium.pf2e.feats-srd.Item.wPHZhgKzNw4VcCFt",
+    "createdTime": 1784373455034,
+    "modifiedTime": 1784373455034,
+    "lastModifiedBy": "cDVClG5j3LgTcqta",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "effects": [],
+  "ownership": {
+    "default": 0,
+    "cDVClG5j3LgTcqta": 3
+  },
+  "flags": {},
+  "sort": 1200000,
+  "_key": "!items!wPHZhgKzNw4VcCFt"
+}

@@ -1,0 +1,85 @@
+{
+  "name": "Alchemical Crafting Path - Expert",
+  "type": "feat",
+  "system": {
+    "description": {
+      "value": "<p>You intensified your training in Alchemical Crafting, acquiring advanced techniques and improving existing ones.</p><p>Gain the following expert feats: @UUID[Compendium.pf2e-skillpaths.pf2e-skillpath-compendium.Item.liw4ZJGj4f5ok8zF]{Alchemical Inventor}.</p><p><strong>Skill Potency</strong></p><p>You gain a +1 item bonus to Crafting checks involving @UUID[Compendium.pf2e.actionspf2e.Item.rmwa3OyhTZ2i2AHl]{Craft}.</p>",
+      "gm": ""
+    },
+    "publication": {
+      "title": "PF2e Skill Feat Revamp",
+      "authors": "Sebastian",
+      "license": "ORC",
+      "remaster": true
+    },
+    "rules": [
+      {
+        "key": "FlatModifier",
+        "label": "Skill Potency - Craft alchemical Items",
+        "slug": "skillpaths-crafting-alchemical-crafting-potency-1",
+        "type": "item",
+        "value": 1,
+        "selector": "crafting",
+        "predicate": [
+          {
+            "or": [
+              "action:craft"
+            ]
+          }
+        ]
+      },
+      {
+        "key": "GrantItem",
+        "uuid": "Compendium.pf2e-skillpaths.pf2e-skillpath-compendium.Item.liw4ZJGj4f5ok8zF",
+        "allowDuplicate": false,
+        "onDeleteActions": {
+          "granter": "cascade",
+          "grantee": "restrict"
+        }
+      }
+    ],
+    "slug": "skillpaths-crafting-alchemical-crafting-expert",
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "general",
+        "skill",
+        "skillpath"
+      ],
+      "rarity": "common"
+    },
+    "level": {
+      "value": 3
+    },
+    "category": "skill",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": [
+        {
+          "value": "expert in Crafting"
+        },
+        {
+          "value": "Alchemical Crafting Path - Trained"
+        }
+      ]
+    },
+    "subfeatures": {
+      "proficiencies": {},
+      "senses": {},
+      "suppressedFeatures": []
+    }
+  },
+  "img": "icons/sundries/books/book-red-exclamation.webp",
+  "folder": "M5BKSrN6HVRwrNFo",
+  "flags": {},
+  "effects": [],
+  "_id": "s6ILw0UPhK3r20Up",
+  "_key": "!items!s6ILw0UPhK3r20Up"
+}

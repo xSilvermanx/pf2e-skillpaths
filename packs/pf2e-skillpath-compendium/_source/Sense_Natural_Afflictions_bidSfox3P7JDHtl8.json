@@ -1,0 +1,77 @@
+{
+  "folder": "QPUE5QMgRqCOV1Ks",
+  "name": "Sense Natural Afflictions",
+  "type": "feat",
+  "effects": [],
+  "system": {
+    "_migration": {
+      "version": 0.959,
+      "previous": null
+    },
+    "description": {
+      "value": "<p>You instinctively recognize the signs of venom, infection, spores, and other natural afflictions. When you observe a creature about which you could @UUID[Compendium.pf2e.actionspf2e.Item.1OagaWtBpVXExToo] using Nature, the GM tells you whether the creature has any attacks or abilities that can expose other creatures to poison or disease.</p><p>This doesn’t reveal the exact effects, DCs, stages, or weaknesses of those abilities. You must still Recall Knowledge to learn such details.</p><p></p>",
+      "gm": ""
+    },
+    "publication": {
+      "title": "",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "rules": [],
+    "slug": null,
+    "traits": {
+      "otherTags": [],
+      "value": [],
+      "rarity": "common"
+    },
+    "level": {
+      "value": 2
+    },
+    "category": "skill",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": [
+        {
+          "value": "expert in Nature"
+        },
+        {
+          "value": "Natural Physician"
+        }
+      ]
+    },
+    "subfeatures": {
+      "proficiencies": {},
+      "senses": {},
+      "suppressedFeatures": []
+    },
+    "location": null
+  },
+  "img": "icons/sundries/books/book-red-exclamation.webp",
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "cDVClG5j3LgTcqta": 3
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.364",
+    "systemId": "pf2e",
+    "systemVersion": "8.2.0",
+    "createdTime": 1784378038678,
+    "modifiedTime": 1784378038678,
+    "lastModifiedBy": "cDVClG5j3LgTcqta",
+    "compendiumSource": null,
+    "duplicateSource": "Item.R4wiKmqyKdwHA0CG",
+    "exportSource": null
+  },
+  "_id": "bidSfox3P7JDHtl8",
+  "_key": "!items!bidSfox3P7JDHtl8"
+}

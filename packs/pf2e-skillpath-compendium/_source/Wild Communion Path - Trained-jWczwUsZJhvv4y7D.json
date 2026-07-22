@@ -1,0 +1,79 @@
+{
+  "name": "Wild Communion Path - Trained",
+  "type": "feat",
+  "system": {
+    "description": {
+      "value": "<p><strong>Skill Path:</strong> Wild Communion</p><p>You have the unmatched ability to commune with animals and spirits.</p><hr /><p>While developing your skills in Nature you chose to focus specifically on Wild Communion, learning basic techniques.You gain the following trained feats: @UUID[Compendium.pf2e.feats-srd.Item.6yPrvbSDaa8glLjn]{Pet}, @UUID[Compendium.pf2e.feats-srd.Item.dZDmWXzZfIoBJ53Q]{Tame Animal}.</p><p>This path focuses on @UUID[Compendium.pf2e.actionspf2e.Item.1OagaWtBpVXExToo]{Recall Knowledge}.</p><p><strong>Path Progression</strong></p><ul><li><strong>Trained:</strong> @UUID[Compendium.pf2e.feats-srd.Item.6yPrvbSDaa8glLjn]{Pet}, @UUID[Compendium.pf2e.feats-srd.Item.dZDmWXzZfIoBJ53Q]{Tame Animal}</li><li><strong>Expert:</strong> @UUID[Compendium.pf2e.feats-srd.Item.7t2VGjVhYNU3MsEm]{Spirit Speaker}</li><li><strong>Master:</strong> @UUID[Compendium.pf2e.feats-srd.Item.fvYwsHM9O1twQa5N]{Consult the Spirits}</li></ul>",
+      "gm": ""
+    },
+    "publication": {
+      "title": "PF2e Skill Feat Revamp",
+      "authors": "Sebastian",
+      "license": "ORC",
+      "remaster": true
+    },
+    "rules": [
+      {
+        "key": "GrantItem",
+        "uuid": "Compendium.pf2e.feats-srd.Item.6yPrvbSDaa8glLjn",
+        "allowDuplicate": false,
+        "onDeleteActions": {
+          "granter": "cascade",
+          "grantee": "restrict"
+        }
+      },
+      {
+        "key": "GrantItem",
+        "uuid": "Compendium.pf2e.feats-srd.Item.dZDmWXzZfIoBJ53Q",
+        "allowDuplicate": false,
+        "onDeleteActions": {
+          "granter": "cascade",
+          "grantee": "restrict"
+        }
+      }
+    ],
+    "slug": "skillpaths-nature-wild-communion-trained",
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "general",
+        "skill",
+        "skillpath"
+      ],
+      "rarity": "common"
+    },
+    "level": {
+      "value": 1
+    },
+    "category": "skill",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": [
+        {
+          "value": "trained in Nature"
+        },
+        {
+          "value": "Nature - Base"
+        }
+      ]
+    },
+    "subfeatures": {
+      "proficiencies": {},
+      "senses": {},
+      "suppressedFeatures": []
+    }
+  },
+  "img": "icons/sundries/books/book-red-exclamation.webp",
+  "folder": "5L464p9NmJKVCxCV",
+  "flags": {},
+  "effects": [],
+  "_id": "jWczwUsZJhvv4y7D",
+  "_key": "!items!jWczwUsZJhvv4y7D"
+}

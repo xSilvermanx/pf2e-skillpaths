@@ -1,0 +1,113 @@
+{
+  "name": "Faith Path - Master",
+  "type": "feat",
+  "system": {
+    "description": {
+      "value": "<p>Through long and intensive training you mastered Faith. Few people in this world can match your capabilities in this area.</p><p>Gain the following master feats: @UUID[Compendium.pf2e.feats-srd.Item.zGrUu3dUtqHrqGuo]{Break Curse}.</p><p><strong>Skill Potency</strong></p><p>At 9th level, you gain a +2 item bonus to Religion checks involving @UUID[Compendium.pf2e.actionspf2e.Item.1OagaWtBpVXExToo]{Recall Knowledge}. At 17th level, if you have @UUID[Compendium.pf2e.feats-srd.Item.dYMxP8SsHrwOze8v]{Divine Guidance}, this bonus increases to +3.</p>",
+      "gm": ""
+    },
+    "publication": {
+      "title": "PF2e Skill Feat Revamp",
+      "authors": "Sebastian",
+      "license": "ORC",
+      "remaster": true
+    },
+    "rules": [
+      {
+        "key": "FlatModifier",
+        "label": "Skill Potency - Recall Knowledge",
+        "slug": "skillpaths-religion-faith-potency-2",
+        "type": "item",
+        "value": 2,
+        "selector": "religion",
+        "predicate": [
+          {
+            "or": [
+              "action:recall-knowledge"
+            ]
+          },
+          {
+            "gte": [
+              "self:level",
+              9
+            ]
+          }
+        ]
+      },
+      {
+        "key": "FlatModifier",
+        "label": "Skill Potency - Recall Knowledge",
+        "slug": "skillpaths-religion-faith-potency-3",
+        "type": "item",
+        "value": 3,
+        "selector": "religion",
+        "predicate": [
+          {
+            "or": [
+              "action:recall-knowledge"
+            ]
+          },
+          "feat:divine-guidance",
+          {
+            "gte": [
+              "self:level",
+              17
+            ]
+          }
+        ]
+      },
+      {
+        "key": "GrantItem",
+        "uuid": "Compendium.pf2e.feats-srd.Item.zGrUu3dUtqHrqGuo",
+        "allowDuplicate": false,
+        "onDeleteActions": {
+          "granter": "cascade",
+          "grantee": "restrict"
+        }
+      }
+    ],
+    "slug": "skillpaths-religion-faith-master",
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "general",
+        "skill",
+        "skillpath"
+      ],
+      "rarity": "common"
+    },
+    "level": {
+      "value": 7
+    },
+    "category": "skill",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": [
+        {
+          "value": "master in Religion"
+        },
+        {
+          "value": "Faith Path - Expert"
+        }
+      ]
+    },
+    "subfeatures": {
+      "proficiencies": {},
+      "senses": {},
+      "suppressedFeatures": []
+    }
+  },
+  "img": "icons/sundries/books/book-red-exclamation.webp",
+  "folder": "hFjim5zfvs9A4xPi",
+  "flags": {},
+  "effects": [],
+  "_id": "s5noivXonpCw28bw",
+  "_key": "!items!s5noivXonpCw28bw"
+}

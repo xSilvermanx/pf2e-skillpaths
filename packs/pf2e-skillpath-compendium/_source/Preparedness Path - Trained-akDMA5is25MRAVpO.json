@@ -1,0 +1,79 @@
+{
+  "name": "Preparedness Path - Trained",
+  "type": "feat",
+  "system": {
+    "description": {
+      "value": "<p><strong>Skill Path:</strong> Preparedness</p><p>You have the almost uncanny ability to predict difficult situations and prepare for them.</p><hr /><p>While developing your skills in Survival you chose to focus specifically on Preparedness, learning basic techniques.You gain the following trained feats: @UUID[Compendium.pf2e.feats-srd.Item.tGIXuk0XeWmG04CX]{Survey Wildlife}, @UUID[Compendium.pf2e.feats-srd.Item.Peyf3L7c9esRTsgR]{Predict Weather}.</p><p>This path focuses on @UUID[Compendium.pf2e.actionspf2e.Item.EA5vuSgJfiHH7plD]{Track}.</p><p><strong>Path Progression</strong></p><ul><li><strong>Trained:</strong> @UUID[Compendium.pf2e.feats-srd.Item.tGIXuk0XeWmG04CX]{Survey Wildlife}, @UUID[Compendium.pf2e.feats-srd.Item.Peyf3L7c9esRTsgR]{Predict Weather}</li><li><strong>Expert:</strong> @UUID[Compendium.pf2e.feats-srd.Item.bh2jHyyYrkLMsIdX]{Prescient Planner}</li><li><strong>Master:</strong> @UUID[Compendium.pf2e.feats-srd.Item.lHFz4MmebvPqTb0A]{Prescient Consumable}</li><li><strong>Legendary:</strong> @UUID[Compendium.pf2e.feats-srd.Item.Vk7BzAb3D9r226sI]{Legendary Guide}, @UUID[Compendium.pf2e.feats-srd.Item.Ta61ObC8Lk7BxTFO]{Legendary Survivalist}</li></ul>",
+      "gm": ""
+    },
+    "publication": {
+      "title": "PF2e Skill Feat Revamp",
+      "authors": "Sebastian",
+      "license": "ORC",
+      "remaster": true
+    },
+    "rules": [
+      {
+        "key": "GrantItem",
+        "uuid": "Compendium.pf2e.feats-srd.Item.tGIXuk0XeWmG04CX",
+        "allowDuplicate": false,
+        "onDeleteActions": {
+          "granter": "cascade",
+          "grantee": "restrict"
+        }
+      },
+      {
+        "key": "GrantItem",
+        "uuid": "Compendium.pf2e.feats-srd.Item.Peyf3L7c9esRTsgR",
+        "allowDuplicate": false,
+        "onDeleteActions": {
+          "granter": "cascade",
+          "grantee": "restrict"
+        }
+      }
+    ],
+    "slug": "skillpaths-survival-preparedness-trained",
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "general",
+        "skill",
+        "skillpath"
+      ],
+      "rarity": "common"
+    },
+    "level": {
+      "value": 1
+    },
+    "category": "skill",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": [
+        {
+          "value": "trained in Survival"
+        },
+        {
+          "value": "Survival - Base"
+        }
+      ]
+    },
+    "subfeatures": {
+      "proficiencies": {},
+      "senses": {},
+      "suppressedFeatures": []
+    }
+  },
+  "img": "icons/sundries/books/book-red-exclamation.webp",
+  "folder": "CtCn9FRCzwss0Cd6",
+  "flags": {},
+  "effects": [],
+  "_id": "akDMA5is25MRAVpO",
+  "_key": "!items!akDMA5is25MRAVpO"
+}

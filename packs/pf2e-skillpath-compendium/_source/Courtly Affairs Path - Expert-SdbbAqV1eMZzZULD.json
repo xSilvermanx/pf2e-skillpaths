@@ -1,0 +1,94 @@
+{
+  "name": "Courtly Affairs Path - Expert",
+  "type": "feat",
+  "system": {
+    "description": {
+      "value": "<p>You intensified your training in Courtly Affairs, acquiring advanced techniques and improving existing ones.</p><p>Gain the following expert feats: @UUID[Compendium.pf2e.feats-srd.Item.iCv8KTZ5PcF4GqeV]{Leverage Connections}, @UUID[Compendium.pf2e.feats-srd.Item.ThoOsKjn5xCuZUqM]{Quick Contacts}.</p><p><strong>Skill Potency</strong></p><p>You gain a +1 item bonus to Society checks involving @UUID[Compendium.pf2e.actionspf2e.Item.OX4fy22hQgUHDr0q]{Make an Impression}.</p>",
+      "gm": ""
+    },
+    "publication": {
+      "title": "PF2e Skill Feat Revamp",
+      "authors": "Sebastian",
+      "license": "ORC",
+      "remaster": true
+    },
+    "rules": [
+      {
+        "key": "FlatModifier",
+        "label": "Skill Potency - Make an Impression on Nobles",
+        "slug": "skillpaths-society-courtly-affairs-potency-1",
+        "type": "item",
+        "value": 1,
+        "selector": "society",
+        "predicate": [
+          {
+            "or": [
+              "action:make-an-impression"
+            ]
+          }
+        ]
+      },
+      {
+        "key": "GrantItem",
+        "uuid": "Compendium.pf2e.feats-srd.Item.iCv8KTZ5PcF4GqeV",
+        "allowDuplicate": false,
+        "onDeleteActions": {
+          "granter": "cascade",
+          "grantee": "restrict"
+        }
+      },
+      {
+        "key": "GrantItem",
+        "uuid": "Compendium.pf2e.feats-srd.Item.ThoOsKjn5xCuZUqM",
+        "allowDuplicate": false,
+        "onDeleteActions": {
+          "granter": "cascade",
+          "grantee": "restrict"
+        }
+      }
+    ],
+    "slug": "skillpaths-society-courtly-affairs-expert",
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "general",
+        "skill",
+        "skillpath"
+      ],
+      "rarity": "common"
+    },
+    "level": {
+      "value": 3
+    },
+    "category": "skill",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": [
+        {
+          "value": "expert in Society"
+        },
+        {
+          "value": "Courtly Affairs Path - Trained"
+        }
+      ]
+    },
+    "subfeatures": {
+      "proficiencies": {},
+      "senses": {},
+      "suppressedFeatures": []
+    }
+  },
+  "img": "icons/sundries/books/book-red-exclamation.webp",
+  "folder": "UhnhMwzUOs2XnNFx",
+  "flags": {},
+  "effects": [],
+  "_id": "SdbbAqV1eMZzZULD",
+  "_key": "!items!SdbbAqV1eMZzZULD"
+}

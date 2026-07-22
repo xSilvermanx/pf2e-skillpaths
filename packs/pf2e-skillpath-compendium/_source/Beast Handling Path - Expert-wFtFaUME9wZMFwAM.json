@@ -1,0 +1,94 @@
+{
+  "name": "Beast Handling Path - Expert",
+  "type": "feat",
+  "system": {
+    "description": {
+      "value": "<p>You intensified your training in Beast Handling, acquiring advanced techniques and improving existing ones.</p><p>Gain the following expert feats: @UUID[Compendium.pf2e.feats-srd.Item.pLjvgeqwHrYdg411]{Bonded Animal}, @UUID[Compendium.pf2e.feats-srd.Item.gArdEleFCvUHtdGk]{Express Rider}.</p><p><strong>Skill Potency</strong></p><p>You gain a +1 item bonus to Nature checks involving @UUID[Compendium.pf2e.actionspf2e.Item.q9nbyIF0PEBqMtYe]{Command an Animal}.</p>",
+      "gm": ""
+    },
+    "publication": {
+      "title": "PF2e Skill Feat Revamp",
+      "authors": "Sebastian",
+      "license": "ORC",
+      "remaster": true
+    },
+    "rules": [
+      {
+        "key": "FlatModifier",
+        "label": "Skill Potency - Command an Animal",
+        "slug": "skillpaths-nature-beast-handling-potency-1",
+        "type": "item",
+        "value": 1,
+        "selector": "nature",
+        "predicate": [
+          {
+            "or": [
+              "action:command-an-animal"
+            ]
+          }
+        ]
+      },
+      {
+        "key": "GrantItem",
+        "uuid": "Compendium.pf2e.feats-srd.Item.pLjvgeqwHrYdg411",
+        "allowDuplicate": false,
+        "onDeleteActions": {
+          "granter": "cascade",
+          "grantee": "restrict"
+        }
+      },
+      {
+        "key": "GrantItem",
+        "uuid": "Compendium.pf2e.feats-srd.Item.gArdEleFCvUHtdGk",
+        "allowDuplicate": false,
+        "onDeleteActions": {
+          "granter": "cascade",
+          "grantee": "restrict"
+        }
+      }
+    ],
+    "slug": "skillpaths-nature-beast-handling-expert",
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "general",
+        "skill",
+        "skillpath"
+      ],
+      "rarity": "common"
+    },
+    "level": {
+      "value": 3
+    },
+    "category": "skill",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": [
+        {
+          "value": "expert in Nature"
+        },
+        {
+          "value": "Beast Handling Path - Trained"
+        }
+      ]
+    },
+    "subfeatures": {
+      "proficiencies": {},
+      "senses": {},
+      "suppressedFeatures": []
+    }
+  },
+  "img": "icons/sundries/books/book-red-exclamation.webp",
+  "folder": "5L464p9NmJKVCxCV",
+  "flags": {},
+  "effects": [],
+  "_id": "wFtFaUME9wZMFwAM",
+  "_key": "!items!wFtFaUME9wZMFwAM"
+}

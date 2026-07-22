@@ -1,0 +1,100 @@
+{
+  "name": "Intimidation - Base",
+  "type": "feat",
+  "system": {
+    "description": {
+      "value": "<p>You have started to develop Intimidation beyond other skills, delving deeper into its possibilities.</p><p><strong>Core Feats</strong></p><ul><li>When master: @UUID[Compendium.pf2e.feats-srd.Item.Jk9XEMfMXoPT0ua2]{Skeptic's Defense}</li></ul><p>Choose one Skill Path and gain that path's Trained feat.</p><p><strong>Available Skill Paths</strong></p><ul><li><strong>@UUID[Compendium.pf2e-skillpaths.pf2e-skillpath-compendium.Item.yH0KPGPz2hYrZ390]{Menace Path - Trained}</strong>: You intimidate foes through physical menace.</li><li><strong>@UUID[Compendium.pf2e-skillpaths.pf2e-skillpath-compendium.Item.wa4tkFnN6RJBOSRV]{Dread Path - Trained}</strong>: You intimidate foes through psychological pressure.</li></ul>",
+      "gm": ""
+    },
+    "publication": {
+      "title": "PF2e Skill Feat Revamp",
+      "authors": "Sebastian",
+      "license": "ORC",
+      "remaster": true
+    },
+    "rules": [
+      {
+        "key": "GrantItem",
+        "uuid": "Compendium.pf2e.feats-srd.Item.Jk9XEMfMXoPT0ua2",
+        "allowDuplicate": false,
+        "onDeleteActions": {
+          "granter": "cascade",
+          "grantee": "restrict"
+        },
+        "predicate": [
+          {
+            "gte": [
+              "skill:intimidation:rank",
+              3
+            ]
+          }
+        ]
+      },
+      {
+        "key": "ChoiceSet",
+        "flag": "intimidationSkillpathChoice",
+        "prompt": "Choose a skill path.",
+        "adjustName": false,
+        "choices": [
+          {
+            "label": "Menace",
+            "value": "Compendium.pf2e-skillpaths.pf2e-skillpath-compendium.Item.yH0KPGPz2hYrZ390"
+          },
+          {
+            "label": "Dread",
+            "value": "Compendium.pf2e-skillpaths.pf2e-skillpath-compendium.Item.wa4tkFnN6RJBOSRV"
+          }
+        ]
+      },
+      {
+        "key": "GrantItem",
+        "uuid": "{item|flags.pf2e.rulesSelections.intimidationSkillpathChoice}",
+        "allowDuplicate": false,
+        "onDeleteActions": {
+          "granter": "cascade",
+          "grantee": "restrict"
+        }
+      }
+    ],
+    "slug": "skillpaths-intimidation-base",
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "general",
+        "skill",
+        "skillpath"
+      ],
+      "rarity": "common"
+    },
+    "level": {
+      "value": 1
+    },
+    "category": "skill",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": [
+        {
+          "value": "trained in Intimidation"
+        }
+      ]
+    },
+    "subfeatures": {
+      "proficiencies": {},
+      "senses": {},
+      "suppressedFeatures": []
+    }
+  },
+  "img": "icons/sundries/books/book-red-exclamation.webp",
+  "folder": "a5X3vnyewfMbH6N4",
+  "flags": {},
+  "effects": [],
+  "_id": "H5IVqGJ0YQJmSsKg",
+  "_key": "!items!H5IVqGJ0YQJmSsKg"
+}

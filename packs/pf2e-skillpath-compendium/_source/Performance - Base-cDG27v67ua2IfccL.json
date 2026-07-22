@@ -1,0 +1,92 @@
+{
+  "name": "Performance - Base",
+  "type": "feat",
+  "system": {
+    "description": {
+      "value": "<p>You have started to develop Performance beyond other skills, delving deeper into its possibilities.</p><p><strong>Core Feats</strong></p><ul><li>@UUID[Compendium.pf2e.feats-srd.Item.lFwfUvH2708rl6i3]{Virtuosic Performer}</li></ul><p>Choose one Skill Path and gain that path's Trained feat.</p><p><strong>Available Skill Paths</strong></p><ul><li><strong>@UUID[Compendium.pf2e-skillpaths.pf2e-skillpath-compendium.Item.I49MiHHkgLVAQWg4]{Inspiration Path - Trained}</strong>: You mastered the ability to inspire people with your performance.</li><li><strong>@UUID[Compendium.pf2e-skillpaths.pf2e-skillpath-compendium.Item.dY4GbDOi2zciWkcN]{Showmanship Path - Trained}</strong>: Your performances are awe-inspiring and fascinating.</li></ul>",
+      "gm": ""
+    },
+    "publication": {
+      "title": "PF2e Skill Feat Revamp",
+      "authors": "Sebastian",
+      "license": "ORC",
+      "remaster": true
+    },
+    "rules": [
+      {
+        "key": "GrantItem",
+        "uuid": "Compendium.pf2e.feats-srd.Item.lFwfUvH2708rl6i3",
+        "allowDuplicate": false,
+        "onDeleteActions": {
+          "granter": "cascade",
+          "grantee": "restrict"
+        }
+      },
+      {
+        "key": "ChoiceSet",
+        "flag": "performanceSkillpathChoice",
+        "prompt": "Choose a skill path.",
+        "adjustName": false,
+        "choices": [
+          {
+            "label": "Inspiration",
+            "value": "Compendium.pf2e-skillpaths.pf2e-skillpath-compendium.Item.I49MiHHkgLVAQWg4"
+          },
+          {
+            "label": "Showmanship",
+            "value": "Compendium.pf2e-skillpaths.pf2e-skillpath-compendium.Item.dY4GbDOi2zciWkcN"
+          }
+        ]
+      },
+      {
+        "key": "GrantItem",
+        "uuid": "{item|flags.pf2e.rulesSelections.performanceSkillpathChoice}",
+        "allowDuplicate": false,
+        "onDeleteActions": {
+          "granter": "cascade",
+          "grantee": "restrict"
+        }
+      }
+    ],
+    "slug": "skillpaths-performance-base",
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "general",
+        "skill",
+        "skillpath"
+      ],
+      "rarity": "common"
+    },
+    "level": {
+      "value": 1
+    },
+    "category": "skill",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": [
+        {
+          "value": "trained in Performance"
+        }
+      ]
+    },
+    "subfeatures": {
+      "proficiencies": {},
+      "senses": {},
+      "suppressedFeatures": []
+    }
+  },
+  "img": "icons/sundries/books/book-red-exclamation.webp",
+  "folder": "Xa54iFZZQhO1NcsA",
+  "flags": {},
+  "effects": [],
+  "_id": "cDG27v67ua2IfccL",
+  "_key": "!items!cDG27v67ua2IfccL"
+}

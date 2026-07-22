@@ -1,0 +1,79 @@
+{
+  "name": "Favors Path - Trained",
+  "type": "feat",
+  "system": {
+    "description": {
+      "value": "<p><strong>Skill Path:</strong> Favors</p><p>You know how to charm people into doing whatever you ask of them.</p><hr /><p>While developing your skills in Diplomacy you chose to focus specifically on Favors, learning basic techniques.You gain the following trained feats: @UUID[Compendium.pf2e.feats-srd.Item.5nc5ridFBfYpn2Om]{Bargain Hunter}, @UUID[Compendium.pf2e.feats-srd.Item.muMOxZyduEFv8UT6]{A Home in Every Port}.</p><p>This path focuses on @UUID[Compendium.pf2e.actionspf2e.Item.DCb62iCBrJXy0Ik6]{Request}.</p><p><strong>Path Progression</strong></p><ul><li><strong>Trained:</strong> @UUID[Compendium.pf2e.feats-srd.Item.5nc5ridFBfYpn2Om]{Bargain Hunter}, @UUID[Compendium.pf2e.feats-srd.Item.muMOxZyduEFv8UT6]{A Home in Every Port}</li><li><strong>Expert:</strong> @UUID[Compendium.pf2e.feats-srd.Item.bmtf49jRKBCfdC5W]{Half-Truths}</li><li><strong>Master:</strong> @UUID[Compendium.pf2e.feats-srd.Item.KIK2Eza9TK47MEb2]{Shameless Request}</li><li><strong>Legendary:</strong> @UUID[Compendium.pf2e.feats-srd.Item.A0TNeMNvyY8QpmLz]{Legendary Negotiation}</li></ul>",
+      "gm": ""
+    },
+    "publication": {
+      "title": "PF2e Skill Feat Revamp",
+      "authors": "Sebastian",
+      "license": "ORC",
+      "remaster": true
+    },
+    "rules": [
+      {
+        "key": "GrantItem",
+        "uuid": "Compendium.pf2e.feats-srd.Item.5nc5ridFBfYpn2Om",
+        "allowDuplicate": false,
+        "onDeleteActions": {
+          "granter": "cascade",
+          "grantee": "restrict"
+        }
+      },
+      {
+        "key": "GrantItem",
+        "uuid": "Compendium.pf2e.feats-srd.Item.muMOxZyduEFv8UT6",
+        "allowDuplicate": false,
+        "onDeleteActions": {
+          "granter": "cascade",
+          "grantee": "restrict"
+        }
+      }
+    ],
+    "slug": "skillpaths-diplomacy-favors-trained",
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "general",
+        "skill",
+        "skillpath"
+      ],
+      "rarity": "common"
+    },
+    "level": {
+      "value": 1
+    },
+    "category": "skill",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": [
+        {
+          "value": "trained in Diplomacy"
+        },
+        {
+          "value": "Diplomacy - Base"
+        }
+      ]
+    },
+    "subfeatures": {
+      "proficiencies": {},
+      "senses": {},
+      "suppressedFeatures": []
+    }
+  },
+  "img": "icons/sundries/books/book-red-exclamation.webp",
+  "folder": "IbjZ8SgNevwjxOCF",
+  "flags": {},
+  "effects": [],
+  "_id": "AHCnDEptOM5CZyME",
+  "_key": "!items!AHCnDEptOM5CZyME"
+}

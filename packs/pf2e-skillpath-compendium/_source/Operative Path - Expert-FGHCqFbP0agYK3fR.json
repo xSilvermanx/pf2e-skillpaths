@@ -1,0 +1,86 @@
+{
+  "name": "Operative Path - Expert",
+  "type": "feat",
+  "system": {
+    "description": {
+      "value": "<p>You intensified your training in Operative, acquiring advanced techniques and improving existing ones.</p><p>Gain the following expert feats: @UUID[Compendium.pf2e.feats-srd.Item.pekKtubQTkG9m1xK]{Quiet Allies}.</p><p><strong>Skill Potency</strong></p><p>You gain a +1 item bonus to Stealth checks involving @UUID[Compendium.pf2e.actionspf2e.Item.IE2nThCmoyhQA0Jn]{Avoid Notice}, @UUID[Compendium.pf2e.actionspf2e.Item.qVNVSmsgpKFGk9hV]{Conceal an Object}.</p>",
+      "gm": ""
+    },
+    "publication": {
+      "title": "PF2e Skill Feat Revamp",
+      "authors": "Sebastian",
+      "license": "ORC",
+      "remaster": true
+    },
+    "rules": [
+      {
+        "key": "FlatModifier",
+        "label": "Skill Potency - Avoid Notice, Conceal an Object",
+        "slug": "skillpaths-stealth-operative-potency-1",
+        "type": "item",
+        "value": 1,
+        "selector": "stealth",
+        "predicate": [
+          {
+            "or": [
+              "action:avoid-notice",
+              "action:conceal-an-object"
+            ]
+          }
+        ]
+      },
+      {
+        "key": "GrantItem",
+        "uuid": "Compendium.pf2e.feats-srd.Item.pekKtubQTkG9m1xK",
+        "allowDuplicate": false,
+        "onDeleteActions": {
+          "granter": "cascade",
+          "grantee": "restrict"
+        }
+      }
+    ],
+    "slug": "skillpaths-stealth-operative-expert",
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "general",
+        "skill",
+        "skillpath"
+      ],
+      "rarity": "common"
+    },
+    "level": {
+      "value": 3
+    },
+    "category": "skill",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": [
+        {
+          "value": "expert in Stealth"
+        },
+        {
+          "value": "Operative Path - Trained"
+        }
+      ]
+    },
+    "subfeatures": {
+      "proficiencies": {},
+      "senses": {},
+      "suppressedFeatures": []
+    }
+  },
+  "img": "icons/sundries/books/book-red-exclamation.webp",
+  "folder": "Sq8aLregSckvn0E4",
+  "flags": {},
+  "effects": [],
+  "_id": "FGHCqFbP0agYK3fR",
+  "_key": "!items!FGHCqFbP0agYK3fR"
+}

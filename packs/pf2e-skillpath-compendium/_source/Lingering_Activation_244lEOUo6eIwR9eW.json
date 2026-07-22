@@ -1,0 +1,77 @@
+{
+  "folder": "QPUE5QMgRqCOV1Ks",
+  "name": "Lingering Activation",
+  "type": "feat",
+  "effects": [],
+  "system": {
+    "_migration": {
+      "version": 0.959,
+      "previous": null
+    },
+    "description": {
+      "value": "<p><span style=\"font-size:11pt;font-family:Arial,sans-serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap\">By adding a flourish, you make @UUID[Compendium.pf2e.feats-srd.Item.uR62fVC9FyQAMCO1] </span><span style=\"font-size:11pt;font-family:Arial, sans-serif;color:rgb(0, 0, 0);background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre-wrap\">last longer. You learn the @UUID[Compendium.pf2e-skillpaths.pf2e-skillpath-compendium.Item.H8VrORaT79dR9Qgf] focus spell. </span></p><p></p>",
+      "gm": ""
+    },
+    "publication": {
+      "title": "",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "rules": [],
+    "slug": null,
+    "traits": {
+      "otherTags": [],
+      "value": [],
+      "rarity": "common"
+    },
+    "level": {
+      "value": 7
+    },
+    "category": "skill",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": [
+        {
+          "value": "master in Arcana, Nature, Occultism or Religion"
+        },
+        {
+          "value": "Trick Magic Item"
+        }
+      ]
+    },
+    "subfeatures": {
+      "proficiencies": {},
+      "senses": {},
+      "suppressedFeatures": []
+    },
+    "location": null
+  },
+  "img": "icons/sundries/books/book-red-exclamation.webp",
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "cDVClG5j3LgTcqta": 3
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.364",
+    "systemId": "pf2e",
+    "systemVersion": "8.2.0",
+    "createdTime": 1784378038673,
+    "modifiedTime": 1784378038673,
+    "lastModifiedBy": "cDVClG5j3LgTcqta",
+    "compendiumSource": null,
+    "duplicateSource": "Item.R4wiKmqyKdwHA0CG",
+    "exportSource": null
+  },
+  "_id": "244lEOUo6eIwR9eW",
+  "_key": "!items!244lEOUo6eIwR9eW"
+}

@@ -1,0 +1,79 @@
+{
+  "name": "Identity Path - Trained",
+  "type": "feat",
+  "system": {
+    "description": {
+      "value": "<p><strong>Skill Path:</strong> Identity</p><p>You are a master of disguise, easily able to Impersonate whomever you want..</p><hr /><p>While developing your skills in Deception you chose to focus specifically on Identity, learning basic techniques.You gain the following trained feats: @UUID[Compendium.pf2e.feats-srd.Item.7F3sTNRoNsQgD8tX]{Backup Disguise}, @UUID[Compendium.pf2e.feats-srd.Item.z1Z22gTp7J1VRLSR]{Different Worlds}.</p><p>This path focuses on @UUID[Compendium.pf2e.actionspf2e.Item.AJstokjdG6iDjVjE]{Impersonate}.</p><p><strong>Path Progression</strong></p><ul><li><strong>Trained:</strong> @UUID[Compendium.pf2e.feats-srd.Item.7F3sTNRoNsQgD8tX]{Backup Disguise}, @UUID[Compendium.pf2e.feats-srd.Item.z1Z22gTp7J1VRLSR]{Different Worlds}</li><li><strong>Expert:</strong> @UUID[Compendium.pf2e.feats-srd.Item.e4KB4pSkx2lDBNw3]{Quick Disguise}</li><li><strong>Master:</strong> @UUID[Compendium.pf2e.feats-srd.Item.RiuZT3H4QZIIEQXJ]{Slippery Secrets}</li><li><strong>Legendary:</strong> @UUID[Compendium.pf2e.feats-srd.Item.XZcd1wFHy111klu2]{Reveal Machinations}</li></ul>",
+      "gm": ""
+    },
+    "publication": {
+      "title": "PF2e Skill Feat Revamp",
+      "authors": "Sebastian",
+      "license": "ORC",
+      "remaster": true
+    },
+    "rules": [
+      {
+        "key": "GrantItem",
+        "uuid": "Compendium.pf2e.feats-srd.Item.7F3sTNRoNsQgD8tX",
+        "allowDuplicate": false,
+        "onDeleteActions": {
+          "granter": "cascade",
+          "grantee": "restrict"
+        }
+      },
+      {
+        "key": "GrantItem",
+        "uuid": "Compendium.pf2e.feats-srd.Item.z1Z22gTp7J1VRLSR",
+        "allowDuplicate": false,
+        "onDeleteActions": {
+          "granter": "cascade",
+          "grantee": "restrict"
+        }
+      }
+    ],
+    "slug": "skillpaths-deception-identity-trained",
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "general",
+        "skill",
+        "skillpath"
+      ],
+      "rarity": "common"
+    },
+    "level": {
+      "value": 1
+    },
+    "category": "skill",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": [
+        {
+          "value": "trained in Deception"
+        },
+        {
+          "value": "Deception - Base"
+        }
+      ]
+    },
+    "subfeatures": {
+      "proficiencies": {},
+      "senses": {},
+      "suppressedFeatures": []
+    }
+  },
+  "img": "icons/sundries/books/book-red-exclamation.webp",
+  "folder": "D4fxhAE28vKaKW6N",
+  "flags": {},
+  "effects": [],
+  "_id": "hcpYdOcHkp3Cgogk",
+  "_key": "!items!hcpYdOcHkp3Cgogk"
+}

@@ -1,0 +1,101 @@
+{
+  "name": "Acrobatics - Base",
+  "type": "feat",
+  "system": {
+    "description": {
+      "value": "<p>You have started to develop Acrobatics beyond other skills, delving deeper into its possibilities.</p><p><strong>Core Feats</strong></p><ul><li>@UUID[Compendium.pf2e.feats-srd.Item.LQw0yIMDUJJkq1nD]{Cat Fall}, @UUID[Compendium.pf2e.feats-srd.Item.bJ4tF95Byy7wCS65]{Rolling Landing}</li></ul><p>Choose one Skill Path and gain that path's Trained feat.</p><p><strong>Available Skill Paths</strong></p><ul><li><strong>@UUID[Compendium.pf2e-skillpaths.pf2e-skillpath-compendium.Item.1CgxvFwVXKDSgcVr]{Poise Path - Trained}</strong>: Even in difficult situations your movement remains robust, deliberate and controlled.</li><li><strong>@UUID[Compendium.pf2e-skillpaths.pf2e-skillpath-compendium.Item.M2a2oBkildqF5EWO]{Flow Path - Trained}</strong>: Your movements flow into one another, making you agile and hard to catch.</li></ul>",
+      "gm": ""
+    },
+    "publication": {
+      "title": "PF2e Skill Feat Revamp",
+      "authors": "Sebastian",
+      "license": "ORC",
+      "remaster": true
+    },
+    "rules": [
+      {
+        "key": "GrantItem",
+        "uuid": "Compendium.pf2e.feats-srd.Item.LQw0yIMDUJJkq1nD",
+        "allowDuplicate": false,
+        "onDeleteActions": {
+          "granter": "cascade",
+          "grantee": "restrict"
+        }
+      },
+      {
+        "key": "GrantItem",
+        "uuid": "Compendium.pf2e.feats-srd.Item.bJ4tF95Byy7wCS65",
+        "allowDuplicate": false,
+        "onDeleteActions": {
+          "granter": "cascade",
+          "grantee": "restrict"
+        }
+      },
+      {
+        "key": "ChoiceSet",
+        "flag": "acrobaticsSkillpathChoice",
+        "prompt": "Choose a skill path.",
+        "adjustName": false,
+        "choices": [
+          {
+            "label": "Poise",
+            "value": "Compendium.pf2e-skillpaths.pf2e-skillpath-compendium.Item.1CgxvFwVXKDSgcVr"
+          },
+          {
+            "label": "Flow",
+            "value": "Compendium.pf2e-skillpaths.pf2e-skillpath-compendium.Item.M2a2oBkildqF5EWO"
+          }
+        ]
+      },
+      {
+        "key": "GrantItem",
+        "uuid": "{item|flags.pf2e.rulesSelections.acrobaticsSkillpathChoice}",
+        "allowDuplicate": false,
+        "onDeleteActions": {
+          "granter": "cascade",
+          "grantee": "restrict"
+        }
+      }
+    ],
+    "slug": "skillpaths-acrobatics-base",
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "general",
+        "skill",
+        "skillpath"
+      ],
+      "rarity": "common"
+    },
+    "level": {
+      "value": 1
+    },
+    "category": "skill",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": [
+        {
+          "value": "trained in Acrobatics"
+        }
+      ]
+    },
+    "subfeatures": {
+      "proficiencies": {},
+      "senses": {},
+      "suppressedFeatures": []
+    }
+  },
+  "img": "icons/sundries/books/book-red-exclamation.webp",
+  "folder": "XOHWUlidsqZO4qpw",
+  "flags": {},
+  "effects": [],
+  "_id": "tTaZchDnV9LUvkO9",
+  "_key": "!items!tTaZchDnV9LUvkO9"
+}

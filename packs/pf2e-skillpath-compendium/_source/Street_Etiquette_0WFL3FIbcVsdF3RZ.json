@@ -1,0 +1,74 @@
+{
+  "folder": "QPUE5QMgRqCOV1Ks",
+  "name": "Street Etiquette",
+  "type": "feat",
+  "effects": [],
+  "system": {
+    "_migration": {
+      "version": 0.959,
+      "previous": null
+    },
+    "description": {
+      "value": "<p>You know how to avoid looking out of place in rough neighborhoods, markets, taverns, docks, and criminal districts. You can use Society instead of Deception to @UUID[Compendium.pf2e.actionspf2e.Item.AJstokjdG6iDjVjE] a local in such areas, provided you aren’t pretending to be a specific individual.</p><p></p>",
+      "gm": ""
+    },
+    "publication": {
+      "title": "",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "rules": [],
+    "slug": null,
+    "traits": {
+      "otherTags": [],
+      "value": [],
+      "rarity": "common"
+    },
+    "level": {
+      "value": 1
+    },
+    "category": "skill",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": [
+        {
+          "value": "trained in Society"
+        }
+      ]
+    },
+    "subfeatures": {
+      "proficiencies": {},
+      "senses": {},
+      "suppressedFeatures": []
+    },
+    "location": null
+  },
+  "img": "icons/sundries/books/book-red-exclamation.webp",
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "cDVClG5j3LgTcqta": 3
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.364",
+    "systemId": "pf2e",
+    "systemVersion": "8.2.0",
+    "createdTime": 1784378038678,
+    "modifiedTime": 1784378038678,
+    "lastModifiedBy": "cDVClG5j3LgTcqta",
+    "compendiumSource": null,
+    "duplicateSource": "Item.R4wiKmqyKdwHA0CG",
+    "exportSource": null
+  },
+  "_id": "0WFL3FIbcVsdF3RZ",
+  "_key": "!items!0WFL3FIbcVsdF3RZ"
+}

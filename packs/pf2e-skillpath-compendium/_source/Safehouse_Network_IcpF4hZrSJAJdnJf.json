@@ -1,0 +1,77 @@
+{
+  "folder": "QPUE5QMgRqCOV1Ks",
+  "name": "Safehouse Network",
+  "type": "feat",
+  "effects": [],
+  "system": {
+    "_migration": {
+      "version": 0.959,
+      "previous": null
+    },
+    "description": {
+      "value": "<p>Your underworld contacts can shelter people, hide goods, and move information through back channels. When you are in a settlement where a criminal underworld or informal network exists, you can spend 1 hour and attempt a Society check against a DC set by the GM, usually based on the settlement’s level and how dangerous or visible your situation is.</p><p>On a success, you secure a safehouse, hidden storage, discreet messenger, or illicit route for up to 24 hours. Creatures using the safehouse or route are harder to find through ordinary inquiries: attempts to Gather Information, Track, or otherwise locate them through the settlement’s public channels use your Society DC if it is higher than the normal DC. On a critical success, the arrangement also leaves no obvious trail back to you or your allies unless the pursuer critically succeeds.</p><p>This doesn’t protect against magic, direct observation, betrayal by an established NPC, or an enemy who already knows where to look.</p>",
+      "gm": ""
+    },
+    "publication": {
+      "title": "",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "rules": [],
+    "slug": null,
+    "traits": {
+      "otherTags": [],
+      "value": [],
+      "rarity": "common"
+    },
+    "level": {
+      "value": 7
+    },
+    "category": "skill",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": [
+        {
+          "value": "master in Society"
+        },
+        {
+          "value": "Underground Network"
+        }
+      ]
+    },
+    "subfeatures": {
+      "proficiencies": {},
+      "senses": {},
+      "suppressedFeatures": []
+    },
+    "location": null
+  },
+  "img": "icons/sundries/books/book-red-exclamation.webp",
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "cDVClG5j3LgTcqta": 3
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.364",
+    "systemId": "pf2e",
+    "systemVersion": "8.2.0",
+    "createdTime": 1784378038679,
+    "modifiedTime": 1784378038679,
+    "lastModifiedBy": "cDVClG5j3LgTcqta",
+    "compendiumSource": null,
+    "duplicateSource": "Item.R4wiKmqyKdwHA0CG",
+    "exportSource": null
+  },
+  "_id": "IcpF4hZrSJAJdnJf",
+  "_key": "!items!IcpF4hZrSJAJdnJf"
+}

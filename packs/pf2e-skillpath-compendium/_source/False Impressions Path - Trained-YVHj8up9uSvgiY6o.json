@@ -1,0 +1,88 @@
+{
+  "name": "False Impressions Path - Trained",
+  "type": "feat",
+  "system": {
+    "description": {
+      "value": "<p><strong>Skill Path:</strong> False Impressions</p><p>You became a deceptively well lier, easily concealing the truth from anyone who shouldn't know it.</p><hr /><p>While developing your skills in Deception you chose to focus specifically on False Impressions, learning basic techniques.You gain the following trained feats: @UUID[Compendium.pf2e.feats-srd.Item.HEBXaS656MZTiWFu]{Lengthy Diversion}, @UUID[Compendium.pf2e.feats-srd.Item.lQs2i9L09MQiZSPC]{Charlatan}, @UUID[Compendium.pf2e.feats-srd.Item.B6HbYsLBWb1RR6Fx]{Charming Liar}.</p><p>This path focuses on @UUID[Compendium.pf2e.actionspf2e.Item.ewwCglB7XOPLUz72]{Lie}, @UUID[Compendium.pf2e.actionspf2e.Item.GkmbTGfg8KcgynOA]{Create a Diversion}.</p><p><strong>Path Progression</strong></p><ul><li><strong>Trained:</strong> @UUID[Compendium.pf2e.feats-srd.Item.HEBXaS656MZTiWFu]{Lengthy Diversion}, @UUID[Compendium.pf2e.feats-srd.Item.lQs2i9L09MQiZSPC]{Charlatan}, @UUID[Compendium.pf2e.feats-srd.Item.B6HbYsLBWb1RR6Fx]{Charming Liar}</li><li><strong>Expert:</strong> @UUID[Compendium.pf2e.feats-srd.Item.6Z4e3B9vePYpibcy]{Confabulator}, @UUID[Compendium.pf2e.feats-srd.Item.Z7M3ImHWqUyGu6cN]{Fleeing Diversion}</li><li><strong>Master:</strong> @UUID[Compendium.pf2e-skillpaths.pf2e-skillpath-compendium.Item.FeH272Nvfx7ZDzZd]{False Expressions}</li><li><strong>Legendary:</strong> @UUID[Compendium.pf2e.feats-srd.Item.XZcd1wFHy111klu2]{Reveal Machinations}</li></ul>",
+      "gm": ""
+    },
+    "publication": {
+      "title": "PF2e Skill Feat Revamp",
+      "authors": "Sebastian",
+      "license": "ORC",
+      "remaster": true
+    },
+    "rules": [
+      {
+        "key": "GrantItem",
+        "uuid": "Compendium.pf2e.feats-srd.Item.HEBXaS656MZTiWFu",
+        "allowDuplicate": false,
+        "onDeleteActions": {
+          "granter": "cascade",
+          "grantee": "restrict"
+        }
+      },
+      {
+        "key": "GrantItem",
+        "uuid": "Compendium.pf2e.feats-srd.Item.lQs2i9L09MQiZSPC",
+        "allowDuplicate": false,
+        "onDeleteActions": {
+          "granter": "cascade",
+          "grantee": "restrict"
+        }
+      },
+      {
+        "key": "GrantItem",
+        "uuid": "Compendium.pf2e.feats-srd.Item.B6HbYsLBWb1RR6Fx",
+        "allowDuplicate": false,
+        "onDeleteActions": {
+          "granter": "cascade",
+          "grantee": "restrict"
+        }
+      }
+    ],
+    "slug": "skillpaths-deception-false-impressions-trained",
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "general",
+        "skill",
+        "skillpath"
+      ],
+      "rarity": "common"
+    },
+    "level": {
+      "value": 1
+    },
+    "category": "skill",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": [
+        {
+          "value": "trained in Deception"
+        },
+        {
+          "value": "Deception - Base"
+        }
+      ]
+    },
+    "subfeatures": {
+      "proficiencies": {},
+      "senses": {},
+      "suppressedFeatures": []
+    }
+  },
+  "img": "icons/sundries/books/book-red-exclamation.webp",
+  "folder": "D4fxhAE28vKaKW6N",
+  "flags": {},
+  "effects": [],
+  "_id": "YVHj8up9uSvgiY6o",
+  "_key": "!items!YVHj8up9uSvgiY6o"
+}

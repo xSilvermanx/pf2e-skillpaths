@@ -1,0 +1,79 @@
+{
+  "name": "Faith Path - Trained",
+  "type": "feat",
+  "system": {
+    "description": {
+      "value": "<p><strong>Skill Path:</strong> Faith</p><p>You are a well-informed member of your faith.</p><hr /><p>While developing your skills in Religion you chose to focus specifically on Faith, learning basic techniques.You gain the following trained feats: @UUID[Compendium.pf2e.feats-srd.Item.BqceQIKE0lwIS98s]{Pilgrim's Token}, @UUID[Compendium.pf2e-skillpaths.pf2e-skillpath-compendium.Item.QvBIYW6aAqoiyim3]{Exhort the Faithful}.</p><p>This path focuses on @UUID[Compendium.pf2e.actionspf2e.Item.1OagaWtBpVXExToo]{Recall Knowledge}.</p><p><strong>Path Progression</strong></p><ul><li><strong>Trained:</strong> @UUID[Compendium.pf2e.feats-srd.Item.BqceQIKE0lwIS98s]{Pilgrim's Token}, @UUID[Compendium.pf2e-skillpaths.pf2e-skillpath-compendium.Item.QvBIYW6aAqoiyim3]{Exhort the Faithful}</li><li><strong>Expert:</strong> @UUID[Compendium.pf2e.feats-srd.Item.P9dVBWB8nYZt4AFA]{Sanctify Water}</li><li><strong>Master:</strong> @UUID[Compendium.pf2e.feats-srd.Item.zGrUu3dUtqHrqGuo]{Break Curse}</li><li><strong>Legendary:</strong> @UUID[Compendium.pf2e.feats-srd.Item.dYMxP8SsHrwOze8v]{Divine Guidance}</li></ul>",
+      "gm": ""
+    },
+    "publication": {
+      "title": "PF2e Skill Feat Revamp",
+      "authors": "Sebastian",
+      "license": "ORC",
+      "remaster": true
+    },
+    "rules": [
+      {
+        "key": "GrantItem",
+        "uuid": "Compendium.pf2e.feats-srd.Item.BqceQIKE0lwIS98s",
+        "allowDuplicate": false,
+        "onDeleteActions": {
+          "granter": "cascade",
+          "grantee": "restrict"
+        }
+      },
+      {
+        "key": "GrantItem",
+        "uuid": "Compendium.pf2e-skillpaths.pf2e-skillpath-compendium.Item.QvBIYW6aAqoiyim3",
+        "allowDuplicate": false,
+        "onDeleteActions": {
+          "granter": "cascade",
+          "grantee": "restrict"
+        }
+      }
+    ],
+    "slug": "skillpaths-religion-faith-trained",
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "general",
+        "skill",
+        "skillpath"
+      ],
+      "rarity": "common"
+    },
+    "level": {
+      "value": 1
+    },
+    "category": "skill",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": [
+        {
+          "value": "trained in Religion"
+        },
+        {
+          "value": "Religion - Base"
+        }
+      ]
+    },
+    "subfeatures": {
+      "proficiencies": {},
+      "senses": {},
+      "suppressedFeatures": []
+    }
+  },
+  "img": "icons/sundries/books/book-red-exclamation.webp",
+  "folder": "hFjim5zfvs9A4xPi",
+  "flags": {},
+  "effects": [],
+  "_id": "lbOJefoI1Wz6pq19",
+  "_key": "!items!lbOJefoI1Wz6pq19"
+}

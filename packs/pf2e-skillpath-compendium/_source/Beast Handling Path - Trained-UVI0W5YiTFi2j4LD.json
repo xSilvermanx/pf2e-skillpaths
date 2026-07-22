@@ -1,0 +1,79 @@
+{
+  "name": "Beast Handling Path - Trained",
+  "type": "feat",
+  "system": {
+    "description": {
+      "value": "<p><strong>Skill Path:</strong> Beast Handling</p><p>You are a master in handling tamed beasts.</p><hr /><p>While developing your skills in Nature you chose to focus specifically on Beast Handling, learning basic techniques.You gain the following trained feats: @UUID[Compendium.pf2e.feats-srd.Item.nowEaHgIyij7im8F]{Train Animal}, @UUID[Compendium.pf2e.feats-srd.Item.Rq5wkA8DtsmbzoGV]{Ride}.</p><p>This path focuses on @UUID[Compendium.pf2e.actionspf2e.Item.q9nbyIF0PEBqMtYe]{Command an Animal}.</p><p><strong>Path Progression</strong></p><ul><li><strong>Trained:</strong> @UUID[Compendium.pf2e.feats-srd.Item.nowEaHgIyij7im8F]{Train Animal}, @UUID[Compendium.pf2e.feats-srd.Item.Rq5wkA8DtsmbzoGV]{Ride}</li><li><strong>Expert:</strong> @UUID[Compendium.pf2e.feats-srd.Item.pLjvgeqwHrYdg411]{Bonded Animal}, @UUID[Compendium.pf2e.feats-srd.Item.gArdEleFCvUHtdGk]{Express Rider}</li><li><strong>Master:</strong> @UUID[Compendium.pf2e.feats-srd.Item.f5JOSyW1tKMpz6hU]{Influence Nature}</li></ul>",
+      "gm": ""
+    },
+    "publication": {
+      "title": "PF2e Skill Feat Revamp",
+      "authors": "Sebastian",
+      "license": "ORC",
+      "remaster": true
+    },
+    "rules": [
+      {
+        "key": "GrantItem",
+        "uuid": "Compendium.pf2e.feats-srd.Item.nowEaHgIyij7im8F",
+        "allowDuplicate": false,
+        "onDeleteActions": {
+          "granter": "cascade",
+          "grantee": "restrict"
+        }
+      },
+      {
+        "key": "GrantItem",
+        "uuid": "Compendium.pf2e.feats-srd.Item.Rq5wkA8DtsmbzoGV",
+        "allowDuplicate": false,
+        "onDeleteActions": {
+          "granter": "cascade",
+          "grantee": "restrict"
+        }
+      }
+    ],
+    "slug": "skillpaths-nature-beast-handling-trained",
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "general",
+        "skill",
+        "skillpath"
+      ],
+      "rarity": "common"
+    },
+    "level": {
+      "value": 1
+    },
+    "category": "skill",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": [
+        {
+          "value": "trained in Nature"
+        },
+        {
+          "value": "Nature - Base"
+        }
+      ]
+    },
+    "subfeatures": {
+      "proficiencies": {},
+      "senses": {},
+      "suppressedFeatures": []
+    }
+  },
+  "img": "icons/sundries/books/book-red-exclamation.webp",
+  "folder": "5L464p9NmJKVCxCV",
+  "flags": {},
+  "effects": [],
+  "_id": "UVI0W5YiTFi2j4LD",
+  "_key": "!items!UVI0W5YiTFi2j4LD"
+}

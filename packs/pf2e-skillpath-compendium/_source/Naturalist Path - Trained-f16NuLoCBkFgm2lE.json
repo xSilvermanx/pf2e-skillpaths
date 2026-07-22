@@ -1,0 +1,79 @@
+{
+  "name": "Naturalist Path - Trained",
+  "type": "feat",
+  "system": {
+    "description": {
+      "value": "<p><strong>Skill Path:</strong> Naturalist</p><p>You know most of natures' opportunities to heal.</p><hr /><p>While developing your skills in Nature you chose to focus specifically on Naturalist, learning basic techniques.You gain the following trained feats: @UUID[Compendium.pf2e.feats-srd.Item.WC4xLBGmBsdOdHWu]{Natural Medicine}, @UUID[Compendium.pf2e-skillpaths.pf2e-skillpath-compendium.Item.l0h2RhJSOOtMKO0m]{Natural Physician}.</p><p>This path focuses on @UUID[Compendium.pf2e.actionspf2e.Item.1kGNdIIhuglAjIp9]{Treat Wounds}, @UUID[Compendium.pf2e.actionspf2e.Item.TC7OcDa7JlWbqMaN]{Treat Disease}, @UUID[Compendium.pf2e.actionspf2e.Item.KjoCEEmPGTeFE4hh]{Treat Poison}.</p><p><strong>Path Progression</strong></p><ul><li><strong>Trained:</strong> @UUID[Compendium.pf2e.feats-srd.Item.WC4xLBGmBsdOdHWu]{Natural Medicine}, @UUID[Compendium.pf2e-skillpaths.pf2e-skillpath-compendium.Item.l0h2RhJSOOtMKO0m]{Natural Physician}</li><li><strong>Expert:</strong> @UUID[Compendium.pf2e-skillpaths.pf2e-skillpath-compendium.Item.bidSfox3P7JDHtl8]{Sense Natural Afflictions}</li><li><strong>Master:</strong> @UUID[Compendium.pf2e.feats-srd.Item.wlbfINUTHDPqbV7v]{Morphic Manipulation}</li></ul>",
+      "gm": ""
+    },
+    "publication": {
+      "title": "PF2e Skill Feat Revamp",
+      "authors": "Sebastian",
+      "license": "ORC",
+      "remaster": true
+    },
+    "rules": [
+      {
+        "key": "GrantItem",
+        "uuid": "Compendium.pf2e.feats-srd.Item.WC4xLBGmBsdOdHWu",
+        "allowDuplicate": false,
+        "onDeleteActions": {
+          "granter": "cascade",
+          "grantee": "restrict"
+        }
+      },
+      {
+        "key": "GrantItem",
+        "uuid": "Compendium.pf2e-skillpaths.pf2e-skillpath-compendium.Item.l0h2RhJSOOtMKO0m",
+        "allowDuplicate": false,
+        "onDeleteActions": {
+          "granter": "cascade",
+          "grantee": "restrict"
+        }
+      }
+    ],
+    "slug": "skillpaths-nature-naturalist-trained",
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "general",
+        "skill",
+        "skillpath"
+      ],
+      "rarity": "common"
+    },
+    "level": {
+      "value": 1
+    },
+    "category": "skill",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": [
+        {
+          "value": "trained in Nature"
+        },
+        {
+          "value": "Nature - Base"
+        }
+      ]
+    },
+    "subfeatures": {
+      "proficiencies": {},
+      "senses": {},
+      "suppressedFeatures": []
+    }
+  },
+  "img": "icons/sundries/books/book-red-exclamation.webp",
+  "folder": "5L464p9NmJKVCxCV",
+  "flags": {},
+  "effects": [],
+  "_id": "f16NuLoCBkFgm2lE",
+  "_key": "!items!f16NuLoCBkFgm2lE"
+}

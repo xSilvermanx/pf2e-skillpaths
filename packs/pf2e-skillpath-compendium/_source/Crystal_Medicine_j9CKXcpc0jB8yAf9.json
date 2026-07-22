@@ -1,0 +1,77 @@
+{
+  "folder": "QPUE5QMgRqCOV1Ks",
+  "name": "Crystal Medicine",
+  "type": "feat",
+  "effects": [],
+  "system": {
+    "_migration": {
+      "version": 0.959,
+      "previous": null
+    },
+    "description": {
+      "value": "<p>You can use resonant crystals to stimulate wound healing. When you use at least two semiprecious stones with a total value of at least 50 gp, you can use Occultism instead of Medicine to @UUID[Compendium.pf2e.actionspf2e.Item.1kGNdIIhuglAjIp9], including higher Occultism proficiency letting you attempt more difficult checks. It doesn’t replace Medicine for uses of the skill other than Treat Wounds or for feat prerequisites.</p><p>The bonuses from @UUID[Compendium.pf2e.feats-srd.Item.6O8MoMheHs5hNHX1] also apply when you use Crystal Medicine.</p><p></p>",
+      "gm": ""
+    },
+    "publication": {
+      "title": "",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "rules": [],
+    "slug": null,
+    "traits": {
+      "otherTags": [],
+      "value": [],
+      "rarity": "common"
+    },
+    "level": {
+      "value": 2
+    },
+    "category": "skill",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": [
+        {
+          "value": "expert in Occultism"
+        },
+        {
+          "value": "Crystal Healing"
+        }
+      ]
+    },
+    "subfeatures": {
+      "proficiencies": {},
+      "senses": {},
+      "suppressedFeatures": []
+    },
+    "location": null
+  },
+  "img": "icons/sundries/books/book-red-exclamation.webp",
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "cDVClG5j3LgTcqta": 3
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.364",
+    "systemId": "pf2e",
+    "systemVersion": "8.2.0",
+    "createdTime": 1784378038678,
+    "modifiedTime": 1784378038678,
+    "lastModifiedBy": "cDVClG5j3LgTcqta",
+    "compendiumSource": null,
+    "duplicateSource": "Item.R4wiKmqyKdwHA0CG",
+    "exportSource": null
+  },
+  "_id": "j9CKXcpc0jB8yAf9",
+  "_key": "!items!j9CKXcpc0jB8yAf9"
+}

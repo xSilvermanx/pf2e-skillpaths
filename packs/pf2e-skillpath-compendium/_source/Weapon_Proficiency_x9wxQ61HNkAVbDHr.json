@@ -1,0 +1,93 @@
+{
+  "_id": "x9wxQ61HNkAVbDHr",
+  "folder": "nau9DRWvDo59JfOZ",
+  "img": "icons/sundries/books/book-red-exclamation.webp",
+  "name": "Weapon Proficiency",
+  "system": {
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "category": "general",
+    "description": {
+      "value": "<p>You become trained in all martial weapons. If you were already trained in all martial weapons, you become trained in one advanced weapon of your choice. If you are at least 11th level, you also become an expert in these weapons.</p>\n<hr>\n<p><strong>Special</strong> You can select this feat more than once. Each time you do, you become trained in an advanced weapon.</p>",
+      "gm": ""
+    },
+    "level": {
+      "value": 1
+    },
+    "maxTakable": null,
+    "prerequisites": {
+      "value": []
+    },
+    "publication": {
+      "license": "ORC",
+      "remaster": true,
+      "title": "Pathfinder Player Core",
+      "authors": ""
+    },
+    "rules": [
+      {
+        "key": "ActiveEffectLike",
+        "mode": "upgrade",
+        "path": "system.proficiencies.attacks.martial.rank",
+        "predicate": [
+          {
+            "gte": [
+              "self:level",
+              11
+            ]
+          }
+        ],
+        "value": 2
+      }
+    ],
+    "subfeatures": {
+      "proficiencies": {
+        "martial": {
+          "rank": 1,
+          "attribute": null
+        }
+      },
+      "senses": {},
+      "suppressedFeatures": []
+    },
+    "traits": {
+      "rarity": "common",
+      "value": [
+        "general",
+        "skillpath"
+      ],
+      "otherTags": []
+    },
+    "slug": "weapon-proficiency",
+    "_migration": {
+      "version": 0.959,
+      "previous": null
+    },
+    "onlyLevel1": false,
+    "location": null
+  },
+  "type": "feat",
+  "_stats": {
+    "coreVersion": "14.364",
+    "systemId": "pf2e",
+    "systemVersion": "8.2.0",
+    "compendiumSource": "Compendium.pf2e.feats-srd.Item.x9wxQ61HNkAVbDHr",
+    "createdTime": 1784373455036,
+    "modifiedTime": 1784373455036,
+    "lastModifiedBy": "cDVClG5j3LgTcqta",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "effects": [],
+  "ownership": {
+    "default": 0,
+    "cDVClG5j3LgTcqta": 3
+  },
+  "flags": {},
+  "sort": 800000,
+  "_key": "!items!x9wxQ61HNkAVbDHr"
+}

@@ -1,0 +1,79 @@
+{
+  "name": "Courtly Affairs Path - Trained",
+  "type": "feat",
+  "system": {
+    "description": {
+      "value": "<p><strong>Skill Path:</strong> Courtly Affairs</p><p>Conversing with nobility and the leading caste is second nature to you.</p><hr /><p>While developing your skills in Society you chose to focus specifically on Courtly Affairs, learning basic techniques.You gain the following trained feats: @UUID[Compendium.pf2e.feats-srd.Item.JtjnFsOToBLnSRO9]{Courtly Graces}, @UUID[Compendium.pf2e-skillpaths.pf2e-skillpath-compendium.Item.9m4pmTwEGElJQFUN]{Public Speaker}.</p><p>This path focuses on @UUID[Compendium.pf2e.actionspf2e.Item.OX4fy22hQgUHDr0q]{Make an Impression}.</p><p><strong>Path Progression</strong></p><ul><li><strong>Trained:</strong> @UUID[Compendium.pf2e.feats-srd.Item.JtjnFsOToBLnSRO9]{Courtly Graces}, @UUID[Compendium.pf2e-skillpaths.pf2e-skillpath-compendium.Item.9m4pmTwEGElJQFUN]{Public Speaker}</li><li><strong>Expert:</strong> @UUID[Compendium.pf2e.feats-srd.Item.iCv8KTZ5PcF4GqeV]{Leverage Connections}, @UUID[Compendium.pf2e.feats-srd.Item.ThoOsKjn5xCuZUqM]{Quick Contacts}</li><li><strong>Master:</strong> @UUID[Compendium.pf2e-skillpaths.pf2e-skillpath-compendium.Item.JaG1SfG4iB6gJO9y]{Command the Assembly}</li><li><strong>Legendary:</strong> @UUID[Compendium.pf2e.feats-srd.Item.Zf4yiLDdxHPovEQI]{Legendary Codebreaker}, @UUID[Compendium.pf2e.feats-srd.Item.n0S0tJiOJPQk0Rne]{Legendary Linguist}</li></ul>",
+      "gm": ""
+    },
+    "publication": {
+      "title": "PF2e Skill Feat Revamp",
+      "authors": "Sebastian",
+      "license": "ORC",
+      "remaster": true
+    },
+    "rules": [
+      {
+        "key": "GrantItem",
+        "uuid": "Compendium.pf2e.feats-srd.Item.JtjnFsOToBLnSRO9",
+        "allowDuplicate": false,
+        "onDeleteActions": {
+          "granter": "cascade",
+          "grantee": "restrict"
+        }
+      },
+      {
+        "key": "GrantItem",
+        "uuid": "Compendium.pf2e-skillpaths.pf2e-skillpath-compendium.Item.9m4pmTwEGElJQFUN",
+        "allowDuplicate": false,
+        "onDeleteActions": {
+          "granter": "cascade",
+          "grantee": "restrict"
+        }
+      }
+    ],
+    "slug": "skillpaths-society-courtly-affairs-trained",
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "general",
+        "skill",
+        "skillpath"
+      ],
+      "rarity": "common"
+    },
+    "level": {
+      "value": 1
+    },
+    "category": "skill",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": [
+        {
+          "value": "trained in Society"
+        },
+        {
+          "value": "Society - Base"
+        }
+      ]
+    },
+    "subfeatures": {
+      "proficiencies": {},
+      "senses": {},
+      "suppressedFeatures": []
+    }
+  },
+  "img": "icons/sundries/books/book-red-exclamation.webp",
+  "folder": "UhnhMwzUOs2XnNFx",
+  "flags": {},
+  "effects": [],
+  "_id": "Fck2ke63fgIU4362",
+  "_key": "!items!Fck2ke63fgIU4362"
+}

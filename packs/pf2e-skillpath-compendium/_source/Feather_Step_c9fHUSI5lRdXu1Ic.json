@@ -1,0 +1,77 @@
+{
+  "_id": "c9fHUSI5lRdXu1Ic",
+  "folder": "LCegFaV93MxkKEKT",
+  "img": "icons/sundries/books/book-red-exclamation.webp",
+  "name": "Feather Step",
+  "system": {
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "category": "skill",
+    "description": {
+      "value": "<p>You step carefully and quickly. You can Step into difficult terrain.</p>",
+      "gm": ""
+    },
+    "level": {
+      "value": 1
+    },
+    "prerequisites": {
+      "value": [
+        {
+          "value": "trained in Acrobatics"
+        }
+      ]
+    },
+    "publication": {
+      "license": "ORC",
+      "remaster": true,
+      "title": "Pathfinder Player Core",
+      "authors": ""
+    },
+    "rules": [],
+    "traits": {
+      "rarity": "common",
+      "value": [
+        "general",
+        "skillpath"
+      ],
+      "otherTags": []
+    },
+    "slug": "feather-step",
+    "_migration": {
+      "version": 0.959,
+      "previous": null
+    },
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "subfeatures": {
+      "proficiencies": {},
+      "senses": {},
+      "suppressedFeatures": []
+    },
+    "location": null
+  },
+  "type": "feat",
+  "_stats": {
+    "coreVersion": "14.364",
+    "systemId": "pf2e",
+    "systemVersion": "8.2.0",
+    "compendiumSource": "Compendium.pf2e.feats-srd.Item.c9fHUSI5lRdXu1Ic",
+    "createdTime": 1784373503815,
+    "modifiedTime": 1784373503815,
+    "lastModifiedBy": "cDVClG5j3LgTcqta",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "effects": [],
+  "ownership": {
+    "default": 0,
+    "cDVClG5j3LgTcqta": 3
+  },
+  "flags": {},
+  "sort": 100098,
+  "_key": "!items!c9fHUSI5lRdXu1Ic"
+}

@@ -1,0 +1,115 @@
+{
+  "name": "False Impressions Path - Master",
+  "type": "feat",
+  "system": {
+    "description": {
+      "value": "<p>Through long and intensive training you mastered False Impressions. Few people in this world can match your capabilities in this area.</p><p>Gain the following master feats: @UUID[Compendium.pf2e-skillpaths.pf2e-skillpath-compendium.Item.FeH272Nvfx7ZDzZd]{False Expressions}.</p><p><strong>Skill Potency</strong></p><p>At 9th level, you gain a +2 item bonus to Deception checks involving @UUID[Compendium.pf2e.actionspf2e.Item.ewwCglB7XOPLUz72]{Lie}, @UUID[Compendium.pf2e.actionspf2e.Item.GkmbTGfg8KcgynOA]{Create a Diversion}. At 17th level, if you have @UUID[Compendium.pf2e.feats-srd.Item.XZcd1wFHy111klu2]{Reveal Machinations}, this bonus increases to +3.</p>",
+      "gm": ""
+    },
+    "publication": {
+      "title": "PF2e Skill Feat Revamp",
+      "authors": "Sebastian",
+      "license": "ORC",
+      "remaster": true
+    },
+    "rules": [
+      {
+        "key": "FlatModifier",
+        "label": "Skill Potency - Lie, Create a Diversion",
+        "slug": "skillpaths-deception-false-impressions-potency-2",
+        "type": "item",
+        "value": 2,
+        "selector": "deception",
+        "predicate": [
+          {
+            "or": [
+              "action:lie",
+              "action:create-a-diversion"
+            ]
+          },
+          {
+            "gte": [
+              "self:level",
+              9
+            ]
+          }
+        ]
+      },
+      {
+        "key": "FlatModifier",
+        "label": "Skill Potency - Lie, Create a Diversion",
+        "slug": "skillpaths-deception-false-impressions-potency-3",
+        "type": "item",
+        "value": 3,
+        "selector": "deception",
+        "predicate": [
+          {
+            "or": [
+              "action:lie",
+              "action:create-a-diversion"
+            ]
+          },
+          "feat:reveal-machinations",
+          {
+            "gte": [
+              "self:level",
+              17
+            ]
+          }
+        ]
+      },
+      {
+        "key": "GrantItem",
+        "uuid": "Compendium.pf2e-skillpaths.pf2e-skillpath-compendium.Item.FeH272Nvfx7ZDzZd",
+        "allowDuplicate": false,
+        "onDeleteActions": {
+          "granter": "cascade",
+          "grantee": "restrict"
+        }
+      }
+    ],
+    "slug": "skillpaths-deception-false-impressions-master",
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "general",
+        "skill",
+        "skillpath"
+      ],
+      "rarity": "common"
+    },
+    "level": {
+      "value": 7
+    },
+    "category": "skill",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": [
+        {
+          "value": "master in Deception"
+        },
+        {
+          "value": "False Impressions Path - Expert"
+        }
+      ]
+    },
+    "subfeatures": {
+      "proficiencies": {},
+      "senses": {},
+      "suppressedFeatures": []
+    }
+  },
+  "img": "icons/sundries/books/book-red-exclamation.webp",
+  "folder": "D4fxhAE28vKaKW6N",
+  "flags": {},
+  "effects": [],
+  "_id": "uOkmcTURudpXkefS",
+  "_key": "!items!uOkmcTURudpXkefS"
+}

@@ -1,0 +1,96 @@
+{
+  "name": "Religion - Base",
+  "type": "feat",
+  "system": {
+    "description": {
+      "value": "<p>You have started to develop Religion beyond other skills, delving deeper into its possibilities.</p><p><strong>Core Feats</strong></p><ul><li>@UUID[Compendium.pf2e.feats-srd.Item.x7EMZNMavris2aHY]{Student of the Canon}</li></ul><p>Choose one Skill Path and gain that path's Trained feat.</p><p><strong>Available Skill Paths</strong></p><ul><li><strong>@UUID[Compendium.pf2e-skillpaths.pf2e-skillpath-compendium.Item.7spp7DgHflR9LSjK]{Spellcraft (Religion) Path - Trained}</strong>: Your excellent knowledge of spells helps you identifying spells with great success.</li><li><strong>@UUID[Compendium.pf2e-skillpaths.pf2e-skillpath-compendium.Item.nkr3UfXsotNjLun2]{Itemcraft (Religion) Path - Trained}</strong>: Your knowledge of magical items empowers you use them to beyond their limits.</li><li><strong>@UUID[Compendium.pf2e-skillpaths.pf2e-skillpath-compendium.Item.lbOJefoI1Wz6pq19]{Faith Path - Trained}</strong>: You are a well-informed member of your faith.</li></ul>",
+      "gm": ""
+    },
+    "publication": {
+      "title": "PF2e Skill Feat Revamp",
+      "authors": "Sebastian",
+      "license": "ORC",
+      "remaster": true
+    },
+    "rules": [
+      {
+        "key": "GrantItem",
+        "uuid": "Compendium.pf2e.feats-srd.Item.x7EMZNMavris2aHY",
+        "allowDuplicate": false,
+        "onDeleteActions": {
+          "granter": "cascade",
+          "grantee": "restrict"
+        }
+      },
+      {
+        "key": "ChoiceSet",
+        "flag": "religionSkillpathChoice",
+        "prompt": "Choose a skill path.",
+        "adjustName": false,
+        "choices": [
+          {
+            "label": "Spellcraft (Religion)",
+            "value": "Compendium.pf2e-skillpaths.pf2e-skillpath-compendium.Item.7spp7DgHflR9LSjK"
+          },
+          {
+            "label": "Itemcraft (Religion)",
+            "value": "Compendium.pf2e-skillpaths.pf2e-skillpath-compendium.Item.nkr3UfXsotNjLun2"
+          },
+          {
+            "label": "Faith",
+            "value": "Compendium.pf2e-skillpaths.pf2e-skillpath-compendium.Item.lbOJefoI1Wz6pq19"
+          }
+        ]
+      },
+      {
+        "key": "GrantItem",
+        "uuid": "{item|flags.pf2e.rulesSelections.religionSkillpathChoice}",
+        "allowDuplicate": false,
+        "onDeleteActions": {
+          "granter": "cascade",
+          "grantee": "restrict"
+        }
+      }
+    ],
+    "slug": "skillpaths-religion-base",
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "general",
+        "skill",
+        "skillpath"
+      ],
+      "rarity": "common"
+    },
+    "level": {
+      "value": 1
+    },
+    "category": "skill",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": [
+        {
+          "value": "trained in Religion"
+        }
+      ]
+    },
+    "subfeatures": {
+      "proficiencies": {},
+      "senses": {},
+      "suppressedFeatures": []
+    }
+  },
+  "img": "icons/sundries/books/book-red-exclamation.webp",
+  "folder": "hFjim5zfvs9A4xPi",
+  "flags": {},
+  "effects": [],
+  "_id": "bBek1yAkMIQvS5GI",
+  "_key": "!items!bBek1yAkMIQvS5GI"
+}

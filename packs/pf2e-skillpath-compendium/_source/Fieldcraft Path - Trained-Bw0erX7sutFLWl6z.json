@@ -1,0 +1,88 @@
+{
+  "name": "Fieldcraft Path - Trained",
+  "type": "feat",
+  "system": {
+    "description": {
+      "value": "<p><strong>Skill Path:</strong> Fieldcraft</p><p>You craftsmanship is especially great when repairing equipment.</p><hr /><p>While developing your skills in Crafting you chose to focus specifically on Fieldcraft, learning basic techniques.You gain the following trained feats: @UUID[Compendium.pf2e.feats-srd.Item.3HChkcD1IRqv4DbA]{Improvise Tool}, @UUID[Compendium.pf2e.feats-srd.Item.ASy9AKEIRxPYUi5o]{Quick Repair}, @UUID[Compendium.pf2e.feats-srd.Item.DMetdzt1VJL2Y62i]{Snare Crafting}.</p><p>This path focuses on @UUID[Compendium.pf2e.actionspf2e.Item.bT3skovyLUtP22ME]{Repair}.</p><p><strong>Path Progression</strong></p><ul><li><strong>Trained:</strong> @UUID[Compendium.pf2e.feats-srd.Item.3HChkcD1IRqv4DbA]{Improvise Tool}, @UUID[Compendium.pf2e.feats-srd.Item.ASy9AKEIRxPYUi5o]{Quick Repair}, @UUID[Compendium.pf2e.feats-srd.Item.DMetdzt1VJL2Y62i]{Snare Crafting}</li><li><strong>Expert:</strong> @UUID[Compendium.pf2e.feats-srd.Item.xT593tHyPkumPuzz]{Improvised Repair}, @UUID[Compendium.pf2e.feats-srd.Item.vWtPxwND60EpxBAU]{Tweak Appearances}</li><li><strong>Master:</strong> @UUID[Compendium.pf2e.feats-srd.Item.x9xA8P2Vlz98He7C]{Rapid Affixture}</li><li><strong>Legendary:</strong> @UUID[Compendium.pf2e.feats-srd.Item.v62QzTwHOT3t86cL]{Craft Anything}, @UUID[Compendium.pf2e.feats-srd.Item.VRCBTEyrcBf7auGz]{Legendary Tattoo Artist}</li></ul>",
+      "gm": ""
+    },
+    "publication": {
+      "title": "PF2e Skill Feat Revamp",
+      "authors": "Sebastian",
+      "license": "ORC",
+      "remaster": true
+    },
+    "rules": [
+      {
+        "key": "GrantItem",
+        "uuid": "Compendium.pf2e.feats-srd.Item.3HChkcD1IRqv4DbA",
+        "allowDuplicate": false,
+        "onDeleteActions": {
+          "granter": "cascade",
+          "grantee": "restrict"
+        }
+      },
+      {
+        "key": "GrantItem",
+        "uuid": "Compendium.pf2e.feats-srd.Item.ASy9AKEIRxPYUi5o",
+        "allowDuplicate": false,
+        "onDeleteActions": {
+          "granter": "cascade",
+          "grantee": "restrict"
+        }
+      },
+      {
+        "key": "GrantItem",
+        "uuid": "Compendium.pf2e.feats-srd.Item.DMetdzt1VJL2Y62i",
+        "allowDuplicate": false,
+        "onDeleteActions": {
+          "granter": "cascade",
+          "grantee": "restrict"
+        }
+      }
+    ],
+    "slug": "skillpaths-crafting-fieldcraft-trained",
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "general",
+        "skill",
+        "skillpath"
+      ],
+      "rarity": "common"
+    },
+    "level": {
+      "value": 1
+    },
+    "category": "skill",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": [
+        {
+          "value": "trained in Crafting"
+        },
+        {
+          "value": "Crafting - Base"
+        }
+      ]
+    },
+    "subfeatures": {
+      "proficiencies": {},
+      "senses": {},
+      "suppressedFeatures": []
+    }
+  },
+  "img": "icons/sundries/books/book-red-exclamation.webp",
+  "folder": "M5BKSrN6HVRwrNFo",
+  "flags": {},
+  "effects": [],
+  "_id": "Bw0erX7sutFLWl6z",
+  "_key": "!items!Bw0erX7sutFLWl6z"
+}

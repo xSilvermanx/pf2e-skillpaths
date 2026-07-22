@@ -1,0 +1,79 @@
+{
+  "name": "Alchemical Crafting Path - Trained",
+  "type": "feat",
+  "system": {
+    "description": {
+      "value": "<p><strong>Skill Path:</strong> Alchemical Crafting</p><p>You mastered alchemy, the art of creating potions.</p><hr /><p>While developing your skills in Crafting you chose to focus specifically on Alchemical Crafting, learning basic techniques.You gain the following trained feats: @UUID[Compendium.pf2e.feats-srd.Item.is3Oz9wt11lNq62K]{Alchemical Crafting}, @UUID[Compendium.pf2e.feats-srd.Item.1Eceqc6zbMj2x0q9]{Seasoned}.</p><p>This path focuses on @UUID[Compendium.pf2e.actionspf2e.Item.rmwa3OyhTZ2i2AHl]{Craft}.</p><p><strong>Path Progression</strong></p><ul><li><strong>Trained:</strong> @UUID[Compendium.pf2e.feats-srd.Item.is3Oz9wt11lNq62K]{Alchemical Crafting}, @UUID[Compendium.pf2e.feats-srd.Item.1Eceqc6zbMj2x0q9]{Seasoned}</li><li><strong>Expert:</strong> @UUID[Compendium.pf2e-skillpaths.pf2e-skillpath-compendium.Item.liw4ZJGj4f5ok8zF]{Alchemical Inventor}</li><li><strong>Master:</strong> @UUID[Compendium.pf2e.feats-srd.Item.fOIUmDGa9gkeCHA0]{Supertaster}</li><li><strong>Legendary:</strong> @UUID[Compendium.pf2e.feats-srd.Item.v62QzTwHOT3t86cL]{Craft Anything}, @UUID[Compendium.pf2e.feats-srd.Item.VRCBTEyrcBf7auGz]{Legendary Tattoo Artist}</li></ul>",
+      "gm": ""
+    },
+    "publication": {
+      "title": "PF2e Skill Feat Revamp",
+      "authors": "Sebastian",
+      "license": "ORC",
+      "remaster": true
+    },
+    "rules": [
+      {
+        "key": "GrantItem",
+        "uuid": "Compendium.pf2e.feats-srd.Item.is3Oz9wt11lNq62K",
+        "allowDuplicate": false,
+        "onDeleteActions": {
+          "granter": "cascade",
+          "grantee": "restrict"
+        }
+      },
+      {
+        "key": "GrantItem",
+        "uuid": "Compendium.pf2e.feats-srd.Item.1Eceqc6zbMj2x0q9",
+        "allowDuplicate": false,
+        "onDeleteActions": {
+          "granter": "cascade",
+          "grantee": "restrict"
+        }
+      }
+    ],
+    "slug": "skillpaths-crafting-alchemical-crafting-trained",
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "general",
+        "skill",
+        "skillpath"
+      ],
+      "rarity": "common"
+    },
+    "level": {
+      "value": 1
+    },
+    "category": "skill",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": [
+        {
+          "value": "trained in Crafting"
+        },
+        {
+          "value": "Crafting - Base"
+        }
+      ]
+    },
+    "subfeatures": {
+      "proficiencies": {},
+      "senses": {},
+      "suppressedFeatures": []
+    }
+  },
+  "img": "icons/sundries/books/book-red-exclamation.webp",
+  "folder": "M5BKSrN6HVRwrNFo",
+  "flags": {},
+  "effects": [],
+  "_id": "iCdYhfmxFnFFewDU",
+  "_key": "!items!iCdYhfmxFnFFewDU"
+}

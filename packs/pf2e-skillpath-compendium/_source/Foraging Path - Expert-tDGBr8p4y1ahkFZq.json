@@ -1,0 +1,85 @@
+{
+  "name": "Foraging Path - Expert",
+  "type": "feat",
+  "system": {
+    "description": {
+      "value": "<p>You intensified your training in Foraging, acquiring advanced techniques and improving existing ones.</p><p>Gain the following expert feats: @UUID[Compendium.pf2e.feats-srd.Item.fOIUmDGa9gkeCHA0]{Supertaster}.</p><p><strong>Skill Potency</strong></p><p>You gain a +1 item bonus to Survival checks involving @UUID[Compendium.pf2e.actionspf2e.Item.49y9Ec4bDii8pcD3]{Subsist}.</p>",
+      "gm": ""
+    },
+    "publication": {
+      "title": "PF2e Skill Feat Revamp",
+      "authors": "Sebastian",
+      "license": "ORC",
+      "remaster": true
+    },
+    "rules": [
+      {
+        "key": "FlatModifier",
+        "label": "Skill Potency - Subsist",
+        "slug": "skillpaths-survival-foraging-potency-1",
+        "type": "item",
+        "value": 1,
+        "selector": "survival",
+        "predicate": [
+          {
+            "or": [
+              "action:subsist"
+            ]
+          }
+        ]
+      },
+      {
+        "key": "GrantItem",
+        "uuid": "Compendium.pf2e.feats-srd.Item.fOIUmDGa9gkeCHA0",
+        "allowDuplicate": false,
+        "onDeleteActions": {
+          "granter": "cascade",
+          "grantee": "restrict"
+        }
+      }
+    ],
+    "slug": "skillpaths-survival-foraging-expert",
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "general",
+        "skill",
+        "skillpath"
+      ],
+      "rarity": "common"
+    },
+    "level": {
+      "value": 3
+    },
+    "category": "skill",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": [
+        {
+          "value": "expert in Survival"
+        },
+        {
+          "value": "Foraging Path - Trained"
+        }
+      ]
+    },
+    "subfeatures": {
+      "proficiencies": {},
+      "senses": {},
+      "suppressedFeatures": []
+    }
+  },
+  "img": "icons/sundries/books/book-red-exclamation.webp",
+  "folder": "CtCn9FRCzwss0Cd6",
+  "flags": {},
+  "effects": [],
+  "_id": "tDGBr8p4y1ahkFZq",
+  "_key": "!items!tDGBr8p4y1ahkFZq"
+}

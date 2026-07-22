@@ -1,0 +1,77 @@
+{
+  "folder": "QPUE5QMgRqCOV1Ks",
+  "name": "Natural Physician",
+  "type": "feat",
+  "effects": [],
+  "system": {
+    "_migration": {
+      "version": 0.959,
+      "previous": null
+    },
+    "description": {
+      "value": "<p>Your understanding of living systems lets you treat more than wounds. You can use Nature instead of Medicine to @UUID[Compendium.pf2e.actionspf2e.Item.TC7OcDa7JlWbqMaN] and @UUID[Compendium.pf2e.actionspf2e.Item.KjoCEEmPGTeFE4hh], provided the disease or poison comes from a natural creature, plant, fungus, venom, environmental hazard, or similar natural source.</p><p>When you successfully use Natural Medicine to Treat Wounds, the target also gains a +1 circumstance bonus to the next Fortitude save it attempts against disease or poison before your next daily preparations.</p><p>@UUID[Compendium.pf2e-skillpaths.pf2e-skillpath-compendium.Item.jO7wMhnjT7yoAtQg]</p>",
+      "gm": ""
+    },
+    "publication": {
+      "title": "",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "rules": [],
+    "slug": null,
+    "traits": {
+      "otherTags": [],
+      "value": [],
+      "rarity": "common"
+    },
+    "level": {
+      "value": 2
+    },
+    "category": "skill",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": [
+        {
+          "value": "trained in Nature"
+        },
+        {
+          "value": "Natural Medicine"
+        }
+      ]
+    },
+    "subfeatures": {
+      "proficiencies": {},
+      "senses": {},
+      "suppressedFeatures": []
+    },
+    "location": null
+  },
+  "img": "icons/sundries/books/book-red-exclamation.webp",
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "cDVClG5j3LgTcqta": 3
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.364",
+    "systemId": "pf2e",
+    "systemVersion": "8.2.0",
+    "createdTime": 1784378038677,
+    "modifiedTime": 1784378038677,
+    "lastModifiedBy": "cDVClG5j3LgTcqta",
+    "compendiumSource": null,
+    "duplicateSource": "Item.R4wiKmqyKdwHA0CG",
+    "exportSource": null
+  },
+  "_id": "l0h2RhJSOOtMKO0m",
+  "_key": "!items!l0h2RhJSOOtMKO0m"
+}

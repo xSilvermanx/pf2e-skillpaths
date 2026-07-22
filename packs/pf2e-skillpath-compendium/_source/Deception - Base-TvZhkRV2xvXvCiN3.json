@@ -1,0 +1,96 @@
+{
+  "name": "Deception - Base",
+  "type": "feat",
+  "system": {
+    "description": {
+      "value": "<p>You have started to develop Deception beyond other skills, delving deeper into its possibilities.</p><p><strong>Core Feats</strong></p><ul><li>@UUID[Compendium.pf2e.feats-srd.Item.Dvz54d6aPhjsmUux]{Lie to Me}</li></ul><p>Choose one Skill Path and gain that path's Trained feat.</p><p><strong>Available Skill Paths</strong></p><ul><li><strong>@UUID[Compendium.pf2e-skillpaths.pf2e-skillpath-compendium.Item.CiAxlrBn5hUVRQl2]{Intrigue Path - Trained}</strong>: You understand to use spoken words to weave intrigues and conspiracies.</li><li><strong>@UUID[Compendium.pf2e-skillpaths.pf2e-skillpath-compendium.Item.hcpYdOcHkp3Cgogk]{Identity Path - Trained}</strong>: You are a master of disguise, easily able to Impersonate whomever you want..</li><li><strong>@UUID[Compendium.pf2e-skillpaths.pf2e-skillpath-compendium.Item.YVHj8up9uSvgiY6o]{False Impressions Path - Trained}</strong>: You became a deceptively well lier, easily concealing the truth from anyone who shouldn't know it.</li></ul>",
+      "gm": ""
+    },
+    "publication": {
+      "title": "PF2e Skill Feat Revamp",
+      "authors": "Sebastian",
+      "license": "ORC",
+      "remaster": true
+    },
+    "rules": [
+      {
+        "key": "GrantItem",
+        "uuid": "Compendium.pf2e.feats-srd.Item.Dvz54d6aPhjsmUux",
+        "allowDuplicate": false,
+        "onDeleteActions": {
+          "granter": "cascade",
+          "grantee": "restrict"
+        }
+      },
+      {
+        "key": "ChoiceSet",
+        "flag": "deceptionSkillpathChoice",
+        "prompt": "Choose a skill path.",
+        "adjustName": false,
+        "choices": [
+          {
+            "label": "Intrigue",
+            "value": "Compendium.pf2e-skillpaths.pf2e-skillpath-compendium.Item.CiAxlrBn5hUVRQl2"
+          },
+          {
+            "label": "Identity",
+            "value": "Compendium.pf2e-skillpaths.pf2e-skillpath-compendium.Item.hcpYdOcHkp3Cgogk"
+          },
+          {
+            "label": "False Impressions",
+            "value": "Compendium.pf2e-skillpaths.pf2e-skillpath-compendium.Item.YVHj8up9uSvgiY6o"
+          }
+        ]
+      },
+      {
+        "key": "GrantItem",
+        "uuid": "{item|flags.pf2e.rulesSelections.deceptionSkillpathChoice}",
+        "allowDuplicate": false,
+        "onDeleteActions": {
+          "granter": "cascade",
+          "grantee": "restrict"
+        }
+      }
+    ],
+    "slug": "skillpaths-deception-base",
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "general",
+        "skill",
+        "skillpath"
+      ],
+      "rarity": "common"
+    },
+    "level": {
+      "value": 1
+    },
+    "category": "skill",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": [
+        {
+          "value": "trained in Deception"
+        }
+      ]
+    },
+    "subfeatures": {
+      "proficiencies": {},
+      "senses": {},
+      "suppressedFeatures": []
+    }
+  },
+  "img": "icons/sundries/books/book-red-exclamation.webp",
+  "folder": "D4fxhAE28vKaKW6N",
+  "flags": {},
+  "effects": [],
+  "_id": "TvZhkRV2xvXvCiN3",
+  "_key": "!items!TvZhkRV2xvXvCiN3"
+}

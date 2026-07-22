@@ -1,0 +1,79 @@
+{
+  "name": "Psyche Path - Trained",
+  "type": "feat",
+  "system": {
+    "description": {
+      "value": "<p><strong>Skill Path:</strong> Psyche</p><p>Through much training you gained a few psychic abilities.</p><hr /><p>While developing your skills in Occultism you chose to focus specifically on Psyche, learning basic techniques.You gain the following trained feats: @UUID[Compendium.pf2e.feats-srd.Item.p5Bmj3d0uAGnrzIn]{Read Psychometric Resonance}, @UUID[Compendium.pf2e.feats-srd.Item.nJ3EBRat9yUgeWwv]{Automatic Writing}.</p><p>This path focuses on @UUID[Compendium.pf2e.actionspf2e.Item.1OagaWtBpVXExToo]{Recall Knowledge}.</p><p><strong>Path Progression</strong></p><ul><li><strong>Trained:</strong> @UUID[Compendium.pf2e.feats-srd.Item.p5Bmj3d0uAGnrzIn]{Read Psychometric Resonance}, @UUID[Compendium.pf2e.feats-srd.Item.nJ3EBRat9yUgeWwv]{Automatic Writing}</li><li><strong>Expert:</strong> @UUID[Compendium.pf2e.feats-srd.Item.zdjPTg6vRwg8r2Lm]{Aura Sight}</li><li><strong>Master:</strong> choose one of @UUID[Compendium.pf2e.feats-srd.Item.fvYwsHM9O1twQa5N]{Consult the Spirits}, @UUID[Compendium.pf2e.feats-srd.Item.hkSuxXOc9qBleJbd]{Disturbing Knowledge}</li></ul>",
+      "gm": ""
+    },
+    "publication": {
+      "title": "PF2e Skill Feat Revamp",
+      "authors": "Sebastian",
+      "license": "ORC",
+      "remaster": true
+    },
+    "rules": [
+      {
+        "key": "GrantItem",
+        "uuid": "Compendium.pf2e.feats-srd.Item.p5Bmj3d0uAGnrzIn",
+        "allowDuplicate": false,
+        "onDeleteActions": {
+          "granter": "cascade",
+          "grantee": "restrict"
+        }
+      },
+      {
+        "key": "GrantItem",
+        "uuid": "Compendium.pf2e.feats-srd.Item.nJ3EBRat9yUgeWwv",
+        "allowDuplicate": false,
+        "onDeleteActions": {
+          "granter": "cascade",
+          "grantee": "restrict"
+        }
+      }
+    ],
+    "slug": "skillpaths-occultism-psyche-trained",
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "general",
+        "skill",
+        "skillpath"
+      ],
+      "rarity": "common"
+    },
+    "level": {
+      "value": 1
+    },
+    "category": "skill",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": [
+        {
+          "value": "trained in Occultism"
+        },
+        {
+          "value": "Occultism - Base"
+        }
+      ]
+    },
+    "subfeatures": {
+      "proficiencies": {},
+      "senses": {},
+      "suppressedFeatures": []
+    }
+  },
+  "img": "icons/sundries/books/book-red-exclamation.webp",
+  "folder": "G7AF3O2QsYVPLQme",
+  "flags": {},
+  "effects": [],
+  "_id": "sMSOAbUCzsCZdt0f",
+  "_key": "!items!sMSOAbUCzsCZdt0f"
+}

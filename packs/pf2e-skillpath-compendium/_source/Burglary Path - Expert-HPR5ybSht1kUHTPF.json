@@ -1,0 +1,88 @@
+{
+  "name": "Burglary Path - Expert",
+  "type": "feat",
+  "system": {
+    "description": {
+      "value": "<p>You intensified your training in Burglary, acquiring advanced techniques and improving existing ones.</p><p>Gain the following expert feats: @UUID[Compendium.pf2e.feats-srd.Item.RLBYJiGMVkaGL5w9]{Wary Disarmament}.</p><p><strong>Skill Potency</strong></p><p>You gain a +1 item bonus to Thievery checks involving @UUID[Compendium.pf2e.actionspf2e.Item.2EE4aF4SZpYf0R6H]{Pick a Lock}, @UUID[Compendium.pf2e.actionspf2e.Item.cYdz2grcOcRt4jk6]{Disable a Device}, @UUID[Compendium.pf2e.actionspf2e.Item.ijZ0DDFpMkWqaShd]{Palm an Object}, @UUID[Compendium.pf2e.actionspf2e.Item.RDXXE7wMrSPCLv5k]{Steal}.</p>",
+      "gm": ""
+    },
+    "publication": {
+      "title": "PF2e Skill Feat Revamp",
+      "authors": "Sebastian",
+      "license": "ORC",
+      "remaster": true
+    },
+    "rules": [
+      {
+        "key": "FlatModifier",
+        "label": "Skill Potency - Pick a Lock, Disable a Device, Palm an Object, Steal",
+        "slug": "skillpaths-thievery-burglary-potency-1",
+        "type": "item",
+        "value": 1,
+        "selector": "thievery",
+        "predicate": [
+          {
+            "or": [
+              "action:pick-a-lock",
+              "action:disable-a-device",
+              "action:palm-an-object",
+              "action:steal"
+            ]
+          }
+        ]
+      },
+      {
+        "key": "GrantItem",
+        "uuid": "Compendium.pf2e.feats-srd.Item.RLBYJiGMVkaGL5w9",
+        "allowDuplicate": false,
+        "onDeleteActions": {
+          "granter": "cascade",
+          "grantee": "restrict"
+        }
+      }
+    ],
+    "slug": "skillpaths-thievery-burglary-expert",
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "general",
+        "skill",
+        "skillpath"
+      ],
+      "rarity": "common"
+    },
+    "level": {
+      "value": 3
+    },
+    "category": "skill",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": [
+        {
+          "value": "expert in Thievery"
+        },
+        {
+          "value": "Burglary Path - Trained"
+        }
+      ]
+    },
+    "subfeatures": {
+      "proficiencies": {},
+      "senses": {},
+      "suppressedFeatures": []
+    }
+  },
+  "img": "icons/sundries/books/book-red-exclamation.webp",
+  "folder": "NsbLnpqRAL9jHjcs",
+  "flags": {},
+  "effects": [],
+  "_id": "HPR5ybSht1kUHTPF",
+  "_key": "!items!HPR5ybSht1kUHTPF"
+}

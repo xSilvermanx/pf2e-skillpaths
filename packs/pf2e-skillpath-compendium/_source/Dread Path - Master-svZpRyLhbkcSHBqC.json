@@ -1,0 +1,103 @@
+{
+  "name": "Dread Path - Master",
+  "type": "feat",
+  "system": {
+    "description": {
+      "value": "<p>Through long and intensive training you mastered Dread. Few people in this world can match your capabilities in this area.</p><p>Gain the following master feats: @UUID[Compendium.pf2e.feats-srd.Item.dc8X2Mbtwq6kGp7F]{Terrified Retreat}.</p><p><strong>Skill Potency</strong></p><p>At 9th level, you gain a +2 item bonus to Intimidation checks involving Psychological Pressure. At 17th level, if you have @UUID[Compendium.pf2e.feats-srd.Item.mZttsiWl1ql5NvrH]{Scare to Death}, this bonus increases to +3.</p>",
+      "gm": ""
+    },
+    "publication": {
+      "title": "PF2e Skill Feat Revamp",
+      "authors": "Sebastian",
+      "license": "ORC",
+      "remaster": true
+    },
+    "rules": [
+      {
+        "key": "FlatModifier",
+        "label": "Skill Potency - Psychological Pressure",
+        "slug": "skillpaths-intimidation-dread-potency-2",
+        "type": "item",
+        "value": 2,
+        "selector": "intimidation",
+        "predicate": [
+          {
+            "gte": [
+              "self:level",
+              9
+            ]
+          }
+        ]
+      },
+      {
+        "key": "FlatModifier",
+        "label": "Skill Potency - Psychological Pressure",
+        "slug": "skillpaths-intimidation-dread-potency-3",
+        "type": "item",
+        "value": 3,
+        "selector": "intimidation",
+        "predicate": [
+          "feat:scare-to-death",
+          {
+            "gte": [
+              "self:level",
+              17
+            ]
+          }
+        ]
+      },
+      {
+        "key": "GrantItem",
+        "uuid": "Compendium.pf2e.feats-srd.Item.dc8X2Mbtwq6kGp7F",
+        "allowDuplicate": false,
+        "onDeleteActions": {
+          "granter": "cascade",
+          "grantee": "restrict"
+        }
+      }
+    ],
+    "slug": "skillpaths-intimidation-dread-master",
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "general",
+        "skill",
+        "skillpath"
+      ],
+      "rarity": "common"
+    },
+    "level": {
+      "value": 7
+    },
+    "category": "skill",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": [
+        {
+          "value": "master in Intimidation"
+        },
+        {
+          "value": "Dread Path - Expert"
+        }
+      ]
+    },
+    "subfeatures": {
+      "proficiencies": {},
+      "senses": {},
+      "suppressedFeatures": []
+    }
+  },
+  "img": "icons/sundries/books/book-red-exclamation.webp",
+  "folder": "a5X3vnyewfMbH6N4",
+  "flags": {},
+  "effects": [],
+  "_id": "svZpRyLhbkcSHBqC",
+  "_key": "!items!svZpRyLhbkcSHBqC"
+}

@@ -1,0 +1,117 @@
+{
+  "name": "Survival - Base",
+  "type": "feat",
+  "system": {
+    "description": {
+      "value": "<p>You have started to develop Survival beyond other skills, delving deeper into its possibilities.</p><p><strong>Core Feats</strong></p><ul><li>@UUID[Compendium.pf2e.feats-srd.Item.4tTkRyOQ0VuRBac3]{Terrain Expertise}</li><li>When expert: @UUID[Compendium.pf2e.feats-srd.Item.BV5jpSifVJsTwoO7]{Wilderness Spotter}</li></ul><p>Choose one Skill Path and gain that path's Trained feat.</p><p><strong>Available Skill Paths</strong></p><ul><li><strong>@UUID[Compendium.pf2e-skillpaths.pf2e-skillpath-compendium.Item.dbLMuzTrci1l3X0X]{Resilience Path - Trained}</strong>: Your body is especially resilient against hardships.</li><li><strong>@UUID[Compendium.pf2e-skillpaths.pf2e-skillpath-compendium.Item.kOWJkYnuwvYaAbMn]{Foraging Path - Trained}</strong>: You are a master at procuring rations in dire situations.</li><li><strong>@UUID[Compendium.pf2e-skillpaths.pf2e-skillpath-compendium.Item.oUPFbBi1zruenReB]{Wayfinding Path - Trained}</strong>: Your ability to orientate yourself is unparalleled.</li><li><strong>@UUID[Compendium.pf2e-skillpaths.pf2e-skillpath-compendium.Item.akDMA5is25MRAVpO]{Preparedness Path - Trained}</strong>: You have the almost uncanny ability to predict difficult situations and prepare for them.</li></ul>",
+      "gm": ""
+    },
+    "publication": {
+      "title": "PF2e Skill Feat Revamp",
+      "authors": "Sebastian",
+      "license": "ORC",
+      "remaster": true
+    },
+    "rules": [
+      {
+        "key": "GrantItem",
+        "uuid": "Compendium.pf2e.feats-srd.Item.4tTkRyOQ0VuRBac3",
+        "allowDuplicate": false,
+        "onDeleteActions": {
+          "granter": "cascade",
+          "grantee": "restrict"
+        }
+      },
+      {
+        "key": "GrantItem",
+        "uuid": "Compendium.pf2e.feats-srd.Item.BV5jpSifVJsTwoO7",
+        "allowDuplicate": false,
+        "onDeleteActions": {
+          "granter": "cascade",
+          "grantee": "restrict"
+        },
+        "predicate": [
+          {
+            "gte": [
+              "skill:survival:rank",
+              2
+            ]
+          }
+        ]
+      },
+      {
+        "key": "ChoiceSet",
+        "flag": "survivalSkillpathChoice",
+        "prompt": "Choose a skill path.",
+        "adjustName": false,
+        "choices": [
+          {
+            "label": "Resilience",
+            "value": "Compendium.pf2e-skillpaths.pf2e-skillpath-compendium.Item.dbLMuzTrci1l3X0X"
+          },
+          {
+            "label": "Foraging",
+            "value": "Compendium.pf2e-skillpaths.pf2e-skillpath-compendium.Item.kOWJkYnuwvYaAbMn"
+          },
+          {
+            "label": "Wayfinding",
+            "value": "Compendium.pf2e-skillpaths.pf2e-skillpath-compendium.Item.oUPFbBi1zruenReB"
+          },
+          {
+            "label": "Preparedness",
+            "value": "Compendium.pf2e-skillpaths.pf2e-skillpath-compendium.Item.akDMA5is25MRAVpO"
+          }
+        ]
+      },
+      {
+        "key": "GrantItem",
+        "uuid": "{item|flags.pf2e.rulesSelections.survivalSkillpathChoice}",
+        "allowDuplicate": false,
+        "onDeleteActions": {
+          "granter": "cascade",
+          "grantee": "restrict"
+        }
+      }
+    ],
+    "slug": "skillpaths-survival-base",
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "general",
+        "skill",
+        "skillpath"
+      ],
+      "rarity": "common"
+    },
+    "level": {
+      "value": 1
+    },
+    "category": "skill",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": [
+        {
+          "value": "trained in Survival"
+        }
+      ]
+    },
+    "subfeatures": {
+      "proficiencies": {},
+      "senses": {},
+      "suppressedFeatures": []
+    }
+  },
+  "img": "icons/sundries/books/book-red-exclamation.webp",
+  "folder": "CtCn9FRCzwss0Cd6",
+  "flags": {},
+  "effects": [],
+  "_id": "REeJDVy0EjveNnFI",
+  "_key": "!items!REeJDVy0EjveNnFI"
+}

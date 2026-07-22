@@ -1,0 +1,79 @@
+{
+  "name": "Magical Crafting Path - Trained",
+  "type": "feat",
+  "system": {
+    "description": {
+      "value": "<p><strong>Skill Path:</strong> Magical Crafting</p><p>Crafting magical items has become second nature to you.</p><hr /><p>While developing your skills in Crafting you chose to focus specifically on Magical Crafting, learning basic techniques.You gain the following trained feats: @UUID[Compendium.pf2e.feats-srd.Item.voYr7ygVcWmlg1f4]{Crafter's Appraisal}, @UUID[Compendium.pf2e.feats-srd.Item.z0HX5L7bOOrKi0dD]{Tattoo Artist}.</p><p>This path focuses on @UUID[Compendium.pf2e.actionspf2e.Item.rmwa3OyhTZ2i2AHl]{Craft}.</p><p><strong>Path Progression</strong></p><ul><li><strong>Trained:</strong> @UUID[Compendium.pf2e.feats-srd.Item.voYr7ygVcWmlg1f4]{Crafter's Appraisal}, @UUID[Compendium.pf2e.feats-srd.Item.z0HX5L7bOOrKi0dD]{Tattoo Artist}</li><li><strong>Expert:</strong> @UUID[Compendium.pf2e.feats-srd.Item.xWY5omyIcILNR7y1]{Magical Crafting}</li><li><strong>Master:</strong> @UUID[Compendium.pf2e.feats-srd.Item.niQY3XR2VWp3GWDx]{Signature Crafting}</li><li><strong>Legendary:</strong> @UUID[Compendium.pf2e.feats-srd.Item.v62QzTwHOT3t86cL]{Craft Anything}, @UUID[Compendium.pf2e.feats-srd.Item.VRCBTEyrcBf7auGz]{Legendary Tattoo Artist}</li></ul>",
+      "gm": ""
+    },
+    "publication": {
+      "title": "PF2e Skill Feat Revamp",
+      "authors": "Sebastian",
+      "license": "ORC",
+      "remaster": true
+    },
+    "rules": [
+      {
+        "key": "GrantItem",
+        "uuid": "Compendium.pf2e.feats-srd.Item.voYr7ygVcWmlg1f4",
+        "allowDuplicate": false,
+        "onDeleteActions": {
+          "granter": "cascade",
+          "grantee": "restrict"
+        }
+      },
+      {
+        "key": "GrantItem",
+        "uuid": "Compendium.pf2e.feats-srd.Item.z0HX5L7bOOrKi0dD",
+        "allowDuplicate": false,
+        "onDeleteActions": {
+          "granter": "cascade",
+          "grantee": "restrict"
+        }
+      }
+    ],
+    "slug": "skillpaths-crafting-magical-crafting-trained",
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "general",
+        "skill",
+        "skillpath"
+      ],
+      "rarity": "common"
+    },
+    "level": {
+      "value": 1
+    },
+    "category": "skill",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": [
+        {
+          "value": "trained in Crafting"
+        },
+        {
+          "value": "Crafting - Base"
+        }
+      ]
+    },
+    "subfeatures": {
+      "proficiencies": {},
+      "senses": {},
+      "suppressedFeatures": []
+    }
+  },
+  "img": "icons/sundries/books/book-red-exclamation.webp",
+  "folder": "M5BKSrN6HVRwrNFo",
+  "flags": {},
+  "effects": [],
+  "_id": "etEO3TloXDgbFBxM",
+  "_key": "!items!etEO3TloXDgbFBxM"
+}

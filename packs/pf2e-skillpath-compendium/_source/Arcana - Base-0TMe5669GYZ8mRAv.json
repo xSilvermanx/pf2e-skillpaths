@@ -1,0 +1,92 @@
+{
+  "name": "Arcana - Base",
+  "type": "feat",
+  "system": {
+    "description": {
+      "value": "<p>You have started to develop Arcana beyond other skills, delving deeper into its possibilities.</p><p><strong>Core Feats</strong></p><ul><li>@UUID[Compendium.pf2e.feats-srd.Item.blMeVamjGz4ODWxq]{Arcane Sense}</li></ul><p>Choose one Skill Path and gain that path's Trained feat.</p><p><strong>Available Skill Paths</strong></p><ul><li><strong>@UUID[Compendium.pf2e-skillpaths.pf2e-skillpath-compendium.Item.6RcjOrQqhoBRjlk8]{Spellcraft (Arcana) Path - Trained}</strong>: Your excellent knowledge of spells helps you identifying spells with great success.</li><li><strong>@UUID[Compendium.pf2e-skillpaths.pf2e-skillpath-compendium.Item.7BoRfaGxLnk8eHaW]{Itemcraft (Arcana) Path - Trained}</strong>: Your knowledge of magical items empowers you use them to beyond their limits.</li></ul>",
+      "gm": ""
+    },
+    "publication": {
+      "title": "PF2e Skill Feat Revamp",
+      "authors": "Sebastian",
+      "license": "ORC",
+      "remaster": true
+    },
+    "rules": [
+      {
+        "key": "GrantItem",
+        "uuid": "Compendium.pf2e.feats-srd.Item.blMeVamjGz4ODWxq",
+        "allowDuplicate": false,
+        "onDeleteActions": {
+          "granter": "cascade",
+          "grantee": "restrict"
+        }
+      },
+      {
+        "key": "ChoiceSet",
+        "flag": "arcanaSkillpathChoice",
+        "prompt": "Choose a skill path.",
+        "adjustName": false,
+        "choices": [
+          {
+            "label": "Spellcraft (Arcana)",
+            "value": "Compendium.pf2e-skillpaths.pf2e-skillpath-compendium.Item.6RcjOrQqhoBRjlk8"
+          },
+          {
+            "label": "Itemcraft (Arcana)",
+            "value": "Compendium.pf2e-skillpaths.pf2e-skillpath-compendium.Item.7BoRfaGxLnk8eHaW"
+          }
+        ]
+      },
+      {
+        "key": "GrantItem",
+        "uuid": "{item|flags.pf2e.rulesSelections.arcanaSkillpathChoice}",
+        "allowDuplicate": false,
+        "onDeleteActions": {
+          "granter": "cascade",
+          "grantee": "restrict"
+        }
+      }
+    ],
+    "slug": "skillpaths-arcana-base",
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "general",
+        "skill",
+        "skillpath"
+      ],
+      "rarity": "common"
+    },
+    "level": {
+      "value": 1
+    },
+    "category": "skill",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": [
+        {
+          "value": "trained in Arcana"
+        }
+      ]
+    },
+    "subfeatures": {
+      "proficiencies": {},
+      "senses": {},
+      "suppressedFeatures": []
+    }
+  },
+  "img": "icons/sundries/books/book-red-exclamation.webp",
+  "folder": "NUC8zprb3DEhiyS4",
+  "flags": {},
+  "effects": [],
+  "_id": "0TMe5669GYZ8mRAv",
+  "_key": "!items!0TMe5669GYZ8mRAv"
+}

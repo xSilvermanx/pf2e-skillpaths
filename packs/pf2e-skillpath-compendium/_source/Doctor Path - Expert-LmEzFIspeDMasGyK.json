@@ -1,0 +1,96 @@
+{
+  "name": "Doctor Path - Expert",
+  "type": "feat",
+  "system": {
+    "description": {
+      "value": "<p>You intensified your training in Doctor, acquiring advanced techniques and improving existing ones.</p><p>Gain the following expert feats: @UUID[Compendium.pf2e.feats-srd.Item.c85a69mB1urW2Se2]{Continual Recovery}, @UUID[Compendium.pf2e.feats-srd.Item.8c61nOIr5AM3KxZi]{Ward Medic}.</p><p><strong>Skill Potency</strong></p><p>You gain a +1 item bonus to Medicine checks involving @UUID[Compendium.pf2e.actionspf2e.Item.1kGNdIIhuglAjIp9]{Treat Wounds}, @UUID[Compendium.pf2e.actionspf2e.Item.TC7OcDa7JlWbqMaN]{Treat Disease}, @UUID[Compendium.pf2e.actionspf2e.Item.KjoCEEmPGTeFE4hh]{Treat Poison}.</p>",
+      "gm": ""
+    },
+    "publication": {
+      "title": "PF2e Skill Feat Revamp",
+      "authors": "Sebastian",
+      "license": "ORC",
+      "remaster": true
+    },
+    "rules": [
+      {
+        "key": "FlatModifier",
+        "label": "Skill Potency - Treat Wounds (not in combat), Treat Disease, Treat Poison",
+        "slug": "skillpaths-medicine-doctor-potency-1",
+        "type": "item",
+        "value": 1,
+        "selector": "medicine",
+        "predicate": [
+          {
+            "or": [
+              "action:treat-wounds",
+              "action:treat-disease",
+              "action:treat-poison"
+            ]
+          }
+        ]
+      },
+      {
+        "key": "GrantItem",
+        "uuid": "Compendium.pf2e.feats-srd.Item.c85a69mB1urW2Se2",
+        "allowDuplicate": false,
+        "onDeleteActions": {
+          "granter": "cascade",
+          "grantee": "restrict"
+        }
+      },
+      {
+        "key": "GrantItem",
+        "uuid": "Compendium.pf2e.feats-srd.Item.8c61nOIr5AM3KxZi",
+        "allowDuplicate": false,
+        "onDeleteActions": {
+          "granter": "cascade",
+          "grantee": "restrict"
+        }
+      }
+    ],
+    "slug": "skillpaths-medicine-doctor-expert",
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "general",
+        "skill",
+        "skillpath"
+      ],
+      "rarity": "common"
+    },
+    "level": {
+      "value": 3
+    },
+    "category": "skill",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": [
+        {
+          "value": "expert in Medicine"
+        },
+        {
+          "value": "Doctor Path - Trained"
+        }
+      ]
+    },
+    "subfeatures": {
+      "proficiencies": {},
+      "senses": {},
+      "suppressedFeatures": []
+    }
+  },
+  "img": "icons/sundries/books/book-red-exclamation.webp",
+  "folder": "wuXEfcfvooGNZV29",
+  "flags": {},
+  "effects": [],
+  "_id": "LmEzFIspeDMasGyK",
+  "_key": "!items!LmEzFIspeDMasGyK"
+}

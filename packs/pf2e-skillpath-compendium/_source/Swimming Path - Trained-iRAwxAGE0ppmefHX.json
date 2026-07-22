@@ -1,0 +1,79 @@
+{
+  "name": "Swimming Path - Trained",
+  "type": "feat",
+  "system": {
+    "description": {
+      "value": "<p><strong>Skill Path:</strong> Swimming</p><p>You focus on improving your swimming and diving, mastering the element of water.</p><hr /><p>While developing your skills in Athletics you chose to focus specifically on Swimming, learning basic techniques.You gain the following trained feats: @UUID[Compendium.pf2e.feats-srd.Item.iOY6YfGBaOvMNAor]{Underwater Marauder}, @UUID[Compendium.pf2e.feats-srd.Item.aJUXbe9HJVvv0Mxa]{Breath Control}.</p><p>This path focuses on @UUID[Compendium.pf2e.actionspf2e.Item.c8TGiZ48ygoSPofx]{Swim}.</p><p><strong>Path Progression</strong></p><ul><li><strong>Trained:</strong> @UUID[Compendium.pf2e.feats-srd.Item.iOY6YfGBaOvMNAor]{Underwater Marauder}, @UUID[Compendium.pf2e.feats-srd.Item.aJUXbe9HJVvv0Mxa]{Breath Control}</li><li><strong>Expert:</strong> @UUID[Compendium.pf2e.feats-srd.Item.bFoh3267kNLk68cU]{Quick Swim}</li><li><strong>Master:</strong> @UUID[Compendium.pf2e.feats-srd.Item.MTO0spetPKyIa4sT]{Water Sprint}</li></ul>",
+      "gm": ""
+    },
+    "publication": {
+      "title": "PF2e Skill Feat Revamp",
+      "authors": "Sebastian",
+      "license": "ORC",
+      "remaster": true
+    },
+    "rules": [
+      {
+        "key": "GrantItem",
+        "uuid": "Compendium.pf2e.feats-srd.Item.iOY6YfGBaOvMNAor",
+        "allowDuplicate": false,
+        "onDeleteActions": {
+          "granter": "cascade",
+          "grantee": "restrict"
+        }
+      },
+      {
+        "key": "GrantItem",
+        "uuid": "Compendium.pf2e.feats-srd.Item.aJUXbe9HJVvv0Mxa",
+        "allowDuplicate": false,
+        "onDeleteActions": {
+          "granter": "cascade",
+          "grantee": "restrict"
+        }
+      }
+    ],
+    "slug": "skillpaths-athletics-swimming-trained",
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "general",
+        "skill",
+        "skillpath"
+      ],
+      "rarity": "common"
+    },
+    "level": {
+      "value": 1
+    },
+    "category": "skill",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": [
+        {
+          "value": "trained in Athletics"
+        },
+        {
+          "value": "Athletics - Base"
+        }
+      ]
+    },
+    "subfeatures": {
+      "proficiencies": {},
+      "senses": {},
+      "suppressedFeatures": []
+    }
+  },
+  "img": "icons/sundries/books/book-red-exclamation.webp",
+  "folder": "4a13FbltoiyxbOe2",
+  "flags": {},
+  "effects": [],
+  "_id": "iRAwxAGE0ppmefHX",
+  "_key": "!items!iRAwxAGE0ppmefHX"
+}

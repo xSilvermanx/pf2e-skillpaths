@@ -1,0 +1,23 @@
+{
+  "type": "Item",
+  "folder": null,
+  "name": "Other Features",
+  "color": null,
+  "sorting": "a",
+  "_id": "S3hQctbIF7UtPgaH",
+  "description": "",
+  "sort": 400000,
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.364",
+    "systemId": "pf2e",
+    "systemVersion": "8.2.0",
+    "createdTime": 1784378041453,
+    "modifiedTime": 1784378041465,
+    "lastModifiedBy": "cDVClG5j3LgTcqta",
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!folders!S3hQctbIF7UtPgaH"
+}

@@ -1,0 +1,100 @@
+{
+  "name": "Athletics - Base",
+  "type": "feat",
+  "system": {
+    "description": {
+      "value": "<p>You have started to develop Athletics beyond other skills, delving deeper into its possibilities.</p><p><strong>Core Feats</strong></p><ul><li>@UUID[Compendium.pf2e.feats-srd.Item.KxaYlC50zzHysJj8]{Titan Wrestler}</li></ul><p>Choose one Skill Path and gain that path's Trained feat.</p><p><strong>Available Skill Paths</strong></p><ul><li><strong>@UUID[Compendium.pf2e-skillpaths.pf2e-skillpath-compendium.Item.DP9HZpKiMLumpv5N]{Jumping Path - Trained}</strong>: Thanks to your thorough training your jumping ability is extraordinary.</li><li><strong>@UUID[Compendium.pf2e-skillpaths.pf2e-skillpath-compendium.Item.S7m5LJNHDLnOJtnu]{Climbing Path - Trained}</strong>: There are few people climbing as good as you do.</li><li><strong>@UUID[Compendium.pf2e-skillpaths.pf2e-skillpath-compendium.Item.s33jZRlkY3uOvMpS]{Might Path - Trained}</strong>: As a martial artists you strive to master grappling and other hand to hand combat.</li><li><strong>@UUID[Compendium.pf2e-skillpaths.pf2e-skillpath-compendium.Item.iRAwxAGE0ppmefHX]{Swimming Path - Trained}</strong>: You focus on improving your swimming and diving, mastering the element of water.</li></ul>",
+      "gm": ""
+    },
+    "publication": {
+      "title": "PF2e Skill Feat Revamp",
+      "authors": "Sebastian",
+      "license": "ORC",
+      "remaster": true
+    },
+    "rules": [
+      {
+        "key": "GrantItem",
+        "uuid": "Compendium.pf2e.feats-srd.Item.KxaYlC50zzHysJj8",
+        "allowDuplicate": false,
+        "onDeleteActions": {
+          "granter": "cascade",
+          "grantee": "restrict"
+        }
+      },
+      {
+        "key": "ChoiceSet",
+        "flag": "athleticsSkillpathChoice",
+        "prompt": "Choose a skill path.",
+        "adjustName": false,
+        "choices": [
+          {
+            "label": "Jumping",
+            "value": "Compendium.pf2e-skillpaths.pf2e-skillpath-compendium.Item.DP9HZpKiMLumpv5N"
+          },
+          {
+            "label": "Climbing",
+            "value": "Compendium.pf2e-skillpaths.pf2e-skillpath-compendium.Item.S7m5LJNHDLnOJtnu"
+          },
+          {
+            "label": "Might",
+            "value": "Compendium.pf2e-skillpaths.pf2e-skillpath-compendium.Item.s33jZRlkY3uOvMpS"
+          },
+          {
+            "label": "Swimming",
+            "value": "Compendium.pf2e-skillpaths.pf2e-skillpath-compendium.Item.iRAwxAGE0ppmefHX"
+          }
+        ]
+      },
+      {
+        "key": "GrantItem",
+        "uuid": "{item|flags.pf2e.rulesSelections.athleticsSkillpathChoice}",
+        "allowDuplicate": false,
+        "onDeleteActions": {
+          "granter": "cascade",
+          "grantee": "restrict"
+        }
+      }
+    ],
+    "slug": "skillpaths-athletics-base",
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "general",
+        "skill",
+        "skillpath"
+      ],
+      "rarity": "common"
+    },
+    "level": {
+      "value": 1
+    },
+    "category": "skill",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": [
+        {
+          "value": "trained in Athletics"
+        }
+      ]
+    },
+    "subfeatures": {
+      "proficiencies": {},
+      "senses": {},
+      "suppressedFeatures": []
+    }
+  },
+  "img": "icons/sundries/books/book-red-exclamation.webp",
+  "folder": "4a13FbltoiyxbOe2",
+  "flags": {},
+  "effects": [],
+  "_id": "jMOL7mKEZsHmTbdz",
+  "_key": "!items!jMOL7mKEZsHmTbdz"
+}

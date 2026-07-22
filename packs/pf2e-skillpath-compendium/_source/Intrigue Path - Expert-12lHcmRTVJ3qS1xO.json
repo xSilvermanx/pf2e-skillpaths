@@ -1,0 +1,92 @@
+{
+  "name": "Intrigue Path - Expert",
+  "type": "feat",
+  "system": {
+    "description": {
+      "value": "<p>You intensified your training in Intrigue, acquiring advanced techniques and improving existing ones.</p><p>Gain the following expert feats: @UUID[Compendium.pf2e.feats-srd.Item.bmtf49jRKBCfdC5W]{Half-Truths}.</p><p>which you can only use for Request with Deception. You may only Lie with Diplomacy, if you are an expert in Diplomacy too.</p><p><strong>Skill Potency</strong></p><p>You gain a +1 item bonus to Deception checks involving Language-based deception.</p>",
+      "gm": ""
+    },
+    "publication": {
+      "title": "PF2e Skill Feat Revamp",
+      "authors": "Sebastian",
+      "license": "ORC",
+      "remaster": true
+    },
+    "rules": [
+      {
+        "key": "FlatModifier",
+        "label": "Skill Potency - Language-based deception",
+        "slug": "skillpaths-deception-intrigue-potency-1",
+        "type": "item",
+        "value": 1,
+        "selector": "deception",
+        "predicate": [
+          {
+            "not": "action:feint"
+          },
+          {
+            "not": "action:lie"
+          },
+          {
+            "not": "action:impersonate"
+          },
+          {
+            "not": "action:create-a-diversion"
+          }
+        ]
+      },
+      {
+        "key": "GrantItem",
+        "uuid": "Compendium.pf2e.feats-srd.Item.bmtf49jRKBCfdC5W",
+        "allowDuplicate": false,
+        "onDeleteActions": {
+          "granter": "cascade",
+          "grantee": "restrict"
+        }
+      }
+    ],
+    "slug": "skillpaths-deception-intrigue-expert",
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "general",
+        "skill",
+        "skillpath"
+      ],
+      "rarity": "common"
+    },
+    "level": {
+      "value": 3
+    },
+    "category": "skill",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": [
+        {
+          "value": "expert in Deception"
+        },
+        {
+          "value": "Intrigue Path - Trained"
+        }
+      ]
+    },
+    "subfeatures": {
+      "proficiencies": {},
+      "senses": {},
+      "suppressedFeatures": []
+    }
+  },
+  "img": "icons/sundries/books/book-red-exclamation.webp",
+  "folder": "D4fxhAE28vKaKW6N",
+  "flags": {},
+  "effects": [],
+  "_id": "12lHcmRTVJ3qS1xO",
+  "_key": "!items!12lHcmRTVJ3qS1xO"
+}

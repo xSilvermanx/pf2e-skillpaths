@@ -1,0 +1,77 @@
+{
+  "folder": "QPUE5QMgRqCOV1Ks",
+  "name": "Ingenious Grafting",
+  "type": "feat",
+  "effects": [],
+  "system": {
+    "_migration": {
+      "version": 0.959,
+      "previous": null
+    },
+    "description": {
+      "value": "<p>Your Grafting Prowess produces truly unbelievable results. Not only are they beautiful creations, they also function exceptionally well. The Grafts you create and implant use the standard DC for your Character Level.</p><p>Additionally, you always look for exciting new experimental Grafts, increasingly finding inspiration in animals and other creatures. You can invent new Grafts based on specific body parts of living creatures and their physical abilities. The recipient of the Graft must be within one size category of the creature the Graft is based on.</p><p>Note: You can’t replicate abilities with Elemental, Energy, Planar or Tradition traits, nor abilities with the Aura, Emotion, Healing, Mental, Morph, or Polymorph Traits. The GM has final say on whether a certain Graft is allowed.</p><p></p>",
+      "gm": ""
+    },
+    "publication": {
+      "title": "",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "rules": [],
+    "slug": null,
+    "traits": {
+      "otherTags": [],
+      "value": [],
+      "rarity": "common"
+    },
+    "level": {
+      "value": 7
+    },
+    "category": "skill",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": [
+        {
+          "value": "master in Medicine"
+        },
+        {
+          "value": "Graft Technician"
+        }
+      ]
+    },
+    "subfeatures": {
+      "proficiencies": {},
+      "senses": {},
+      "suppressedFeatures": []
+    },
+    "location": null
+  },
+  "img": "icons/sundries/books/book-red-exclamation.webp",
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "cDVClG5j3LgTcqta": 3
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.364",
+    "systemId": "pf2e",
+    "systemVersion": "8.2.0",
+    "createdTime": 1784378038677,
+    "modifiedTime": 1784378038677,
+    "lastModifiedBy": "cDVClG5j3LgTcqta",
+    "compendiumSource": null,
+    "duplicateSource": "Item.R4wiKmqyKdwHA0CG",
+    "exportSource": null
+  },
+  "_id": "M6wJbWijFoOXJw8l",
+  "_key": "!items!M6wJbWijFoOXJw8l"
+}

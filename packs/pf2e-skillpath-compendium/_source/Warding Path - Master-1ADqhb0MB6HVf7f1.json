@@ -1,0 +1,136 @@
+{
+  "name": "Warding Path - Master",
+  "type": "feat",
+  "system": {
+    "description": {
+      "value": "<p>Through long and intensive training you mastered Warding. Few people in this world can match your capabilities in this area.</p><p>Gain the following master feats: choose one of @UUID[Compendium.pf2e.feats-srd.Item.zGrUu3dUtqHrqGuo]{Break Curse}, @UUID[Compendium.pf2e.feats-srd.Item.MSyU208twPGKU16W]{Calm and Centered}, @UUID[Compendium.pf2e.feats-srd.Item.MMaUL7r99DY7nvds]{Comforting Presence}.</p><p><strong>Skill Potency</strong></p><p>At 9th level, you gain a +2 item bonus to Occultism checks involving @UUID[Compendium.pf2e.actionspf2e.Item.TC7OcDa7JlWbqMaN]{Treat Disease}, @UUID[Compendium.pf2e.actionspf2e.Item.KjoCEEmPGTeFE4hh]{Treat Poison}, @UUID[Compendium.pf2e.actionspf2e.Item.1kGNdIIhuglAjIp9]{Treat Wounds}. At 17th level, this bonus increases to +3.</p>",
+      "gm": ""
+    },
+    "publication": {
+      "title": "PF2e Skill Feat Revamp",
+      "authors": "Sebastian",
+      "license": "ORC",
+      "remaster": true
+    },
+    "rules": [
+      {
+        "key": "FlatModifier",
+        "label": "Skill Potency - Treat Disease, Treat Poison, Treat Wounds with Crystal Healing and Crystal Medicine",
+        "slug": "skillpaths-occultism-warding-potency-2",
+        "type": "item",
+        "value": 2,
+        "selector": "occultism",
+        "predicate": [
+          {
+            "or": [
+              "action:treat-disease",
+              "action:treat-poison",
+              "action:treat-wounds"
+            ]
+          },
+          {
+            "gte": [
+              "self:level",
+              9
+            ]
+          }
+        ]
+      },
+      {
+        "key": "FlatModifier",
+        "label": "Skill Potency - Treat Disease, Treat Poison, Treat Wounds with Crystal Healing and Crystal Medicine",
+        "slug": "skillpaths-occultism-warding-potency-3",
+        "type": "item",
+        "value": 3,
+        "selector": "occultism",
+        "predicate": [
+          {
+            "or": [
+              "action:treat-disease",
+              "action:treat-poison",
+              "action:treat-wounds"
+            ]
+          },
+          {
+            "gte": [
+              "self:level",
+              17
+            ]
+          }
+        ]
+      },
+      {
+        "key": "ChoiceSet",
+        "flag": "occultismwardingMasterChoice",
+        "prompt": "Choose a master feat.",
+        "adjustName": false,
+        "choices": [
+          {
+            "label": "Break Curse",
+            "value": "Compendium.pf2e.feats-srd.Item.zGrUu3dUtqHrqGuo"
+          },
+          {
+            "label": "Calm and Centered",
+            "value": "Compendium.pf2e.feats-srd.Item.MSyU208twPGKU16W"
+          },
+          {
+            "label": "Comforting Presence",
+            "value": "Compendium.pf2e.feats-srd.Item.MMaUL7r99DY7nvds"
+          }
+        ]
+      },
+      {
+        "key": "GrantItem",
+        "uuid": "{item|flags.pf2e.rulesSelections.occultismwardingMasterChoice}",
+        "allowDuplicate": false,
+        "onDeleteActions": {
+          "granter": "cascade",
+          "grantee": "restrict"
+        }
+      }
+    ],
+    "slug": "skillpaths-occultism-warding-master",
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "general",
+        "skill",
+        "skillpath"
+      ],
+      "rarity": "common"
+    },
+    "level": {
+      "value": 7
+    },
+    "category": "skill",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": [
+        {
+          "value": "master in Occultism"
+        },
+        {
+          "value": "Warding Path - Expert"
+        }
+      ]
+    },
+    "subfeatures": {
+      "proficiencies": {},
+      "senses": {},
+      "suppressedFeatures": []
+    }
+  },
+  "img": "icons/sundries/books/book-red-exclamation.webp",
+  "folder": "G7AF3O2QsYVPLQme",
+  "flags": {},
+  "effects": [],
+  "_id": "1ADqhb0MB6HVf7f1",
+  "_key": "!items!1ADqhb0MB6HVf7f1"
+}

@@ -1,0 +1,23 @@
+{
+  "type": "Item",
+  "folder": "WgryEInzPWSxgBAN",
+  "name": "Athletics",
+  "color": null,
+  "sorting": "a",
+  "_id": "4a13FbltoiyxbOe2",
+  "description": "",
+  "sort": 0,
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.364",
+    "systemId": "pf2e",
+    "systemVersion": "8.2.0",
+    "createdTime": 1784398614646,
+    "modifiedTime": 1784398614646,
+    "lastModifiedBy": "cDVClG5j3LgTcqta",
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!folders!4a13FbltoiyxbOe2"
+}

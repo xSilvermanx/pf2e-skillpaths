@@ -1,0 +1,95 @@
+{
+  "name": "Flow Path - Expert",
+  "type": "feat",
+  "system": {
+    "description": {
+      "value": "<p>You intensified your training in Flow, acquiring advanced techniques and improving existing ones.</p><p>Gain the following expert feats: @UUID[Compendium.pf2e.feats-srd.Item.5I97q0FfAeXcUQhs]{Nimble Crawl}, @UUID[Compendium.pf2e.feats-srd.Item.c9fHUSI5lRdXu1Ic]{Feather Step}.</p><p><strong>Skill Potency</strong></p><p>You gain a +1 item bonus to Acrobatics checks involving @UUID[Compendium.pf2e.actionspf2e.Item.SkZAQRkLLkmBQNB9]{Escape}, @UUID[Compendium.pf2e.actionspf2e.Item.Qf1ylAbdVi1rkc8M]{Maneuver in Flight}.</p>",
+      "gm": ""
+    },
+    "publication": {
+      "title": "PF2e Skill Feat Revamp",
+      "authors": "Sebastian",
+      "license": "ORC",
+      "remaster": true
+    },
+    "rules": [
+      {
+        "key": "FlatModifier",
+        "label": "Skill Potency - Escape, Maneuver in Flight",
+        "slug": "skillpaths-acrobatics-flow-potency-1",
+        "type": "item",
+        "value": 1,
+        "selector": "acrobatics",
+        "predicate": [
+          {
+            "or": [
+              "action:escape",
+              "action:maneuver-in-flight"
+            ]
+          }
+        ]
+      },
+      {
+        "key": "GrantItem",
+        "uuid": "Compendium.pf2e.feats-srd.Item.5I97q0FfAeXcUQhs",
+        "allowDuplicate": false,
+        "onDeleteActions": {
+          "granter": "cascade",
+          "grantee": "restrict"
+        }
+      },
+      {
+        "key": "GrantItem",
+        "uuid": "Compendium.pf2e.feats-srd.Item.c9fHUSI5lRdXu1Ic",
+        "allowDuplicate": false,
+        "onDeleteActions": {
+          "granter": "cascade",
+          "grantee": "restrict"
+        }
+      }
+    ],
+    "slug": "skillpaths-acrobatics-flow-expert",
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "general",
+        "skill",
+        "skillpath"
+      ],
+      "rarity": "common"
+    },
+    "level": {
+      "value": 3
+    },
+    "category": "skill",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": [
+        {
+          "value": "expert in Acrobatics"
+        },
+        {
+          "value": "Flow Path - Trained"
+        }
+      ]
+    },
+    "subfeatures": {
+      "proficiencies": {},
+      "senses": {},
+      "suppressedFeatures": []
+    }
+  },
+  "img": "icons/sundries/books/book-red-exclamation.webp",
+  "folder": "XOHWUlidsqZO4qpw",
+  "flags": {},
+  "effects": [],
+  "_id": "KC431FzolRpG0ANi",
+  "_key": "!items!KC431FzolRpG0ANi"
+}

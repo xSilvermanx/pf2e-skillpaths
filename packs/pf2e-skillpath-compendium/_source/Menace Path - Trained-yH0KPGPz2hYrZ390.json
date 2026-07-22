@@ -1,0 +1,79 @@
+{
+  "name": "Menace Path - Trained",
+  "type": "feat",
+  "system": {
+    "description": {
+      "value": "<p><strong>Skill Path:</strong> Menace</p><p>You intimidate foes through physical menace.</p><hr /><p>While developing your skills in Intimidation you chose to focus specifically on Menace, learning basic techniques.You gain the following trained feats: @UUID[Compendium.pf2e.feats-srd.Item.xQMz6eDgX75WX2ce]{Intimidating Glare}, @UUID[Compendium.pf2e.feats-srd.Item.ar2DUlvDK4LDcH9J]{Quick Coercion}.</p><p>This path focuses on Physical Menace.</p><p><strong>Path Progression</strong></p><ul><li><strong>Trained:</strong> @UUID[Compendium.pf2e.feats-srd.Item.xQMz6eDgX75WX2ce]{Intimidating Glare}, @UUID[Compendium.pf2e.feats-srd.Item.ar2DUlvDK4LDcH9J]{Quick Coercion}</li><li><strong>Expert:</strong> @UUID[Compendium.pf2e.feats-srd.Item.XFJiGllNZp8Xebda]{Intimidating Prowess}</li><li><strong>Master:</strong> @UUID[Compendium.pf2e.feats-srd.Item.ePObIpaJDgDb9CQj]{Battle Cry}</li><li><strong>Legendary:</strong> @UUID[Compendium.pf2e.feats-srd.Item.mZttsiWl1ql5NvrH]{Scare to Death}</li></ul>",
+      "gm": ""
+    },
+    "publication": {
+      "title": "PF2e Skill Feat Revamp",
+      "authors": "Sebastian",
+      "license": "ORC",
+      "remaster": true
+    },
+    "rules": [
+      {
+        "key": "GrantItem",
+        "uuid": "Compendium.pf2e.feats-srd.Item.xQMz6eDgX75WX2ce",
+        "allowDuplicate": false,
+        "onDeleteActions": {
+          "granter": "cascade",
+          "grantee": "restrict"
+        }
+      },
+      {
+        "key": "GrantItem",
+        "uuid": "Compendium.pf2e.feats-srd.Item.ar2DUlvDK4LDcH9J",
+        "allowDuplicate": false,
+        "onDeleteActions": {
+          "granter": "cascade",
+          "grantee": "restrict"
+        }
+      }
+    ],
+    "slug": "skillpaths-intimidation-menace-trained",
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "general",
+        "skill",
+        "skillpath"
+      ],
+      "rarity": "common"
+    },
+    "level": {
+      "value": 1
+    },
+    "category": "skill",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": [
+        {
+          "value": "trained in Intimidation"
+        },
+        {
+          "value": "Intimidation - Base"
+        }
+      ]
+    },
+    "subfeatures": {
+      "proficiencies": {},
+      "senses": {},
+      "suppressedFeatures": []
+    }
+  },
+  "img": "icons/sundries/books/book-red-exclamation.webp",
+  "folder": "a5X3vnyewfMbH6N4",
+  "flags": {},
+  "effects": [],
+  "_id": "yH0KPGPz2hYrZ390",
+  "_key": "!items!yH0KPGPz2hYrZ390"
+}

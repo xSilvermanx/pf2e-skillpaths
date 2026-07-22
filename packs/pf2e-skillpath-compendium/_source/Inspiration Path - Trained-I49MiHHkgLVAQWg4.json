@@ -1,0 +1,79 @@
+{
+  "name": "Inspiration Path - Trained",
+  "type": "feat",
+  "system": {
+    "description": {
+      "value": "<p><strong>Skill Path:</strong> Inspiration</p><p>You mastered the ability to inspire people with your performance.</p><hr /><p>While developing your skills in Performance you chose to focus specifically on Inspiration, learning basic techniques.You gain the following trained feats: @UUID[Compendium.pf2e.feats-srd.Item.xqAdXRd2gSQcqp5E]{Impressive Performance}, @UUID[Compendium.pf2e.feats-srd.Item.nxq9hFyIPR2jRi6G]{Performer's Treatment}.</p><p>This path focuses on @UUID[Compendium.pf2e.actionspf2e.Item.EEDElIyin4z60PXx]{Perform}.</p><p><strong>Path Progression</strong></p><ul><li><strong>Trained:</strong> @UUID[Compendium.pf2e.feats-srd.Item.xqAdXRd2gSQcqp5E]{Impressive Performance}, @UUID[Compendium.pf2e.feats-srd.Item.nxq9hFyIPR2jRi6G]{Performer's Treatment}</li><li><strong>Expert:</strong> @UUID[Compendium.pf2e.feats-srd.Item.YRjv9cxUAkeOiNAM]{Inflame Crowd}</li><li><strong>Master:</strong> @UUID[Compendium.pf2e.feats-srd.Item.HBosqD4ijMVTflCt]{Master of Apprentice}</li><li><strong>Legendary:</strong> @UUID[Compendium.pf2e.feats-srd.Item.467qQoiy6bjWU1G8]{Legendary Performer}</li></ul>",
+      "gm": ""
+    },
+    "publication": {
+      "title": "PF2e Skill Feat Revamp",
+      "authors": "Sebastian",
+      "license": "ORC",
+      "remaster": true
+    },
+    "rules": [
+      {
+        "key": "GrantItem",
+        "uuid": "Compendium.pf2e.feats-srd.Item.xqAdXRd2gSQcqp5E",
+        "allowDuplicate": false,
+        "onDeleteActions": {
+          "granter": "cascade",
+          "grantee": "restrict"
+        }
+      },
+      {
+        "key": "GrantItem",
+        "uuid": "Compendium.pf2e.feats-srd.Item.nxq9hFyIPR2jRi6G",
+        "allowDuplicate": false,
+        "onDeleteActions": {
+          "granter": "cascade",
+          "grantee": "restrict"
+        }
+      }
+    ],
+    "slug": "skillpaths-performance-inspiration-trained",
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "general",
+        "skill",
+        "skillpath"
+      ],
+      "rarity": "common"
+    },
+    "level": {
+      "value": 1
+    },
+    "category": "skill",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": [
+        {
+          "value": "trained in Performance"
+        },
+        {
+          "value": "Performance - Base"
+        }
+      ]
+    },
+    "subfeatures": {
+      "proficiencies": {},
+      "senses": {},
+      "suppressedFeatures": []
+    }
+  },
+  "img": "icons/sundries/books/book-red-exclamation.webp",
+  "folder": "Xa54iFZZQhO1NcsA",
+  "flags": {},
+  "effects": [],
+  "_id": "I49MiHHkgLVAQWg4",
+  "_key": "!items!I49MiHHkgLVAQWg4"
+}

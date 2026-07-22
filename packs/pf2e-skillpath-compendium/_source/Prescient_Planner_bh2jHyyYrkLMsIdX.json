@@ -1,0 +1,77 @@
+{
+  "_id": "bh2jHyyYrkLMsIdX",
+  "folder": "LCegFaV93MxkKEKT",
+  "img": "icons/sundries/books/book-red-exclamation.webp",
+  "name": "Prescient Planner",
+  "system": {
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "category": "skill",
+    "description": {
+      "value": "<p><strong>Cost</strong> the Price of the chosen item</p>\n<p><strong>Requirements</strong> You haven't used this ability since the last time you were able to purchase goods.</p>\n<hr>\n<p>You regularly create convoluted plans and contingencies, using your resources to enact them. You take 1 minute to remove your backpack, then carefully remove an item you hadn't previously declared that you purchased—you intuited that you would come to need the item and purchased it at the latest opportunity. The item must be a piece of adventuring gear, and can't be a weapon, armor, alchemical item, magic item, or other treasure. It must be common with a level no higher than half your level, and its Bulk must be low enough that carrying it wouldn't have made you encumbered.</p>",
+      "gm": ""
+    },
+    "level": {
+      "value": 2
+    },
+    "prerequisites": {
+      "value": [
+        {
+          "value": "expert in Survival"
+        }
+      ]
+    },
+    "publication": {
+      "license": "ORC",
+      "remaster": true,
+      "title": "Pathfinder Player Core",
+      "authors": ""
+    },
+    "rules": [],
+    "traits": {
+      "rarity": "common",
+      "value": [
+        "general",
+        "skillpath"
+      ],
+      "otherTags": []
+    },
+    "slug": "prescient-planner",
+    "_migration": {
+      "version": 0.959,
+      "previous": null
+    },
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "subfeatures": {
+      "proficiencies": {},
+      "senses": {},
+      "suppressedFeatures": []
+    },
+    "location": null
+  },
+  "type": "feat",
+  "_stats": {
+    "coreVersion": "14.364",
+    "systemId": "pf2e",
+    "systemVersion": "8.2.0",
+    "compendiumSource": "Compendium.pf2e.feats-srd.Item.bh2jHyyYrkLMsIdX",
+    "createdTime": 1784373503817,
+    "modifiedTime": 1784373503817,
+    "lastModifiedBy": "cDVClG5j3LgTcqta",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "effects": [],
+  "ownership": {
+    "default": 0,
+    "cDVClG5j3LgTcqta": 3
+  },
+  "flags": {},
+  "sort": 101563,
+  "_key": "!items!bh2jHyyYrkLMsIdX"
+}

@@ -1,0 +1,87 @@
+{
+  "name": "Jumping Path - Expert",
+  "type": "feat",
+  "system": {
+    "description": {
+      "value": "<p>You intensified your training in Jumping, acquiring advanced techniques and improving existing ones.</p><p>Gain the following expert feats: @UUID[Compendium.pf2e.feats-srd.Item.HJYQlmGTdtyGWr6a]{Powerful Leap}.</p><p><strong>Skill Potency</strong></p><p>You gain a +1 item bonus to Athletics checks involving @UUID[Compendium.pf2e.actionspf2e.Item.2HJ4yuEFY1Cast4h]{High Jump}, @UUID[Compendium.pf2e.actionspf2e.Item.JUvAvruz7yRQXfz2]{Long Jump}, @UUID[Compendium.pf2e.actionspf2e.Item.d5I6018Mci2SWokk]{Leap}.</p>",
+      "gm": ""
+    },
+    "publication": {
+      "title": "PF2e Skill Feat Revamp",
+      "authors": "Sebastian",
+      "license": "ORC",
+      "remaster": true
+    },
+    "rules": [
+      {
+        "key": "FlatModifier",
+        "label": "Skill Potency - High Jump, Long Jump, Leap",
+        "slug": "skillpaths-athletics-jumping-potency-1",
+        "type": "item",
+        "value": 1,
+        "selector": "athletics",
+        "predicate": [
+          {
+            "or": [
+              "action:high-jump",
+              "action:long-jump",
+              "action:leap"
+            ]
+          }
+        ]
+      },
+      {
+        "key": "GrantItem",
+        "uuid": "Compendium.pf2e.feats-srd.Item.HJYQlmGTdtyGWr6a",
+        "allowDuplicate": false,
+        "onDeleteActions": {
+          "granter": "cascade",
+          "grantee": "restrict"
+        }
+      }
+    ],
+    "slug": "skillpaths-athletics-jumping-expert",
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "general",
+        "skill",
+        "skillpath"
+      ],
+      "rarity": "common"
+    },
+    "level": {
+      "value": 3
+    },
+    "category": "skill",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": [
+        {
+          "value": "expert in Athletics"
+        },
+        {
+          "value": "Jumping Path - Trained"
+        }
+      ]
+    },
+    "subfeatures": {
+      "proficiencies": {},
+      "senses": {},
+      "suppressedFeatures": []
+    }
+  },
+  "img": "icons/sundries/books/book-red-exclamation.webp",
+  "folder": "4a13FbltoiyxbOe2",
+  "flags": {},
+  "effects": [],
+  "_id": "29ynag5NzzCBKjzY",
+  "_key": "!items!29ynag5NzzCBKjzY"
+}

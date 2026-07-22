@@ -1,0 +1,122 @@
+{
+  "name": "Society - Base",
+  "type": "feat",
+  "system": {
+    "description": {
+      "value": "<p>You have started to develop Society beyond other skills, delving deeper into its possibilities.</p><p><strong>Core Feats</strong></p><ul><li>@UUID[Compendium.pf2e.feats-srd.Item.0N8TtGSk5enoLBZ8]{Eye for Numbers}, @UUID[Compendium.pf2e.feats-srd.Item.P9HCz0uR6xPHuw72]{Multilingual}</li><li>When expert: @UUID[Compendium.pf2e.feats-srd.Item.Wb3FHiDuY6Nuc0N0]{Hireling Manager}</li></ul><p>Choose one Skill Path and gain that path's Trained feat.</p><p><strong>Available Skill Paths</strong></p><ul><li><strong>@UUID[Compendium.pf2e-skillpaths.pf2e-skillpath-compendium.Item.9OaLaP2DEUyJ6qEr]{Civic Acumen Path - Trained}</strong>: Your sharp vision enables you to gain information others can't perceive.</li><li><strong>@UUID[Compendium.pf2e-skillpaths.pf2e-skillpath-compendium.Item.eHjQVQW7pG7tNJzw]{Underworld Path - Trained}</strong>: You blend in particularily well in poor and crime-ridden areas.</li><li><strong>@UUID[Compendium.pf2e-skillpaths.pf2e-skillpath-compendium.Item.Fck2ke63fgIU4362]{Courtly Affairs Path - Trained}</strong>: Conversing with nobility and the leading caste is second nature to you.</li></ul>",
+      "gm": ""
+    },
+    "publication": {
+      "title": "PF2e Skill Feat Revamp",
+      "authors": "Sebastian",
+      "license": "ORC",
+      "remaster": true
+    },
+    "rules": [
+      {
+        "key": "GrantItem",
+        "uuid": "Compendium.pf2e.feats-srd.Item.0N8TtGSk5enoLBZ8",
+        "allowDuplicate": false,
+        "onDeleteActions": {
+          "granter": "cascade",
+          "grantee": "restrict"
+        }
+      },
+      {
+        "key": "GrantItem",
+        "uuid": "Compendium.pf2e.feats-srd.Item.P9HCz0uR6xPHuw72",
+        "allowDuplicate": false,
+        "onDeleteActions": {
+          "granter": "cascade",
+          "grantee": "restrict"
+        }
+      },
+      {
+        "key": "GrantItem",
+        "uuid": "Compendium.pf2e.feats-srd.Item.Wb3FHiDuY6Nuc0N0",
+        "allowDuplicate": false,
+        "onDeleteActions": {
+          "granter": "cascade",
+          "grantee": "restrict"
+        },
+        "predicate": [
+          {
+            "gte": [
+              "skill:society:rank",
+              2
+            ]
+          }
+        ]
+      },
+      {
+        "key": "ChoiceSet",
+        "flag": "societySkillpathChoice",
+        "prompt": "Choose a skill path.",
+        "adjustName": false,
+        "choices": [
+          {
+            "label": "Civic Acumen",
+            "value": "Compendium.pf2e-skillpaths.pf2e-skillpath-compendium.Item.9OaLaP2DEUyJ6qEr"
+          },
+          {
+            "label": "Underworld",
+            "value": "Compendium.pf2e-skillpaths.pf2e-skillpath-compendium.Item.eHjQVQW7pG7tNJzw"
+          },
+          {
+            "label": "Courtly Affairs",
+            "value": "Compendium.pf2e-skillpaths.pf2e-skillpath-compendium.Item.Fck2ke63fgIU4362"
+          }
+        ]
+      },
+      {
+        "key": "GrantItem",
+        "uuid": "{item|flags.pf2e.rulesSelections.societySkillpathChoice}",
+        "allowDuplicate": false,
+        "onDeleteActions": {
+          "granter": "cascade",
+          "grantee": "restrict"
+        }
+      }
+    ],
+    "slug": "skillpaths-society-base",
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "general",
+        "skill",
+        "skillpath"
+      ],
+      "rarity": "common"
+    },
+    "level": {
+      "value": 1
+    },
+    "category": "skill",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": [
+        {
+          "value": "trained in Society"
+        }
+      ]
+    },
+    "subfeatures": {
+      "proficiencies": {},
+      "senses": {},
+      "suppressedFeatures": []
+    }
+  },
+  "img": "icons/sundries/books/book-red-exclamation.webp",
+  "folder": "UhnhMwzUOs2XnNFx",
+  "flags": {},
+  "effects": [],
+  "_id": "xBb1GCdReu6NDzJW",
+  "_key": "!items!xBb1GCdReu6NDzJW"
+}

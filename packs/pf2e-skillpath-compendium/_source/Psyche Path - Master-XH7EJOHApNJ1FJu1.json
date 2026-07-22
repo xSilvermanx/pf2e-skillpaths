@@ -1,0 +1,128 @@
+{
+  "name": "Psyche Path - Master",
+  "type": "feat",
+  "system": {
+    "description": {
+      "value": "<p>Through long and intensive training you mastered Psyche. Few people in this world can match your capabilities in this area.</p><p>Gain the following master feats: choose one of @UUID[Compendium.pf2e.feats-srd.Item.fvYwsHM9O1twQa5N]{Consult the Spirits}, @UUID[Compendium.pf2e.feats-srd.Item.hkSuxXOc9qBleJbd]{Disturbing Knowledge}.</p><p><strong>Skill Potency</strong></p><p>At 9th level, you gain a +2 item bonus to Occultism checks involving @UUID[Compendium.pf2e.actionspf2e.Item.1OagaWtBpVXExToo]{Recall Knowledge}. At 17th level, this bonus increases to +3.</p>",
+      "gm": ""
+    },
+    "publication": {
+      "title": "PF2e Skill Feat Revamp",
+      "authors": "Sebastian",
+      "license": "ORC",
+      "remaster": true
+    },
+    "rules": [
+      {
+        "key": "FlatModifier",
+        "label": "Skill Potency - Recall Knowledge",
+        "slug": "skillpaths-occultism-psyche-potency-2",
+        "type": "item",
+        "value": 2,
+        "selector": "occultism",
+        "predicate": [
+          {
+            "or": [
+              "action:recall-knowledge"
+            ]
+          },
+          {
+            "gte": [
+              "self:level",
+              9
+            ]
+          }
+        ]
+      },
+      {
+        "key": "FlatModifier",
+        "label": "Skill Potency - Recall Knowledge",
+        "slug": "skillpaths-occultism-psyche-potency-3",
+        "type": "item",
+        "value": 3,
+        "selector": "occultism",
+        "predicate": [
+          {
+            "or": [
+              "action:recall-knowledge"
+            ]
+          },
+          {
+            "gte": [
+              "self:level",
+              17
+            ]
+          }
+        ]
+      },
+      {
+        "key": "ChoiceSet",
+        "flag": "occultismpsycheMasterChoice",
+        "prompt": "Choose a master feat.",
+        "adjustName": false,
+        "choices": [
+          {
+            "label": "Consult the Spirits",
+            "value": "Compendium.pf2e.feats-srd.Item.fvYwsHM9O1twQa5N"
+          },
+          {
+            "label": "Disturbing Knowledge",
+            "value": "Compendium.pf2e.feats-srd.Item.hkSuxXOc9qBleJbd"
+          }
+        ]
+      },
+      {
+        "key": "GrantItem",
+        "uuid": "{item|flags.pf2e.rulesSelections.occultismpsycheMasterChoice}",
+        "allowDuplicate": false,
+        "onDeleteActions": {
+          "granter": "cascade",
+          "grantee": "restrict"
+        }
+      }
+    ],
+    "slug": "skillpaths-occultism-psyche-master",
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "general",
+        "skill",
+        "skillpath"
+      ],
+      "rarity": "common"
+    },
+    "level": {
+      "value": 7
+    },
+    "category": "skill",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": [
+        {
+          "value": "master in Occultism"
+        },
+        {
+          "value": "Psyche Path - Expert"
+        }
+      ]
+    },
+    "subfeatures": {
+      "proficiencies": {},
+      "senses": {},
+      "suppressedFeatures": []
+    }
+  },
+  "img": "icons/sundries/books/book-red-exclamation.webp",
+  "folder": "G7AF3O2QsYVPLQme",
+  "flags": {},
+  "effects": [],
+  "_id": "XH7EJOHApNJ1FJu1",
+  "_key": "!items!XH7EJOHApNJ1FJu1"
+}

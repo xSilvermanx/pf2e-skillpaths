@@ -1,0 +1,79 @@
+{
+  "name": "Itemcraft (Religion) Path - Trained",
+  "type": "feat",
+  "system": {
+    "description": {
+      "value": "<p><strong>Skill Path:</strong> Itemcraft (Religion)</p><p>Your knowledge of magical items empowers you use them to beyond their limits.</p><hr /><p>While developing your skills in Religion you chose to focus specifically on Itemcraft (Religion), learning basic techniques.You gain the following trained feats: @UUID[Compendium.pf2e.feats-srd.Item.IlOQuCQIhjJpig3S]{Quick Identification}, @UUID[Compendium.pf2e.feats-srd.Item.uR62fVC9FyQAMCO1]{Trick Magic Item}.</p><p>This path focuses on @UUID[Compendium.pf2e.actionspf2e.Item.eReSHVEPCsdkSL4G]{Identify Magic}.</p><p><strong>Path Progression</strong></p><ul><li><strong>Trained:</strong> @UUID[Compendium.pf2e.feats-srd.Item.IlOQuCQIhjJpig3S]{Quick Identification}, @UUID[Compendium.pf2e.feats-srd.Item.uR62fVC9FyQAMCO1]{Trick Magic Item}</li><li><strong>Expert:</strong> @UUID[Compendium.pf2e.feats-srd.Item.XmF4q4rzKWg55vG4]{Assured Identification}</li><li><strong>Master:</strong> @UUID[Compendium.pf2e-skillpaths.pf2e-skillpath-compendium.Item.244lEOUo6eIwR9eW]{Lingering Activation}</li><li><strong>Legendary:</strong> @UUID[Compendium.pf2e.feats-srd.Item.dYMxP8SsHrwOze8v]{Divine Guidance}</li></ul>",
+      "gm": ""
+    },
+    "publication": {
+      "title": "PF2e Skill Feat Revamp",
+      "authors": "Sebastian",
+      "license": "ORC",
+      "remaster": true
+    },
+    "rules": [
+      {
+        "key": "GrantItem",
+        "uuid": "Compendium.pf2e.feats-srd.Item.IlOQuCQIhjJpig3S",
+        "allowDuplicate": false,
+        "onDeleteActions": {
+          "granter": "cascade",
+          "grantee": "restrict"
+        }
+      },
+      {
+        "key": "GrantItem",
+        "uuid": "Compendium.pf2e.feats-srd.Item.uR62fVC9FyQAMCO1",
+        "allowDuplicate": false,
+        "onDeleteActions": {
+          "granter": "cascade",
+          "grantee": "restrict"
+        }
+      }
+    ],
+    "slug": "skillpaths-religion-itemcraft-trained",
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "general",
+        "skill",
+        "skillpath"
+      ],
+      "rarity": "common"
+    },
+    "level": {
+      "value": 1
+    },
+    "category": "skill",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": [
+        {
+          "value": "trained in Religion"
+        },
+        {
+          "value": "Religion - Base"
+        }
+      ]
+    },
+    "subfeatures": {
+      "proficiencies": {},
+      "senses": {},
+      "suppressedFeatures": []
+    }
+  },
+  "img": "icons/sundries/books/book-red-exclamation.webp",
+  "folder": "hFjim5zfvs9A4xPi",
+  "flags": {},
+  "effects": [],
+  "_id": "nkr3UfXsotNjLun2",
+  "_key": "!items!nkr3UfXsotNjLun2"
+}

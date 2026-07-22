@@ -1,0 +1,74 @@
+{
+  "folder": "QPUE5QMgRqCOV1Ks",
+  "name": "Public Speaker",
+  "type": "feat",
+  "effects": [],
+  "system": {
+    "_migration": {
+      "version": 0.959,
+      "previous": null
+    },
+    "description": {
+      "value": "<p>You know how to address formal audiences through protocol, rhetoric, precedent, titles, genealogy, law, history, and civic or courtly custom. You can use Society instead of Performance to @UUID[Compendium.pf2e.actionspf2e.Item.EEDElIyin4z60PXx] when your performance is a formal speech, public address, courtly toast, legal argument, diplomatic statement, academic lecture, ceremonial recitation, or similar act of structured oratory.</p><p>This doesn’t replace Performance for feat prerequisites or other uses of the Performance skill.</p>",
+      "gm": ""
+    },
+    "publication": {
+      "title": "",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "rules": [],
+    "slug": null,
+    "traits": {
+      "otherTags": [],
+      "value": [],
+      "rarity": "common"
+    },
+    "level": {
+      "value": 1
+    },
+    "category": "skill",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": [
+        {
+          "value": "trained in Society"
+        }
+      ]
+    },
+    "subfeatures": {
+      "proficiencies": {},
+      "senses": {},
+      "suppressedFeatures": []
+    },
+    "location": null
+  },
+  "img": "icons/sundries/books/book-red-exclamation.webp",
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "cDVClG5j3LgTcqta": 3
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.364",
+    "systemId": "pf2e",
+    "systemVersion": "8.2.0",
+    "createdTime": 1784378038679,
+    "modifiedTime": 1784378038679,
+    "lastModifiedBy": "cDVClG5j3LgTcqta",
+    "compendiumSource": null,
+    "duplicateSource": "Item.R4wiKmqyKdwHA0CG",
+    "exportSource": null
+  },
+  "_id": "9m4pmTwEGElJQFUN",
+  "_key": "!items!9m4pmTwEGElJQFUN"
+}

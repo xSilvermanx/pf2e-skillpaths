@@ -1,0 +1,79 @@
+{
+  "name": "Workshop Path - Trained",
+  "type": "feat",
+  "system": {
+    "description": {
+      "value": "<p><strong>Skill Path:</strong> Workshop</p><p>More businessman than craftsman you get the best out of your workshop and it's employees.</p><hr /><p>While developing your skills in Crafting you chose to focus specifically on Workshop, learning basic techniques.You gain the following trained feats: @UUID[Compendium.pf2e.feats-srd.Item.CwGMDf0akn0VbNPb]{Vicious Critique}, @UUID[Compendium.pf2e.feats-srd.Item.K3Pgj5z9OpLFzxgt]{Cooperative Crafting}.</p><p>This path focuses on @UUID[Compendium.pf2e.actionspf2e.Item.QyzlsLrqM0EEwd7j]{Earn Income}, @UUID[Compendium.pf2e.actionspf2e.Item.rmwa3OyhTZ2i2AHl]{Craft}.</p><p><strong>Path Progression</strong></p><ul><li><strong>Trained:</strong> @UUID[Compendium.pf2e.feats-srd.Item.CwGMDf0akn0VbNPb]{Vicious Critique}, @UUID[Compendium.pf2e.feats-srd.Item.K3Pgj5z9OpLFzxgt]{Cooperative Crafting}</li><li><strong>Expert:</strong> @UUID[Compendium.pf2e.feats-srd.Item.XR95taODq1sq82Du]{Inventor}, @UUID[Compendium.pf2e.feats-srd.Item.lUXVmSFJbaPos5pY]{Communal Crafting}</li><li><strong>Master:</strong> @UUID[Compendium.pf2e.feats-srd.Item.HBosqD4ijMVTflCt]{Master of Apprentice}</li><li><strong>Legendary:</strong> @UUID[Compendium.pf2e.feats-srd.Item.v62QzTwHOT3t86cL]{Craft Anything}, @UUID[Compendium.pf2e.feats-srd.Item.VRCBTEyrcBf7auGz]{Legendary Tattoo Artist}</li></ul>",
+      "gm": ""
+    },
+    "publication": {
+      "title": "PF2e Skill Feat Revamp",
+      "authors": "Sebastian",
+      "license": "ORC",
+      "remaster": true
+    },
+    "rules": [
+      {
+        "key": "GrantItem",
+        "uuid": "Compendium.pf2e.feats-srd.Item.CwGMDf0akn0VbNPb",
+        "allowDuplicate": false,
+        "onDeleteActions": {
+          "granter": "cascade",
+          "grantee": "restrict"
+        }
+      },
+      {
+        "key": "GrantItem",
+        "uuid": "Compendium.pf2e.feats-srd.Item.K3Pgj5z9OpLFzxgt",
+        "allowDuplicate": false,
+        "onDeleteActions": {
+          "granter": "cascade",
+          "grantee": "restrict"
+        }
+      }
+    ],
+    "slug": "skillpaths-crafting-workshop-trained",
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "general",
+        "skill",
+        "skillpath"
+      ],
+      "rarity": "common"
+    },
+    "level": {
+      "value": 1
+    },
+    "category": "skill",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": [
+        {
+          "value": "trained in Crafting"
+        },
+        {
+          "value": "Crafting - Base"
+        }
+      ]
+    },
+    "subfeatures": {
+      "proficiencies": {},
+      "senses": {},
+      "suppressedFeatures": []
+    }
+  },
+  "img": "icons/sundries/books/book-red-exclamation.webp",
+  "folder": "M5BKSrN6HVRwrNFo",
+  "flags": {},
+  "effects": [],
+  "_id": "UIxZQWy3veeDMgwK",
+  "_key": "!items!UIxZQWy3veeDMgwK"
+}

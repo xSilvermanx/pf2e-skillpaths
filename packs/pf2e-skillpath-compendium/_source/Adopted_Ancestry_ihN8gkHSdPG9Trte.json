@@ -1,0 +1,100 @@
+{
+  "_id": "ihN8gkHSdPG9Trte",
+  "folder": "nau9DRWvDo59JfOZ",
+  "img": "icons/sundries/books/book-red-exclamation.webp",
+  "name": "Adopted Ancestry",
+  "system": {
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "category": "general",
+    "description": {
+      "value": "<p>You're fully immersed in another ancestry's culture and traditions, whether born into them, earned through rite of passage, or bonded through a deep friendship or romance. Choose a common ancestry or another ancestry to which you have access. You can select ancestry feats from the ancestry you chose, in addition to your character's own ancestry, as long as the ancestry feats don't require any physiological feature that you lack, as determined by the GM.</p>",
+      "gm": ""
+    },
+    "level": {
+      "value": 1
+    },
+    "prerequisites": {
+      "value": []
+    },
+    "publication": {
+      "license": "ORC",
+      "remaster": true,
+      "title": "Pathfinder Player Core",
+      "authors": ""
+    },
+    "rules": [
+      {
+        "choices": {
+          "filter": [
+            {
+              "not": "item:slug:{actor|system.details.ancestry.trait}"
+            }
+          ],
+          "itemType": "ancestry",
+          "slugsAsValues": true
+        },
+        "flag": "ancestry",
+        "key": "ChoiceSet",
+        "prompt": "PF2E.SpecificRule.AdoptedAncestry.Prompt"
+      },
+      {
+        "key": "ActiveEffectLike",
+        "mode": "override",
+        "path": "system.details.ancestry.adopted",
+        "value": "{item|flags.system.rulesSelections.ancestry}"
+      },
+      {
+        "key": "ActiveEffectLike",
+        "mode": "add",
+        "path": "system.details.ancestry.countsAs",
+        "value": "{item|flags.system.rulesSelections.ancestry}"
+      }
+    ],
+    "traits": {
+      "rarity": "common",
+      "value": [
+        "general",
+        "skillpath"
+      ],
+      "otherTags": []
+    },
+    "slug": "adopted-ancestry",
+    "_migration": {
+      "version": 0.959,
+      "previous": null
+    },
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "subfeatures": {
+      "proficiencies": {},
+      "senses": {},
+      "suppressedFeatures": []
+    },
+    "location": null
+  },
+  "type": "feat",
+  "_stats": {
+    "coreVersion": "14.364",
+    "systemId": "pf2e",
+    "systemVersion": "8.2.0",
+    "compendiumSource": "Compendium.pf2e.feats-srd.Item.ihN8gkHSdPG9Trte",
+    "createdTime": 1784373455031,
+    "modifiedTime": 1784373455031,
+    "lastModifiedBy": "cDVClG5j3LgTcqta",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "effects": [],
+  "ownership": {
+    "default": 0,
+    "cDVClG5j3LgTcqta": 3
+  },
+  "flags": {},
+  "sort": 125000,
+  "_key": "!items!ihN8gkHSdPG9Trte"
+}

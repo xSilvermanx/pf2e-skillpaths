@@ -1,0 +1,131 @@
+{
+  "name": "Operative Path - Master",
+  "type": "feat",
+  "system": {
+    "description": {
+      "value": "<p>Through long and intensive training you mastered Operative. Few people in this world can match your capabilities in this area.</p><p>Gain the following master feats: choose one of @UUID[Compendium.pf2e.feats-srd.Item.IJQJBnD5CjKvFYEx]{Foil Senses}, @UUID[Compendium.pf2e.feats-srd.Item.Imvu2RV2ggjJ2HZt]{Swift Sneak}.</p><p><strong>Skill Potency</strong></p><p>At 9th level, you gain a +2 item bonus to Stealth checks involving @UUID[Compendium.pf2e.actionspf2e.Item.IE2nThCmoyhQA0Jn]{Avoid Notice}, @UUID[Compendium.pf2e.actionspf2e.Item.qVNVSmsgpKFGk9hV]{Conceal an Object}. At 17th level, if you have @UUID[Compendium.pf2e.feats-srd.Item.n0urrOL8YlnVBVRQ]{Legendary Sneak}, this bonus increases to +3.</p>",
+      "gm": ""
+    },
+    "publication": {
+      "title": "PF2e Skill Feat Revamp",
+      "authors": "Sebastian",
+      "license": "ORC",
+      "remaster": true
+    },
+    "rules": [
+      {
+        "key": "FlatModifier",
+        "label": "Skill Potency - Avoid Notice, Conceal an Object",
+        "slug": "skillpaths-stealth-operative-potency-2",
+        "type": "item",
+        "value": 2,
+        "selector": "stealth",
+        "predicate": [
+          {
+            "or": [
+              "action:avoid-notice",
+              "action:conceal-an-object"
+            ]
+          },
+          {
+            "gte": [
+              "self:level",
+              9
+            ]
+          }
+        ]
+      },
+      {
+        "key": "FlatModifier",
+        "label": "Skill Potency - Avoid Notice, Conceal an Object",
+        "slug": "skillpaths-stealth-operative-potency-3",
+        "type": "item",
+        "value": 3,
+        "selector": "stealth",
+        "predicate": [
+          {
+            "or": [
+              "action:avoid-notice",
+              "action:conceal-an-object"
+            ]
+          },
+          "feat:legendary-sneak",
+          {
+            "gte": [
+              "self:level",
+              17
+            ]
+          }
+        ]
+      },
+      {
+        "key": "ChoiceSet",
+        "flag": "stealthoperativeMasterChoice",
+        "prompt": "Choose a master feat.",
+        "adjustName": false,
+        "choices": [
+          {
+            "label": "Foil Senses",
+            "value": "Compendium.pf2e.feats-srd.Item.IJQJBnD5CjKvFYEx"
+          },
+          {
+            "label": "Swift Sneak",
+            "value": "Compendium.pf2e.feats-srd.Item.Imvu2RV2ggjJ2HZt"
+          }
+        ]
+      },
+      {
+        "key": "GrantItem",
+        "uuid": "{item|flags.pf2e.rulesSelections.stealthoperativeMasterChoice}",
+        "allowDuplicate": false,
+        "onDeleteActions": {
+          "granter": "cascade",
+          "grantee": "restrict"
+        }
+      }
+    ],
+    "slug": "skillpaths-stealth-operative-master",
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "general",
+        "skill",
+        "skillpath"
+      ],
+      "rarity": "common"
+    },
+    "level": {
+      "value": 7
+    },
+    "category": "skill",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": [
+        {
+          "value": "master in Stealth"
+        },
+        {
+          "value": "Operative Path - Expert"
+        }
+      ]
+    },
+    "subfeatures": {
+      "proficiencies": {},
+      "senses": {},
+      "suppressedFeatures": []
+    }
+  },
+  "img": "icons/sundries/books/book-red-exclamation.webp",
+  "folder": "Sq8aLregSckvn0E4",
+  "flags": {},
+  "effects": [],
+  "_id": "GdzBuypblRVFtrf0",
+  "_key": "!items!GdzBuypblRVFtrf0"
+}

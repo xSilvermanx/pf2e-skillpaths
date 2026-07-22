@@ -1,0 +1,113 @@
+{
+  "name": "Rhetoric Path - Master",
+  "type": "feat",
+  "system": {
+    "description": {
+      "value": "<p>Through long and intensive training you mastered Rhetoric. Few people in this world can match your capabilities in this area.</p><p>Gain the following master feats: @UUID[Compendium.pf2e.feats-srd.Item.YgbcLfAEdi4xxvX5]{Evangelize}.</p><p><strong>Skill Potency</strong></p><p>At 9th level, you gain a +2 item bonus to Diplomacy checks involving @UUID[Compendium.pf2e.actionspf2e.Item.OX4fy22hQgUHDr0q]{Make an Impression}. At 17th level, if you have @UUID[Compendium.pf2e.feats-srd.Item.A0TNeMNvyY8QpmLz]{Legendary Negotiation}, this bonus increases to +3.</p>",
+      "gm": ""
+    },
+    "publication": {
+      "title": "PF2e Skill Feat Revamp",
+      "authors": "Sebastian",
+      "license": "ORC",
+      "remaster": true
+    },
+    "rules": [
+      {
+        "key": "FlatModifier",
+        "label": "Skill Potency - Make an Impression",
+        "slug": "skillpaths-diplomacy-rhetoric-potency-2",
+        "type": "item",
+        "value": 2,
+        "selector": "diplomacy",
+        "predicate": [
+          {
+            "or": [
+              "action:make-an-impression"
+            ]
+          },
+          {
+            "gte": [
+              "self:level",
+              9
+            ]
+          }
+        ]
+      },
+      {
+        "key": "FlatModifier",
+        "label": "Skill Potency - Make an Impression",
+        "slug": "skillpaths-diplomacy-rhetoric-potency-3",
+        "type": "item",
+        "value": 3,
+        "selector": "diplomacy",
+        "predicate": [
+          {
+            "or": [
+              "action:make-an-impression"
+            ]
+          },
+          "feat:legendary-negotiation",
+          {
+            "gte": [
+              "self:level",
+              17
+            ]
+          }
+        ]
+      },
+      {
+        "key": "GrantItem",
+        "uuid": "Compendium.pf2e.feats-srd.Item.YgbcLfAEdi4xxvX5",
+        "allowDuplicate": false,
+        "onDeleteActions": {
+          "granter": "cascade",
+          "grantee": "restrict"
+        }
+      }
+    ],
+    "slug": "skillpaths-diplomacy-rhetoric-master",
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "general",
+        "skill",
+        "skillpath"
+      ],
+      "rarity": "common"
+    },
+    "level": {
+      "value": 7
+    },
+    "category": "skill",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": [
+        {
+          "value": "master in Diplomacy"
+        },
+        {
+          "value": "Rhetoric Path - Expert"
+        }
+      ]
+    },
+    "subfeatures": {
+      "proficiencies": {},
+      "senses": {},
+      "suppressedFeatures": []
+    }
+  },
+  "img": "icons/sundries/books/book-red-exclamation.webp",
+  "folder": "IbjZ8SgNevwjxOCF",
+  "flags": {},
+  "effects": [],
+  "_id": "g7bBvTjAbp1K1nTp",
+  "_key": "!items!g7bBvTjAbp1K1nTp"
+}

@@ -1,0 +1,74 @@
+{
+  "_id": "jFmdevE4nKevovzo",
+  "folder": "nau9DRWvDo59JfOZ",
+  "img": "icons/sundries/books/book-red-exclamation.webp",
+  "name": "Steel Your Resolve",
+  "system": {
+    "actionType": {
+      "value": "action"
+    },
+    "actions": {
+      "value": 1
+    },
+    "category": "general",
+    "description": {
+      "value": "<p><strong>Cost</strong> 1 Resolve Point</p>\n<hr>\n<p>Regain Stamina Points equal to half your maximum.</p>\n<p>@UUID[Compendium.pf2e.action-macros.Macro.oxowCzHbxSGOWRke]{Steel Your Resolve}</p>",
+      "gm": ""
+    },
+    "level": {
+      "value": 3
+    },
+    "prerequisites": {
+      "value": []
+    },
+    "publication": {
+      "license": "OGL",
+      "remaster": false,
+      "title": "Pathfinder Gamemastery Guide",
+      "authors": ""
+    },
+    "rules": [],
+    "traits": {
+      "rarity": "common",
+      "value": [
+        "general",
+        "skillpath",
+        "stamina"
+      ],
+      "otherTags": []
+    },
+    "slug": "steel-your-resolve",
+    "_migration": {
+      "version": 0.959,
+      "previous": null
+    },
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "subfeatures": {
+      "proficiencies": {},
+      "senses": {},
+      "suppressedFeatures": []
+    },
+    "location": null
+  },
+  "type": "feat",
+  "_stats": {
+    "coreVersion": "14.364",
+    "systemId": "pf2e",
+    "systemVersion": "8.2.0",
+    "compendiumSource": "Compendium.pf2e.feats-srd.Item.jFmdevE4nKevovzo",
+    "createdTime": 1784373455035,
+    "modifiedTime": 1784373455035,
+    "lastModifiedBy": "cDVClG5j3LgTcqta",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "effects": [],
+  "ownership": {
+    "default": 0,
+    "cDVClG5j3LgTcqta": 3
+  },
+  "flags": {},
+  "sort": 1100000,
+  "_key": "!items!jFmdevE4nKevovzo"
+}

@@ -1,0 +1,79 @@
+{
+  "name": "Underworld Path - Trained",
+  "type": "feat",
+  "system": {
+    "description": {
+      "value": "<p><strong>Skill Path:</strong> Underworld</p><p>You blend in particularily well in poor and crime-ridden areas.</p><hr /><p>While developing your skills in Society you chose to focus specifically on Underworld, learning basic techniques.You gain the following trained feats: @UUID[Compendium.pf2e.feats-srd.Item.X2jGFfLU5qI5XVot]{Streetwise}, @UUID[Compendium.pf2e-skillpaths.pf2e-skillpath-compendium.Item.0WFL3FIbcVsdF3RZ]{Street Etiquette}.</p><p>This path focuses on @UUID[Compendium.pf2e.actionspf2e.Item.AJstokjdG6iDjVjE]{Impersonate}.</p><p><strong>Path Progression</strong></p><ul><li><strong>Trained:</strong> @UUID[Compendium.pf2e.feats-srd.Item.X2jGFfLU5qI5XVot]{Streetwise}, @UUID[Compendium.pf2e-skillpaths.pf2e-skillpath-compendium.Item.0WFL3FIbcVsdF3RZ]{Street Etiquette}</li><li><strong>Expert:</strong> @UUID[Compendium.pf2e.feats-srd.Item.LDUWw2TeEEH0KA6M]{Criminal Connections}, @UUID[Compendium.pf2e.feats-srd.Item.gydOsP9VsdRw3Wg1]{Underground Network}, @UUID[Compendium.pf2e.feats-srd.Item.iCv8KTZ5PcF4GqeV]{Leverage Connections}; at 5th level: @UUID[Compendium.pf2e.feats-srd.Item.ThoOsKjn5xCuZUqM]{Quick Contacts}</li><li><strong>Master:</strong> @UUID[Compendium.pf2e-skillpaths.pf2e-skillpath-compendium.Item.IcpF4hZrSJAJdnJf]{Safehouse Network}</li><li><strong>Legendary:</strong> @UUID[Compendium.pf2e.feats-srd.Item.Zf4yiLDdxHPovEQI]{Legendary Codebreaker}, @UUID[Compendium.pf2e.feats-srd.Item.n0S0tJiOJPQk0Rne]{Legendary Linguist}</li></ul>",
+      "gm": ""
+    },
+    "publication": {
+      "title": "PF2e Skill Feat Revamp",
+      "authors": "Sebastian",
+      "license": "ORC",
+      "remaster": true
+    },
+    "rules": [
+      {
+        "key": "GrantItem",
+        "uuid": "Compendium.pf2e.feats-srd.Item.X2jGFfLU5qI5XVot",
+        "allowDuplicate": false,
+        "onDeleteActions": {
+          "granter": "cascade",
+          "grantee": "restrict"
+        }
+      },
+      {
+        "key": "GrantItem",
+        "uuid": "Compendium.pf2e-skillpaths.pf2e-skillpath-compendium.Item.0WFL3FIbcVsdF3RZ",
+        "allowDuplicate": false,
+        "onDeleteActions": {
+          "granter": "cascade",
+          "grantee": "restrict"
+        }
+      }
+    ],
+    "slug": "skillpaths-society-underworld-trained",
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "general",
+        "skill",
+        "skillpath"
+      ],
+      "rarity": "common"
+    },
+    "level": {
+      "value": 1
+    },
+    "category": "skill",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": [
+        {
+          "value": "trained in Society"
+        },
+        {
+          "value": "Society - Base"
+        }
+      ]
+    },
+    "subfeatures": {
+      "proficiencies": {},
+      "senses": {},
+      "suppressedFeatures": []
+    }
+  },
+  "img": "icons/sundries/books/book-red-exclamation.webp",
+  "folder": "UhnhMwzUOs2XnNFx",
+  "flags": {},
+  "effects": [],
+  "_id": "eHjQVQW7pG7tNJzw",
+  "_key": "!items!eHjQVQW7pG7tNJzw"
+}

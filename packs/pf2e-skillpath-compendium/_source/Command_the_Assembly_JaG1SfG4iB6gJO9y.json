@@ -1,0 +1,77 @@
+{
+  "folder": "QPUE5QMgRqCOV1Ks",
+  "name": "Command the Assembly",
+  "type": "feat",
+  "effects": [],
+  "system": {
+    "_migration": {
+      "version": 0.959,
+      "previous": null
+    },
+    "description": {
+      "value": "<p>Your formal speeches can move courts, councils, guilds, and other structured audiences. When you use Society instead of Performance to @UUID[Compendium.pf2e.actionspf2e.Item.EEDElIyin4z60PXx] with Public Speaker before a formal audience, you can also attempt to @UUID[Compendium.pf2e.actionspf2e.Item.OX4fy22hQgUHDr0q] on that audience using Society. This applies only to listeners who understand the social, civic, academic, legal, noble, or institutional context of your speech. Instead of targeting a single creature, you can target a small formal audience, such as a noble household, council chamber, guild meeting, courtly reception, academic panel, or diplomatic gathering. The GM determines the DC, usually using the highest relevant Will DC or a standard DC for the audience’s level.</p><p>On a success, the audience’s general attitude toward your position improves by one step for the purpose of the current topic or proceeding. On a critical success, you also gain a +1 circumstance bonus to one @UUID[Compendium.pf2e.feats-srd.Item.iCv8KTZ5PcF4GqeV] attempt related to that audience or institution before the end of the day. This doesn’t force agreement, grant a favor, replace a Request, or affect creatures who reject the relevant social context.</p>",
+      "gm": ""
+    },
+    "publication": {
+      "title": "",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "rules": [],
+    "slug": null,
+    "traits": {
+      "otherTags": [],
+      "value": [],
+      "rarity": "common"
+    },
+    "level": {
+      "value": 7
+    },
+    "category": "skill",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": [
+        {
+          "value": "master in Society"
+        },
+        {
+          "value": "Public Speaker"
+        }
+      ]
+    },
+    "subfeatures": {
+      "proficiencies": {},
+      "senses": {},
+      "suppressedFeatures": []
+    },
+    "location": null
+  },
+  "img": "icons/sundries/books/book-red-exclamation.webp",
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "cDVClG5j3LgTcqta": 3
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.364",
+    "systemId": "pf2e",
+    "systemVersion": "8.2.0",
+    "createdTime": 1784378038680,
+    "modifiedTime": 1784378038680,
+    "lastModifiedBy": "cDVClG5j3LgTcqta",
+    "compendiumSource": null,
+    "duplicateSource": "Item.R4wiKmqyKdwHA0CG",
+    "exportSource": null
+  },
+  "_id": "JaG1SfG4iB6gJO9y",
+  "_key": "!items!JaG1SfG4iB6gJO9y"
+}

@@ -1,0 +1,79 @@
+{
+  "name": "Wayfinding Path - Trained",
+  "type": "feat",
+  "system": {
+    "description": {
+      "value": "<p><strong>Skill Path:</strong> Wayfinding</p><p>Your ability to orientate yourself is unparalleled.</p><hr /><p>While developing your skills in Survival you chose to focus specifically on Wayfinding, learning basic techniques.You gain the following trained feats: @UUID[Compendium.pf2e.feats-srd.Item.urQZwmzg2kS53vd5]{Experienced Tracker}, @UUID[Compendium.pf2e.feats-srd.Item.FbGPETHJR9VKxf9i]{Folk Dowsing}.</p><p>This path focuses on @UUID[Compendium.pf2e.actionspf2e.Item.EA5vuSgJfiHH7plD]{Track}, @UUID[Compendium.pf2e.actionspf2e.Item.fJImDBQfqfjKJOhk]{Sense Direction}.</p><p><strong>Path Progression</strong></p><ul><li><strong>Trained:</strong> @UUID[Compendium.pf2e.feats-srd.Item.urQZwmzg2kS53vd5]{Experienced Tracker}, @UUID[Compendium.pf2e.feats-srd.Item.FbGPETHJR9VKxf9i]{Folk Dowsing}</li><li><strong>Expert:</strong> @UUID[Compendium.pf2e.feats-srd.Item.Jivt1iaqKfT6EcwV]{That's Not Natural!}</li><li><strong>Master:</strong> @UUID[Compendium.pf2e.feats-srd.Item.u6tLp3zTBweq7CxO]{Environmental Guide}</li><li><strong>Legendary:</strong> @UUID[Compendium.pf2e.feats-srd.Item.Vk7BzAb3D9r226sI]{Legendary Guide}, @UUID[Compendium.pf2e.feats-srd.Item.Ta61ObC8Lk7BxTFO]{Legendary Survivalist}</li></ul>",
+      "gm": ""
+    },
+    "publication": {
+      "title": "PF2e Skill Feat Revamp",
+      "authors": "Sebastian",
+      "license": "ORC",
+      "remaster": true
+    },
+    "rules": [
+      {
+        "key": "GrantItem",
+        "uuid": "Compendium.pf2e.feats-srd.Item.urQZwmzg2kS53vd5",
+        "allowDuplicate": false,
+        "onDeleteActions": {
+          "granter": "cascade",
+          "grantee": "restrict"
+        }
+      },
+      {
+        "key": "GrantItem",
+        "uuid": "Compendium.pf2e.feats-srd.Item.FbGPETHJR9VKxf9i",
+        "allowDuplicate": false,
+        "onDeleteActions": {
+          "granter": "cascade",
+          "grantee": "restrict"
+        }
+      }
+    ],
+    "slug": "skillpaths-survival-wayfinding-trained",
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "general",
+        "skill",
+        "skillpath"
+      ],
+      "rarity": "common"
+    },
+    "level": {
+      "value": 1
+    },
+    "category": "skill",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": [
+        {
+          "value": "trained in Survival"
+        },
+        {
+          "value": "Survival - Base"
+        }
+      ]
+    },
+    "subfeatures": {
+      "proficiencies": {},
+      "senses": {},
+      "suppressedFeatures": []
+    }
+  },
+  "img": "icons/sundries/books/book-red-exclamation.webp",
+  "folder": "CtCn9FRCzwss0Cd6",
+  "flags": {},
+  "effects": [],
+  "_id": "oUPFbBi1zruenReB",
+  "_key": "!items!oUPFbBi1zruenReB"
+}

@@ -1,0 +1,79 @@
+{
+  "name": "Poise Path - Trained",
+  "type": "feat",
+  "system": {
+    "description": {
+      "value": "<p><strong>Skill Path:</strong> Poise</p><p>Even in difficult situations your movement remains robust, deliberate and controlled.</p><hr /><p>While developing your skills in Acrobatics you chose to focus specifically on Poise, learning basic techniques.You gain the following trained feats: @UUID[Compendium.pf2e.feats-srd.Item.3G8xUlgCjRmRJNfP]{Quick Squeeze}, @UUID[Compendium.pf2e.feats-srd.Item.CnqMJR8e9jqJR7MM]{Steady Balance}.</p><p>This path focuses on @UUID[Compendium.pf2e.actionspf2e.Item.kMcV8e5EZUxa6evt]{Squeeze}, @UUID[Compendium.pf2e.actionspf2e.Item.M76ycLAqHoAgbcej]{Balance}, @UUID[Compendium.pf2e.actionspf2e.Item.21WIfSu7Xd7uKqV8]{Tumble Through}.</p><p><strong>Path Progression</strong></p><ul><li><strong>Trained:</strong> @UUID[Compendium.pf2e.feats-srd.Item.3G8xUlgCjRmRJNfP]{Quick Squeeze}, @UUID[Compendium.pf2e.feats-srd.Item.CnqMJR8e9jqJR7MM]{Steady Balance}</li><li><strong>Expert:</strong> @UUID[Compendium.pf2e.feats-srd.Item.5XwTj6DBX2a2q97E]{Tumbling Teamwork}</li><li><strong>Master:</strong> @UUID[Compendium.pf2e.feats-srd.Item.80AC6Q1m0eQiE7Et]{Tumbling Theft}, @UUID[Compendium.pf2e.feats-srd.Item.gBSPbQRXdagZTUwY]{Kip Up}</li></ul>",
+      "gm": ""
+    },
+    "publication": {
+      "title": "PF2e Skill Feat Revamp",
+      "authors": "Sebastian",
+      "license": "ORC",
+      "remaster": true
+    },
+    "rules": [
+      {
+        "key": "GrantItem",
+        "uuid": "Compendium.pf2e.feats-srd.Item.3G8xUlgCjRmRJNfP",
+        "allowDuplicate": false,
+        "onDeleteActions": {
+          "granter": "cascade",
+          "grantee": "restrict"
+        }
+      },
+      {
+        "key": "GrantItem",
+        "uuid": "Compendium.pf2e.feats-srd.Item.CnqMJR8e9jqJR7MM",
+        "allowDuplicate": false,
+        "onDeleteActions": {
+          "granter": "cascade",
+          "grantee": "restrict"
+        }
+      }
+    ],
+    "slug": "skillpaths-acrobatics-poise-trained",
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "general",
+        "skill",
+        "skillpath"
+      ],
+      "rarity": "common"
+    },
+    "level": {
+      "value": 1
+    },
+    "category": "skill",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": [
+        {
+          "value": "trained in Acrobatics"
+        },
+        {
+          "value": "Acrobatics - Base"
+        }
+      ]
+    },
+    "subfeatures": {
+      "proficiencies": {},
+      "senses": {},
+      "suppressedFeatures": []
+    }
+  },
+  "img": "icons/sundries/books/book-red-exclamation.webp",
+  "folder": "XOHWUlidsqZO4qpw",
+  "flags": {},
+  "effects": [],
+  "_id": "1CgxvFwVXKDSgcVr",
+  "_key": "!items!1CgxvFwVXKDSgcVr"
+}

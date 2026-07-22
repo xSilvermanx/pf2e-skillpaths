@@ -1,0 +1,79 @@
+{
+  "name": "Dread Path - Trained",
+  "type": "feat",
+  "system": {
+    "description": {
+      "value": "<p><strong>Skill Path:</strong> Dread</p><p>You intimidate foes through psychological pressure.</p><hr /><p>While developing your skills in Intimidation you chose to focus specifically on Dread, learning basic techniques.You gain the following trained feats: @UUID[Compendium.pf2e.feats-srd.Item.gUqvezs2zzoTXFAI]{Group Coercion}, @UUID[Compendium.pf2e.feats-srd.Item.CwGMDf0akn0VbNPb]{Vicious Critique}.</p><p>This path focuses on Psychological Pressure.</p><p><strong>Path Progression</strong></p><ul><li><strong>Trained:</strong> @UUID[Compendium.pf2e.feats-srd.Item.gUqvezs2zzoTXFAI]{Group Coercion}, @UUID[Compendium.pf2e.feats-srd.Item.CwGMDf0akn0VbNPb]{Vicious Critique}</li><li><strong>Expert:</strong> @UUID[Compendium.pf2e.feats-srd.Item.iDimfGmQHacwxeh2]{Terrifying Resistance}, @UUID[Compendium.pf2e.feats-srd.Item.6vnbC90UQ3I57RrQ]{Lasting Coercion}</li><li><strong>Master:</strong> @UUID[Compendium.pf2e.feats-srd.Item.dc8X2Mbtwq6kGp7F]{Terrified Retreat}</li><li><strong>Legendary:</strong> @UUID[Compendium.pf2e.feats-srd.Item.mZttsiWl1ql5NvrH]{Scare to Death}</li></ul>",
+      "gm": ""
+    },
+    "publication": {
+      "title": "PF2e Skill Feat Revamp",
+      "authors": "Sebastian",
+      "license": "ORC",
+      "remaster": true
+    },
+    "rules": [
+      {
+        "key": "GrantItem",
+        "uuid": "Compendium.pf2e.feats-srd.Item.gUqvezs2zzoTXFAI",
+        "allowDuplicate": false,
+        "onDeleteActions": {
+          "granter": "cascade",
+          "grantee": "restrict"
+        }
+      },
+      {
+        "key": "GrantItem",
+        "uuid": "Compendium.pf2e.feats-srd.Item.CwGMDf0akn0VbNPb",
+        "allowDuplicate": false,
+        "onDeleteActions": {
+          "granter": "cascade",
+          "grantee": "restrict"
+        }
+      }
+    ],
+    "slug": "skillpaths-intimidation-dread-trained",
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "general",
+        "skill",
+        "skillpath"
+      ],
+      "rarity": "common"
+    },
+    "level": {
+      "value": 1
+    },
+    "category": "skill",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": [
+        {
+          "value": "trained in Intimidation"
+        },
+        {
+          "value": "Intimidation - Base"
+        }
+      ]
+    },
+    "subfeatures": {
+      "proficiencies": {},
+      "senses": {},
+      "suppressedFeatures": []
+    }
+  },
+  "img": "icons/sundries/books/book-red-exclamation.webp",
+  "folder": "a5X3vnyewfMbH6N4",
+  "flags": {},
+  "effects": [],
+  "_id": "wa4tkFnN6RJBOSRV",
+  "_key": "!items!wa4tkFnN6RJBOSRV"
+}

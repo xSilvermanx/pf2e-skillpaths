@@ -1,0 +1,79 @@
+{
+  "name": "Warding Path - Trained",
+  "type": "feat",
+  "system": {
+    "description": {
+      "value": "<p><strong>Skill Path:</strong> Warding</p><p>Crystals offer some unique healing options. You know all of them.</p><hr /><p>While developing your skills in Occultism you chose to focus specifically on Warding, learning basic techniques.You gain the following trained feats: @UUID[Compendium.pf2e.feats-srd.Item.6O8MoMheHs5hNHX1]{Crystal Healing}, @UUID[Compendium.pf2e.feats-srd.Item.22P7IFyhrF7Fbw8B]{Root Magic}.</p><p>This path focuses on @UUID[Compendium.pf2e.actionspf2e.Item.TC7OcDa7JlWbqMaN]{Treat Disease}, @UUID[Compendium.pf2e.actionspf2e.Item.KjoCEEmPGTeFE4hh]{Treat Poison}, @UUID[Compendium.pf2e.actionspf2e.Item.1kGNdIIhuglAjIp9]{Treat Wounds}.</p><p><strong>Path Progression</strong></p><ul><li><strong>Trained:</strong> @UUID[Compendium.pf2e.feats-srd.Item.6O8MoMheHs5hNHX1]{Crystal Healing}, @UUID[Compendium.pf2e.feats-srd.Item.22P7IFyhrF7Fbw8B]{Root Magic}</li><li><strong>Expert:</strong> @UUID[Compendium.pf2e-skillpaths.pf2e-skillpath-compendium.Item.j9CKXcpc0jB8yAf9]{Crystal Medicine}</li><li><strong>Master:</strong> choose one of @UUID[Compendium.pf2e.feats-srd.Item.zGrUu3dUtqHrqGuo]{Break Curse}, @UUID[Compendium.pf2e.feats-srd.Item.MSyU208twPGKU16W]{Calm and Centered}, @UUID[Compendium.pf2e.feats-srd.Item.MMaUL7r99DY7nvds]{Comforting Presence}</li></ul>",
+      "gm": ""
+    },
+    "publication": {
+      "title": "PF2e Skill Feat Revamp",
+      "authors": "Sebastian",
+      "license": "ORC",
+      "remaster": true
+    },
+    "rules": [
+      {
+        "key": "GrantItem",
+        "uuid": "Compendium.pf2e.feats-srd.Item.6O8MoMheHs5hNHX1",
+        "allowDuplicate": false,
+        "onDeleteActions": {
+          "granter": "cascade",
+          "grantee": "restrict"
+        }
+      },
+      {
+        "key": "GrantItem",
+        "uuid": "Compendium.pf2e.feats-srd.Item.22P7IFyhrF7Fbw8B",
+        "allowDuplicate": false,
+        "onDeleteActions": {
+          "granter": "cascade",
+          "grantee": "restrict"
+        }
+      }
+    ],
+    "slug": "skillpaths-occultism-warding-trained",
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "general",
+        "skill",
+        "skillpath"
+      ],
+      "rarity": "common"
+    },
+    "level": {
+      "value": 1
+    },
+    "category": "skill",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": [
+        {
+          "value": "trained in Occultism"
+        },
+        {
+          "value": "Occultism - Base"
+        }
+      ]
+    },
+    "subfeatures": {
+      "proficiencies": {},
+      "senses": {},
+      "suppressedFeatures": []
+    }
+  },
+  "img": "icons/sundries/books/book-red-exclamation.webp",
+  "folder": "G7AF3O2QsYVPLQme",
+  "flags": {},
+  "effects": [],
+  "_id": "2hsDwvHoZ4vHrYvD",
+  "_key": "!items!2hsDwvHoZ4vHrYvD"
+}

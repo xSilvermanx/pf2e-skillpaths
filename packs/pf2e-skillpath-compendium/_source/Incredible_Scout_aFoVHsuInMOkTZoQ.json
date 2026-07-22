@@ -1,0 +1,78 @@
+{
+  "_id": "aFoVHsuInMOkTZoQ",
+  "folder": "nau9DRWvDo59JfOZ",
+  "img": "icons/sundries/books/book-red-exclamation.webp",
+  "name": "Incredible Scout",
+  "system": {
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "category": "general",
+    "description": {
+      "value": "<p>When you scout, you are particularly alert for danger, granting your allies precious moments to prepare to fight. When using the @UUID[Compendium.pf2e.actionspf2e.Item.kV3XM0YJeS2KCSOb]{Scout} exploration activity, you grant your allies a +2 circumstance bonus to their initiative rolls instead of a +1 circumstance bonus.</p>\n<p>@UUID[Compendium.pf2e.feat-effects.Item.la8rWwUtReElgTS6]{Effect: Scout (Incredible Scout)}</p>",
+      "gm": ""
+    },
+    "level": {
+      "value": 11
+    },
+    "prerequisites": {
+      "value": [
+        {
+          "value": "master in Perception"
+        }
+      ]
+    },
+    "publication": {
+      "license": "ORC",
+      "remaster": true,
+      "title": "Pathfinder Player Core 2",
+      "authors": ""
+    },
+    "rules": [],
+    "traits": {
+      "rarity": "common",
+      "value": [
+        "exploration",
+        "general",
+        "skillpath"
+      ],
+      "otherTags": []
+    },
+    "slug": "incredible-scout",
+    "_migration": {
+      "version": 0.959,
+      "previous": null
+    },
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "subfeatures": {
+      "proficiencies": {},
+      "senses": {},
+      "suppressedFeatures": []
+    },
+    "location": null
+  },
+  "type": "feat",
+  "_stats": {
+    "coreVersion": "14.364",
+    "systemId": "pf2e",
+    "systemVersion": "8.2.0",
+    "compendiumSource": "Compendium.pf2e.feats-srd.Item.aFoVHsuInMOkTZoQ",
+    "createdTime": 1784373455033,
+    "modifiedTime": 1784373455033,
+    "lastModifiedBy": "cDVClG5j3LgTcqta",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "effects": [],
+  "ownership": {
+    "default": 0,
+    "cDVClG5j3LgTcqta": 3
+  },
+  "flags": {},
+  "sort": 2300000,
+  "_key": "!items!aFoVHsuInMOkTZoQ"
+}

@@ -1,0 +1,84 @@
+{
+  "_id": "4vu6P3cYoOOeUbLK",
+  "folder": "LCegFaV93MxkKEKT",
+  "img": "icons/sundries/books/book-red-exclamation.webp",
+  "name": "Incredible Investiture",
+  "system": {
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "category": "skill",
+    "description": {
+      "value": "<p>You have an incredible ability to invest more magic items. Increase your limit on invested items from 10 to 12.</p>",
+      "gm": ""
+    },
+    "level": {
+      "value": 11
+    },
+    "prerequisites": {
+      "value": [
+        {
+          "value": "master in Arcana, Nature, Occultism or Religion"
+        }
+      ]
+    },
+    "publication": {
+      "license": "ORC",
+      "remaster": true,
+      "title": "Pathfinder Player Core",
+      "authors": ""
+    },
+    "rules": [
+      {
+        "key": "ActiveEffectLike",
+        "mode": "upgrade",
+        "path": "system.resources.investiture.max",
+        "value": 12
+      }
+    ],
+    "traits": {
+      "rarity": "common",
+      "value": [
+        "general",
+        "skillpath"
+      ],
+      "otherTags": []
+    },
+    "slug": "incredible-investiture",
+    "_migration": {
+      "version": 0.959,
+      "previous": null
+    },
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "subfeatures": {
+      "proficiencies": {},
+      "senses": {},
+      "suppressedFeatures": []
+    },
+    "location": null
+  },
+  "type": "feat",
+  "_stats": {
+    "coreVersion": "14.364",
+    "systemId": "pf2e",
+    "systemVersion": "8.2.0",
+    "compendiumSource": "Compendium.pf2e.feats-srd.Item.4vu6P3cYoOOeUbLK",
+    "createdTime": 1784373503816,
+    "modifiedTime": 1784373503816,
+    "lastModifiedBy": "cDVClG5j3LgTcqta",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "effects": [],
+  "ownership": {
+    "default": 0,
+    "cDVClG5j3LgTcqta": 3
+  },
+  "flags": {},
+  "sort": 200000,
+  "_key": "!items!4vu6P3cYoOOeUbLK"
+}

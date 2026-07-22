@@ -1,0 +1,88 @@
+{
+  "name": "Burglary Path - Trained",
+  "type": "feat",
+  "system": {
+    "description": {
+      "value": "<p><strong>Skill Path:</strong> Burglary</p><p>You mastered the art of petty theft.</p><hr /><p>While developing your skills in Thievery you chose to focus specifically on Burglary, learning basic techniques.You gain the following trained feats: @UUID[Compendium.pf2e.feats-srd.Item.B9cQLRHtXoLlF0iR]{Concealing Legerdemain}, @UUID[Compendium.pf2e.feats-srd.Item.jDdOqFmZLwE4dblQ]{Pickpocket}, @UUID[Compendium.pf2e.feats-srd.Item.hVZbnsDuXihggylt]{Subtle Theft}.</p><p>This path focuses on @UUID[Compendium.pf2e.actionspf2e.Item.2EE4aF4SZpYf0R6H]{Pick a Lock}, @UUID[Compendium.pf2e.actionspf2e.Item.cYdz2grcOcRt4jk6]{Disable a Device}, @UUID[Compendium.pf2e.actionspf2e.Item.ijZ0DDFpMkWqaShd]{Palm an Object}, @UUID[Compendium.pf2e.actionspf2e.Item.RDXXE7wMrSPCLv5k]{Steal}.</p><p><strong>Path Progression</strong></p><ul><li><strong>Trained:</strong> @UUID[Compendium.pf2e.feats-srd.Item.B9cQLRHtXoLlF0iR]{Concealing Legerdemain}, @UUID[Compendium.pf2e.feats-srd.Item.jDdOqFmZLwE4dblQ]{Pickpocket}, @UUID[Compendium.pf2e.feats-srd.Item.hVZbnsDuXihggylt]{Subtle Theft}</li><li><strong>Expert:</strong> @UUID[Compendium.pf2e.feats-srd.Item.RLBYJiGMVkaGL5w9]{Wary Disarmament}</li><li><strong>Master:</strong> @UUID[Compendium.pf2e.feats-srd.Item.7GmXKrkzmInkFyEr]{Quick Unlock}</li><li><strong>Legendary:</strong> @UUID[Compendium.pf2e.feats-srd.Item.IZbjUaZI5zHTd1Vp]{Legendary Thief}</li></ul>",
+      "gm": ""
+    },
+    "publication": {
+      "title": "PF2e Skill Feat Revamp",
+      "authors": "Sebastian",
+      "license": "ORC",
+      "remaster": true
+    },
+    "rules": [
+      {
+        "key": "GrantItem",
+        "uuid": "Compendium.pf2e.feats-srd.Item.B9cQLRHtXoLlF0iR",
+        "allowDuplicate": false,
+        "onDeleteActions": {
+          "granter": "cascade",
+          "grantee": "restrict"
+        }
+      },
+      {
+        "key": "GrantItem",
+        "uuid": "Compendium.pf2e.feats-srd.Item.jDdOqFmZLwE4dblQ",
+        "allowDuplicate": false,
+        "onDeleteActions": {
+          "granter": "cascade",
+          "grantee": "restrict"
+        }
+      },
+      {
+        "key": "GrantItem",
+        "uuid": "Compendium.pf2e.feats-srd.Item.hVZbnsDuXihggylt",
+        "allowDuplicate": false,
+        "onDeleteActions": {
+          "granter": "cascade",
+          "grantee": "restrict"
+        }
+      }
+    ],
+    "slug": "skillpaths-thievery-burglary-trained",
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "general",
+        "skill",
+        "skillpath"
+      ],
+      "rarity": "common"
+    },
+    "level": {
+      "value": 1
+    },
+    "category": "skill",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": [
+        {
+          "value": "trained in Thievery"
+        },
+        {
+          "value": "Thievery - Base"
+        }
+      ]
+    },
+    "subfeatures": {
+      "proficiencies": {},
+      "senses": {},
+      "suppressedFeatures": []
+    }
+  },
+  "img": "icons/sundries/books/book-red-exclamation.webp",
+  "folder": "NsbLnpqRAL9jHjcs",
+  "flags": {},
+  "effects": [],
+  "_id": "UXTCgWxLvsth7YxK",
+  "_key": "!items!UXTCgWxLvsth7YxK"
+}

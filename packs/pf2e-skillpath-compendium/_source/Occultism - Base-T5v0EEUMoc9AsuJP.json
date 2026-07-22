@@ -1,0 +1,104 @@
+{
+  "name": "Occultism - Base",
+  "type": "feat",
+  "system": {
+    "description": {
+      "value": "<p>You have started to develop Occultism beyond other skills, delving deeper into its possibilities.</p><p><strong>Core Feats</strong></p><ul><li>@UUID[Compendium.pf2e.feats-srd.Item.hDGosy2ZTwnyctEP]{Oddity Identification}</li></ul><p>Choose one Skill Path and gain that path's Trained feat.</p><p><strong>Available Skill Paths</strong></p><ul><li><strong>@UUID[Compendium.pf2e-skillpaths.pf2e-skillpath-compendium.Item.gopX1q8wdFmKSOYm]{Spellcraft (Occultism) Path - Trained}</strong>: Your excellent knowledge of spells helps you identifying spells with great success.</li><li><strong>@UUID[Compendium.pf2e-skillpaths.pf2e-skillpath-compendium.Item.8K3mCiBts85kO7UL]{Itemcraft (Occultism) Path - Trained}</strong>: Your knowledge of magical items empowers you use them to beyond their limits.</li><li><strong>@UUID[Compendium.pf2e-skillpaths.pf2e-skillpath-compendium.Item.sMSOAbUCzsCZdt0f]{Psyche Path - Trained}</strong>: Through much training you gained a few psychic abilities.</li><li><strong>@UUID[Compendium.pf2e-skillpaths.pf2e-skillpath-compendium.Item.PmmCAs9ljPQbu0h9]{Shrouded Subterfuge Path - Trained}</strong>: You use the fanatism of Cults and Faiths to Lie and decieve them.</li><li><strong>@UUID[Compendium.pf2e-skillpaths.pf2e-skillpath-compendium.Item.2hsDwvHoZ4vHrYvD]{Warding Path - Trained}</strong>: Crystals offer some unique healing options. You know all of them.</li></ul>",
+      "gm": ""
+    },
+    "publication": {
+      "title": "PF2e Skill Feat Revamp",
+      "authors": "Sebastian",
+      "license": "ORC",
+      "remaster": true
+    },
+    "rules": [
+      {
+        "key": "GrantItem",
+        "uuid": "Compendium.pf2e.feats-srd.Item.hDGosy2ZTwnyctEP",
+        "allowDuplicate": false,
+        "onDeleteActions": {
+          "granter": "cascade",
+          "grantee": "restrict"
+        }
+      },
+      {
+        "key": "ChoiceSet",
+        "flag": "occultismSkillpathChoice",
+        "prompt": "Choose a skill path.",
+        "adjustName": false,
+        "choices": [
+          {
+            "label": "Spellcraft (Occultism)",
+            "value": "Compendium.pf2e-skillpaths.pf2e-skillpath-compendium.Item.gopX1q8wdFmKSOYm"
+          },
+          {
+            "label": "Itemcraft (Occultism)",
+            "value": "Compendium.pf2e-skillpaths.pf2e-skillpath-compendium.Item.8K3mCiBts85kO7UL"
+          },
+          {
+            "label": "Psyche",
+            "value": "Compendium.pf2e-skillpaths.pf2e-skillpath-compendium.Item.sMSOAbUCzsCZdt0f"
+          },
+          {
+            "label": "Shrouded Subterfuge",
+            "value": "Compendium.pf2e-skillpaths.pf2e-skillpath-compendium.Item.PmmCAs9ljPQbu0h9"
+          },
+          {
+            "label": "Warding",
+            "value": "Compendium.pf2e-skillpaths.pf2e-skillpath-compendium.Item.2hsDwvHoZ4vHrYvD"
+          }
+        ]
+      },
+      {
+        "key": "GrantItem",
+        "uuid": "{item|flags.pf2e.rulesSelections.occultismSkillpathChoice}",
+        "allowDuplicate": false,
+        "onDeleteActions": {
+          "granter": "cascade",
+          "grantee": "restrict"
+        }
+      }
+    ],
+    "slug": "skillpaths-occultism-base",
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "general",
+        "skill",
+        "skillpath"
+      ],
+      "rarity": "common"
+    },
+    "level": {
+      "value": 1
+    },
+    "category": "skill",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": [
+        {
+          "value": "trained in Occultism"
+        }
+      ]
+    },
+    "subfeatures": {
+      "proficiencies": {},
+      "senses": {},
+      "suppressedFeatures": []
+    }
+  },
+  "img": "icons/sundries/books/book-red-exclamation.webp",
+  "folder": "G7AF3O2QsYVPLQme",
+  "flags": {},
+  "effects": [],
+  "_id": "T5v0EEUMoc9AsuJP",
+  "_key": "!items!T5v0EEUMoc9AsuJP"
+}

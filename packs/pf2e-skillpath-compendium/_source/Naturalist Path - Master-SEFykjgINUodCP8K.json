@@ -1,0 +1,116 @@
+{
+  "name": "Naturalist Path - Master",
+  "type": "feat",
+  "system": {
+    "description": {
+      "value": "<p>Through long and intensive training you mastered Naturalist. Few people in this world can match your capabilities in this area.</p><p>Gain the following master feats: @UUID[Compendium.pf2e.feats-srd.Item.wlbfINUTHDPqbV7v]{Morphic Manipulation}.</p><p><strong>Skill Potency</strong></p><p>At 9th level, you gain a +2 item bonus to Nature checks involving @UUID[Compendium.pf2e.actionspf2e.Item.1kGNdIIhuglAjIp9]{Treat Wounds}, @UUID[Compendium.pf2e.actionspf2e.Item.TC7OcDa7JlWbqMaN]{Treat Disease}, @UUID[Compendium.pf2e.actionspf2e.Item.KjoCEEmPGTeFE4hh]{Treat Poison}. At 17th level, this bonus increases to +3.</p>",
+      "gm": ""
+    },
+    "publication": {
+      "title": "PF2e Skill Feat Revamp",
+      "authors": "Sebastian",
+      "license": "ORC",
+      "remaster": true
+    },
+    "rules": [
+      {
+        "key": "FlatModifier",
+        "label": "Skill Potency - Treat Wounds, Treat Disease, Treat Poison (not in combat)",
+        "slug": "skillpaths-nature-naturalist-potency-2",
+        "type": "item",
+        "value": 2,
+        "selector": "nature",
+        "predicate": [
+          {
+            "or": [
+              "action:treat-wounds",
+              "action:treat-disease",
+              "action:treat-poison"
+            ]
+          },
+          {
+            "gte": [
+              "self:level",
+              9
+            ]
+          }
+        ]
+      },
+      {
+        "key": "FlatModifier",
+        "label": "Skill Potency - Treat Wounds, Treat Disease, Treat Poison (not in combat)",
+        "slug": "skillpaths-nature-naturalist-potency-3",
+        "type": "item",
+        "value": 3,
+        "selector": "nature",
+        "predicate": [
+          {
+            "or": [
+              "action:treat-wounds",
+              "action:treat-disease",
+              "action:treat-poison"
+            ]
+          },
+          {
+            "gte": [
+              "self:level",
+              17
+            ]
+          }
+        ]
+      },
+      {
+        "key": "GrantItem",
+        "uuid": "Compendium.pf2e.feats-srd.Item.wlbfINUTHDPqbV7v",
+        "allowDuplicate": false,
+        "onDeleteActions": {
+          "granter": "cascade",
+          "grantee": "restrict"
+        }
+      }
+    ],
+    "slug": "skillpaths-nature-naturalist-master",
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "general",
+        "skill",
+        "skillpath"
+      ],
+      "rarity": "common"
+    },
+    "level": {
+      "value": 7
+    },
+    "category": "skill",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": [
+        {
+          "value": "master in Nature"
+        },
+        {
+          "value": "Naturalist Path - Expert"
+        }
+      ]
+    },
+    "subfeatures": {
+      "proficiencies": {},
+      "senses": {},
+      "suppressedFeatures": []
+    }
+  },
+  "img": "icons/sundries/books/book-red-exclamation.webp",
+  "folder": "5L464p9NmJKVCxCV",
+  "flags": {},
+  "effects": [],
+  "_id": "SEFykjgINUodCP8K",
+  "_key": "!items!SEFykjgINUodCP8K"
+}

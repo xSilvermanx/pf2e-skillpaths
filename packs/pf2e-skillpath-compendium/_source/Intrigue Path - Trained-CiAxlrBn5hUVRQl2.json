@@ -1,0 +1,79 @@
+{
+  "name": "Intrigue Path - Trained",
+  "type": "feat",
+  "system": {
+    "description": {
+      "value": "<p><strong>Skill Path:</strong> Intrigue</p><p>You understand to use spoken words to weave intrigues and conspiracies.</p><hr /><p>While developing your skills in Deception you chose to focus specifically on Intrigue, learning basic techniques.You gain the following trained feats: @UUID[Compendium.pf2e.feats-srd.Item.wbjTkaKRygpaZS0r]{Secret Speech}, @UUID[Compendium.pf2e.feats-srd.Item.uF0ATN2Zw1Q67ew2]{Discreet Inquiry}.</p><p>This path focuses on Language-based deception.</p><p><strong>Path Progression</strong></p><ul><li><strong>Trained:</strong> @UUID[Compendium.pf2e.feats-srd.Item.wbjTkaKRygpaZS0r]{Secret Speech}, @UUID[Compendium.pf2e.feats-srd.Item.uF0ATN2Zw1Q67ew2]{Discreet Inquiry}</li><li><strong>Expert:</strong> @UUID[Compendium.pf2e.feats-srd.Item.bmtf49jRKBCfdC5W]{Half-Truths}</li><li><strong>Master:</strong> @UUID[Compendium.pf2e.feats-srd.Item.qibU5SZPFHMNnpAP]{Doublespeak}</li><li><strong>Legendary:</strong> @UUID[Compendium.pf2e.feats-srd.Item.XZcd1wFHy111klu2]{Reveal Machinations}</li></ul>",
+      "gm": ""
+    },
+    "publication": {
+      "title": "PF2e Skill Feat Revamp",
+      "authors": "Sebastian",
+      "license": "ORC",
+      "remaster": true
+    },
+    "rules": [
+      {
+        "key": "GrantItem",
+        "uuid": "Compendium.pf2e.feats-srd.Item.wbjTkaKRygpaZS0r",
+        "allowDuplicate": false,
+        "onDeleteActions": {
+          "granter": "cascade",
+          "grantee": "restrict"
+        }
+      },
+      {
+        "key": "GrantItem",
+        "uuid": "Compendium.pf2e.feats-srd.Item.uF0ATN2Zw1Q67ew2",
+        "allowDuplicate": false,
+        "onDeleteActions": {
+          "granter": "cascade",
+          "grantee": "restrict"
+        }
+      }
+    ],
+    "slug": "skillpaths-deception-intrigue-trained",
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "general",
+        "skill",
+        "skillpath"
+      ],
+      "rarity": "common"
+    },
+    "level": {
+      "value": 1
+    },
+    "category": "skill",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": [
+        {
+          "value": "trained in Deception"
+        },
+        {
+          "value": "Deception - Base"
+        }
+      ]
+    },
+    "subfeatures": {
+      "proficiencies": {},
+      "senses": {},
+      "suppressedFeatures": []
+    }
+  },
+  "img": "icons/sundries/books/book-red-exclamation.webp",
+  "folder": "D4fxhAE28vKaKW6N",
+  "flags": {},
+  "effects": [],
+  "_id": "CiAxlrBn5hUVRQl2",
+  "_key": "!items!CiAxlrBn5hUVRQl2"
+}

@@ -1,0 +1,83 @@
+{
+  "name": "Stealth - Base",
+  "type": "feat",
+  "system": {
+    "description": {
+      "value": "<p>You have started to develop Stealth beyond other skills, delving deeper into its possibilities.</p><p><strong>Core Feats</strong></p><p><em>No automatic core feats.</em></p><p>Choose one Skill Path and gain that path's Trained feat.</p><p><strong>Available Skill Paths</strong></p><ul><li><strong>@UUID[Compendium.pf2e-skillpaths.pf2e-skillpath-compendium.Item.GDGotLl6D0UnGciX]{Ghost Path - Trained}</strong>: Your ability to hide and sneak is unmatched.</li><li><strong>@UUID[Compendium.pf2e-skillpaths.pf2e-skillpath-compendium.Item.vNPUUwowNurRdW0O]{Operative Path - Trained}</strong>: Your specialty are covert operations in enemy territory.</li></ul>",
+      "gm": ""
+    },
+    "publication": {
+      "title": "PF2e Skill Feat Revamp",
+      "authors": "Sebastian",
+      "license": "ORC",
+      "remaster": true
+    },
+    "rules": [
+      {
+        "key": "ChoiceSet",
+        "flag": "stealthSkillpathChoice",
+        "prompt": "Choose a skill path.",
+        "adjustName": false,
+        "choices": [
+          {
+            "label": "Ghost",
+            "value": "Compendium.pf2e-skillpaths.pf2e-skillpath-compendium.Item.GDGotLl6D0UnGciX"
+          },
+          {
+            "label": "Operative",
+            "value": "Compendium.pf2e-skillpaths.pf2e-skillpath-compendium.Item.vNPUUwowNurRdW0O"
+          }
+        ]
+      },
+      {
+        "key": "GrantItem",
+        "uuid": "{item|flags.pf2e.rulesSelections.stealthSkillpathChoice}",
+        "allowDuplicate": false,
+        "onDeleteActions": {
+          "granter": "cascade",
+          "grantee": "restrict"
+        }
+      }
+    ],
+    "slug": "skillpaths-stealth-base",
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "general",
+        "skill",
+        "skillpath"
+      ],
+      "rarity": "common"
+    },
+    "level": {
+      "value": 1
+    },
+    "category": "skill",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": [
+        {
+          "value": "trained in Stealth"
+        }
+      ]
+    },
+    "subfeatures": {
+      "proficiencies": {},
+      "senses": {},
+      "suppressedFeatures": []
+    }
+  },
+  "img": "icons/sundries/books/book-red-exclamation.webp",
+  "folder": "Sq8aLregSckvn0E4",
+  "flags": {},
+  "effects": [],
+  "_id": "RpE3X6rIVAcHT18M",
+  "_key": "!items!RpE3X6rIVAcHT18M"
+}

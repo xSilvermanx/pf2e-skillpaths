@@ -1,0 +1,80 @@
+{
+  "folder": "QPUE5QMgRqCOV1Ks",
+  "name": "Spell Reconstruction",
+  "type": "feat",
+  "effects": [],
+  "system": {
+    "_migration": {
+      "version": 0.959,
+      "previous": null
+    },
+    "description": {
+      "value": "<p><strong>Prepared Caster</strong> Spell Recognition has become second nature to you, so much so that you can remember even the finest details of the recognized cast. If you successfully Recognize a Spell, you can use your memory to Learn that Spell until your next daily preparations. You must still fulfill every other requirement of Learn a Spell.</p><p><strong>Spontaneous Caster</strong> You utilized Spell Recognition to the fullest, so much so that it became intertwined with your unique way of casting. The first spell you successfully Recognize each day becomes intertwined with your Repertoire until the next daily preparations. If that day is Downtime, you can choose to retrain this spell using only 1 Day of Downtime.</p><p></p>",
+      "gm": ""
+    },
+    "publication": {
+      "title": "",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "rules": [],
+    "slug": null,
+    "traits": {
+      "otherTags": [],
+      "value": [],
+      "rarity": "common"
+    },
+    "level": {
+      "value": 2
+    },
+    "category": "skill",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": [
+        {
+          "value": "expert in Arcana, Nature, Occultism or Religion"
+        },
+        {
+          "value": "Recognize Spell"
+        },
+        {
+          "value": "Magical Shorthand"
+        }
+      ]
+    },
+    "subfeatures": {
+      "proficiencies": {},
+      "senses": {},
+      "suppressedFeatures": []
+    },
+    "location": null
+  },
+  "img": "icons/sundries/books/book-red-exclamation.webp",
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "cDVClG5j3LgTcqta": 3
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.364",
+    "systemId": "pf2e",
+    "systemVersion": "8.2.0",
+    "createdTime": 1784378038673,
+    "modifiedTime": 1784378038673,
+    "lastModifiedBy": "cDVClG5j3LgTcqta",
+    "compendiumSource": null,
+    "duplicateSource": "Item.R4wiKmqyKdwHA0CG",
+    "exportSource": null
+  },
+  "_id": "9drUkZpowfoQe48W",
+  "_key": "!items!9drUkZpowfoQe48W"
+}

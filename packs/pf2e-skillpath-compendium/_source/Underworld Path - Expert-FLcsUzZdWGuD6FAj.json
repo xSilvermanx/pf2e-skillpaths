@@ -1,0 +1,120 @@
+{
+  "name": "Underworld Path - Expert",
+  "type": "feat",
+  "system": {
+    "description": {
+      "value": "<p>You intensified your training in Underworld, acquiring advanced techniques and improving existing ones.</p><p>Gain the following expert feats: @UUID[Compendium.pf2e.feats-srd.Item.LDUWw2TeEEH0KA6M]{Criminal Connections}, @UUID[Compendium.pf2e.feats-srd.Item.gydOsP9VsdRw3Wg1]{Underground Network}, @UUID[Compendium.pf2e.feats-srd.Item.iCv8KTZ5PcF4GqeV]{Leverage Connections}; At 5th level, you also gain @UUID[Compendium.pf2e.feats-srd.Item.ThoOsKjn5xCuZUqM]{Quick Contacts}.</p><p><strong>Skill Potency</strong></p><p>You gain a +1 item bonus to Society checks involving @UUID[Compendium.pf2e.actionspf2e.Item.AJstokjdG6iDjVjE]{Impersonate}.</p>",
+      "gm": ""
+    },
+    "publication": {
+      "title": "PF2e Skill Feat Revamp",
+      "authors": "Sebastian",
+      "license": "ORC",
+      "remaster": true
+    },
+    "rules": [
+      {
+        "key": "FlatModifier",
+        "label": "Skill Potency - Impersonate",
+        "slug": "skillpaths-society-underworld-potency-1",
+        "type": "item",
+        "value": 1,
+        "selector": "society",
+        "predicate": [
+          {
+            "or": [
+              "action:impersonate"
+            ]
+          }
+        ]
+      },
+      {
+        "key": "GrantItem",
+        "uuid": "Compendium.pf2e.feats-srd.Item.LDUWw2TeEEH0KA6M",
+        "allowDuplicate": false,
+        "onDeleteActions": {
+          "granter": "cascade",
+          "grantee": "restrict"
+        }
+      },
+      {
+        "key": "GrantItem",
+        "uuid": "Compendium.pf2e.feats-srd.Item.gydOsP9VsdRw3Wg1",
+        "allowDuplicate": false,
+        "onDeleteActions": {
+          "granter": "cascade",
+          "grantee": "restrict"
+        }
+      },
+      {
+        "key": "GrantItem",
+        "uuid": "Compendium.pf2e.feats-srd.Item.iCv8KTZ5PcF4GqeV",
+        "allowDuplicate": false,
+        "onDeleteActions": {
+          "granter": "cascade",
+          "grantee": "restrict"
+        }
+      },
+      {
+        "key": "GrantItem",
+        "uuid": "Compendium.pf2e.feats-srd.Item.ThoOsKjn5xCuZUqM",
+        "allowDuplicate": false,
+        "onDeleteActions": {
+          "granter": "cascade",
+          "grantee": "restrict"
+        },
+        "predicate": [
+          {
+            "gte": [
+              "self:level",
+              5
+            ]
+          }
+        ]
+      }
+    ],
+    "slug": "skillpaths-society-underworld-expert",
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "general",
+        "skill",
+        "skillpath"
+      ],
+      "rarity": "common"
+    },
+    "level": {
+      "value": 3
+    },
+    "category": "skill",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": [
+        {
+          "value": "expert in Society"
+        },
+        {
+          "value": "Underworld Path - Trained"
+        }
+      ]
+    },
+    "subfeatures": {
+      "proficiencies": {},
+      "senses": {},
+      "suppressedFeatures": []
+    }
+  },
+  "img": "icons/sundries/books/book-red-exclamation.webp",
+  "folder": "UhnhMwzUOs2XnNFx",
+  "flags": {},
+  "effects": [],
+  "_id": "FLcsUzZdWGuD6FAj",
+  "_key": "!items!FLcsUzZdWGuD6FAj"
+}

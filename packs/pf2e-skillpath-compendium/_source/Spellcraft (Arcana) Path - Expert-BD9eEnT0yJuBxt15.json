@@ -1,0 +1,85 @@
+{
+  "name": "Spellcraft (Arcana) Path - Expert",
+  "type": "feat",
+  "system": {
+    "description": {
+      "value": "<p>You intensified your training in Spellcraft (Arcana), acquiring advanced techniques and improving existing ones.</p><p>Gain the following expert feats: @UUID[Compendium.pf2e-skillpaths.pf2e-skillpath-compendium.Item.9drUkZpowfoQe48W]{Spell Reconstruction}.</p><p><strong>Skill Potency</strong></p><p>You gain a +1 item bonus to Arcana checks involving @UUID[Compendium.pf2e.actionspf2e.Item.Q5iIYCFdqJFM31GW]{Learn a Spell}.</p>",
+      "gm": ""
+    },
+    "publication": {
+      "title": "PF2e Skill Feat Revamp",
+      "authors": "Sebastian",
+      "license": "ORC",
+      "remaster": true
+    },
+    "rules": [
+      {
+        "key": "FlatModifier",
+        "label": "Skill Potency - Recognize Spell, Learn a Spell",
+        "slug": "skillpaths-arcana-spellcraft-potency-1",
+        "type": "item",
+        "value": 1,
+        "selector": "arcana",
+        "predicate": [
+          {
+            "or": [
+              "action:learn-a-spell"
+            ]
+          }
+        ]
+      },
+      {
+        "key": "GrantItem",
+        "uuid": "Compendium.pf2e-skillpaths.pf2e-skillpath-compendium.Item.9drUkZpowfoQe48W",
+        "allowDuplicate": false,
+        "onDeleteActions": {
+          "granter": "cascade",
+          "grantee": "restrict"
+        }
+      }
+    ],
+    "slug": "skillpaths-arcana-spellcraft-expert",
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "general",
+        "skill",
+        "skillpath"
+      ],
+      "rarity": "common"
+    },
+    "level": {
+      "value": 3
+    },
+    "category": "skill",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": [
+        {
+          "value": "expert in Arcana"
+        },
+        {
+          "value": "Spellcraft (Arcana) Path - Trained"
+        }
+      ]
+    },
+    "subfeatures": {
+      "proficiencies": {},
+      "senses": {},
+      "suppressedFeatures": []
+    }
+  },
+  "img": "icons/sundries/books/book-red-exclamation.webp",
+  "folder": "NUC8zprb3DEhiyS4",
+  "flags": {},
+  "effects": [],
+  "_id": "BD9eEnT0yJuBxt15",
+  "_key": "!items!BD9eEnT0yJuBxt15"
+}

@@ -1,0 +1,77 @@
+{
+  "_id": "5ZsmRm7HvFAw2XDZ",
+  "folder": "nau9DRWvDo59JfOZ",
+  "img": "icons/sundries/books/book-red-exclamation.webp",
+  "name": "Caravan Leader",
+  "system": {
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "category": "general",
+    "description": {
+      "value": "<p>You know how to get the most effort out of your allies on the road. Your group can Hustle for an additional 20 minutes beyond the length of time that the member who could Hustle longest on their own.</p>",
+      "gm": ""
+    },
+    "level": {
+      "value": 11
+    },
+    "prerequisites": {
+      "value": [
+        {
+          "value": "Pick Up the Pace"
+        }
+      ]
+    },
+    "publication": {
+      "license": "ORC",
+      "remaster": true,
+      "title": "Pathfinder Player Core 2",
+      "authors": ""
+    },
+    "rules": [],
+    "traits": {
+      "rarity": "common",
+      "value": [
+        "general",
+        "skillpath"
+      ],
+      "otherTags": []
+    },
+    "slug": "caravan-leader",
+    "_migration": {
+      "version": 0.959,
+      "previous": null
+    },
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "subfeatures": {
+      "proficiencies": {},
+      "senses": {},
+      "suppressedFeatures": []
+    },
+    "location": null
+  },
+  "type": "feat",
+  "_stats": {
+    "coreVersion": "14.364",
+    "systemId": "pf2e",
+    "systemVersion": "8.2.0",
+    "compendiumSource": "Compendium.pf2e.feats-srd.Item.5ZsmRm7HvFAw2XDZ",
+    "createdTime": 1784373455032,
+    "modifiedTime": 1784373455032,
+    "lastModifiedBy": "cDVClG5j3LgTcqta",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "effects": [],
+  "ownership": {
+    "default": 0,
+    "cDVClG5j3LgTcqta": 3
+  },
+  "flags": {},
+  "sort": 2200000,
+  "_key": "!items!5ZsmRm7HvFAw2XDZ"
+}

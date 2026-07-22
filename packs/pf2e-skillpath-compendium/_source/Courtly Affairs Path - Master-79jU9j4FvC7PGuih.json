@@ -1,0 +1,118 @@
+{
+  "name": "Courtly Affairs Path - Master",
+  "type": "feat",
+  "system": {
+    "description": {
+      "value": "<p>Through long and intensive training you mastered Courtly Affairs. Few people in this world can match your capabilities in this area.</p><p>Gain the following master feats: @UUID[Compendium.pf2e-skillpaths.pf2e-skillpath-compendium.Item.JaG1SfG4iB6gJO9y]{Command the Assembly}.</p><p><strong>Skill Potency</strong></p><p>At 9th level, you gain a +2 item bonus to Society checks involving @UUID[Compendium.pf2e.actionspf2e.Item.OX4fy22hQgUHDr0q]{Make an Impression}. At 17th level, if you have @UUID[Compendium.pf2e.feats-srd.Item.Zf4yiLDdxHPovEQI]{Legendary Codebreaker}, @UUID[Compendium.pf2e.feats-srd.Item.n0S0tJiOJPQk0Rne]{Legendary Linguist}, this bonus increases to +3.</p>",
+      "gm": ""
+    },
+    "publication": {
+      "title": "PF2e Skill Feat Revamp",
+      "authors": "Sebastian",
+      "license": "ORC",
+      "remaster": true
+    },
+    "rules": [
+      {
+        "key": "FlatModifier",
+        "label": "Skill Potency - Make an Impression on Nobles",
+        "slug": "skillpaths-society-courtly-affairs-potency-2",
+        "type": "item",
+        "value": 2,
+        "selector": "society",
+        "predicate": [
+          {
+            "or": [
+              "action:make-an-impression"
+            ]
+          },
+          {
+            "gte": [
+              "self:level",
+              9
+            ]
+          }
+        ]
+      },
+      {
+        "key": "FlatModifier",
+        "label": "Skill Potency - Make an Impression on Nobles",
+        "slug": "skillpaths-society-courtly-affairs-potency-3",
+        "type": "item",
+        "value": 3,
+        "selector": "society",
+        "predicate": [
+          {
+            "or": [
+              "action:make-an-impression"
+            ]
+          },
+          {
+            "or": [
+              "feat:legendary-codebreaker",
+              "feat:legendary-linguist"
+            ]
+          },
+          {
+            "gte": [
+              "self:level",
+              17
+            ]
+          }
+        ]
+      },
+      {
+        "key": "GrantItem",
+        "uuid": "Compendium.pf2e-skillpaths.pf2e-skillpath-compendium.Item.JaG1SfG4iB6gJO9y",
+        "allowDuplicate": false,
+        "onDeleteActions": {
+          "granter": "cascade",
+          "grantee": "restrict"
+        }
+      }
+    ],
+    "slug": "skillpaths-society-courtly-affairs-master",
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "general",
+        "skill",
+        "skillpath"
+      ],
+      "rarity": "common"
+    },
+    "level": {
+      "value": 7
+    },
+    "category": "skill",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": [
+        {
+          "value": "master in Society"
+        },
+        {
+          "value": "Courtly Affairs Path - Expert"
+        }
+      ]
+    },
+    "subfeatures": {
+      "proficiencies": {},
+      "senses": {},
+      "suppressedFeatures": []
+    }
+  },
+  "img": "icons/sundries/books/book-red-exclamation.webp",
+  "folder": "UhnhMwzUOs2XnNFx",
+  "flags": {},
+  "effects": [],
+  "_id": "79jU9j4FvC7PGuih",
+  "_key": "!items!79jU9j4FvC7PGuih"
+}

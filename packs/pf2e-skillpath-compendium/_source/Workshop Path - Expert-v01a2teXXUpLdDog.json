@@ -1,0 +1,95 @@
+{
+  "name": "Workshop Path - Expert",
+  "type": "feat",
+  "system": {
+    "description": {
+      "value": "<p>You intensified your training in Workshop, acquiring advanced techniques and improving existing ones.</p><p>Gain the following expert feats: @UUID[Compendium.pf2e.feats-srd.Item.XR95taODq1sq82Du]{Inventor}, @UUID[Compendium.pf2e.feats-srd.Item.lUXVmSFJbaPos5pY]{Communal Crafting}.</p><p><strong>Skill Potency</strong></p><p>You gain a +1 item bonus to Crafting checks involving @UUID[Compendium.pf2e.actionspf2e.Item.QyzlsLrqM0EEwd7j]{Earn Income}, @UUID[Compendium.pf2e.actionspf2e.Item.rmwa3OyhTZ2i2AHl]{Craft}.</p>",
+      "gm": ""
+    },
+    "publication": {
+      "title": "PF2e Skill Feat Revamp",
+      "authors": "Sebastian",
+      "license": "ORC",
+      "remaster": true
+    },
+    "rules": [
+      {
+        "key": "FlatModifier",
+        "label": "Skill Potency - Earn Income, Craft",
+        "slug": "skillpaths-crafting-workshop-potency-1",
+        "type": "item",
+        "value": 1,
+        "selector": "crafting",
+        "predicate": [
+          {
+            "or": [
+              "action:earn-income",
+              "action:craft"
+            ]
+          }
+        ]
+      },
+      {
+        "key": "GrantItem",
+        "uuid": "Compendium.pf2e.feats-srd.Item.XR95taODq1sq82Du",
+        "allowDuplicate": false,
+        "onDeleteActions": {
+          "granter": "cascade",
+          "grantee": "restrict"
+        }
+      },
+      {
+        "key": "GrantItem",
+        "uuid": "Compendium.pf2e.feats-srd.Item.lUXVmSFJbaPos5pY",
+        "allowDuplicate": false,
+        "onDeleteActions": {
+          "granter": "cascade",
+          "grantee": "restrict"
+        }
+      }
+    ],
+    "slug": "skillpaths-crafting-workshop-expert",
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "general",
+        "skill",
+        "skillpath"
+      ],
+      "rarity": "common"
+    },
+    "level": {
+      "value": 3
+    },
+    "category": "skill",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": [
+        {
+          "value": "expert in Crafting"
+        },
+        {
+          "value": "Workshop Path - Trained"
+        }
+      ]
+    },
+    "subfeatures": {
+      "proficiencies": {},
+      "senses": {},
+      "suppressedFeatures": []
+    }
+  },
+  "img": "icons/sundries/books/book-red-exclamation.webp",
+  "folder": "M5BKSrN6HVRwrNFo",
+  "flags": {},
+  "effects": [],
+  "_id": "v01a2teXXUpLdDog",
+  "_key": "!items!v01a2teXXUpLdDog"
+}

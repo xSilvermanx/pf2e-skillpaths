@@ -1,0 +1,129 @@
+{
+  "name": "Crafting - Base",
+  "type": "feat",
+  "system": {
+    "description": {
+      "value": "<p>You have started to develop Crafting beyond other skills, delving deeper into its possibilities.</p><p><strong>Core Feats</strong></p><ul><li>When trained: @UUID[Compendium.pf2e.feats-srd.Item.QLeMH5mQgh28sa5o]{Specialty Crafting}</li><li>When master: @UUID[Compendium.pf2e.feats-srd.Item.PiUe3tpv7UVtnfvS]{Impeccable Crafting}</li></ul><p>Choose one Skill Path and gain that path's Trained feat.</p><p><strong>Available Skill Paths</strong></p><ul><li><strong>@UUID[Compendium.pf2e-skillpaths.pf2e-skillpath-compendium.Item.wE3LoKdcmVHramVM]{Remedies (Crafting) Path - Trained}</strong>: You are especially adept at crafting alchemical and magical healing potions.</li><li><strong>@UUID[Compendium.pf2e-skillpaths.pf2e-skillpath-compendium.Item.Bw0erX7sutFLWl6z]{Fieldcraft Path - Trained}</strong>: You craftsmanship is especially great when repairing equipment.</li><li><strong>@UUID[Compendium.pf2e-skillpaths.pf2e-skillpath-compendium.Item.iCdYhfmxFnFFewDU]{Alchemical Crafting Path - Trained}</strong>: You mastered alchemy, the art of creating potions.</li><li><strong>@UUID[Compendium.pf2e-skillpaths.pf2e-skillpath-compendium.Item.etEO3TloXDgbFBxM]{Magical Crafting Path - Trained}</strong>: Crafting magical items has become second nature to you.</li><li><strong>@UUID[Compendium.pf2e-skillpaths.pf2e-skillpath-compendium.Item.UIxZQWy3veeDMgwK]{Workshop Path - Trained}</strong>: More businessman than craftsman you get the best out of your workshop and it's employees.</li></ul>",
+      "gm": ""
+    },
+    "publication": {
+      "title": "PF2e Skill Feat Revamp",
+      "authors": "Sebastian",
+      "license": "ORC",
+      "remaster": true
+    },
+    "rules": [
+      {
+        "key": "GrantItem",
+        "uuid": "Compendium.pf2e.feats-srd.Item.QLeMH5mQgh28sa5o",
+        "allowDuplicate": false,
+        "onDeleteActions": {
+          "granter": "cascade",
+          "grantee": "restrict"
+        },
+        "predicate": [
+          {
+            "gte": [
+              "skill:crafting:rank",
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "key": "GrantItem",
+        "uuid": "Compendium.pf2e.feats-srd.Item.PiUe3tpv7UVtnfvS",
+        "allowDuplicate": false,
+        "onDeleteActions": {
+          "granter": "cascade",
+          "grantee": "restrict"
+        },
+        "predicate": [
+          {
+            "gte": [
+              "skill:crafting:rank",
+              3
+            ]
+          }
+        ]
+      },
+      {
+        "key": "ChoiceSet",
+        "flag": "craftingSkillpathChoice",
+        "prompt": "Choose a skill path.",
+        "adjustName": false,
+        "choices": [
+          {
+            "label": "Remedies (Crafting)",
+            "value": "Compendium.pf2e-skillpaths.pf2e-skillpath-compendium.Item.wE3LoKdcmVHramVM"
+          },
+          {
+            "label": "Fieldcraft",
+            "value": "Compendium.pf2e-skillpaths.pf2e-skillpath-compendium.Item.Bw0erX7sutFLWl6z"
+          },
+          {
+            "label": "Alchemical Crafting",
+            "value": "Compendium.pf2e-skillpaths.pf2e-skillpath-compendium.Item.iCdYhfmxFnFFewDU"
+          },
+          {
+            "label": "Magical Crafting",
+            "value": "Compendium.pf2e-skillpaths.pf2e-skillpath-compendium.Item.etEO3TloXDgbFBxM"
+          },
+          {
+            "label": "Workshop",
+            "value": "Compendium.pf2e-skillpaths.pf2e-skillpath-compendium.Item.UIxZQWy3veeDMgwK"
+          }
+        ]
+      },
+      {
+        "key": "GrantItem",
+        "uuid": "{item|flags.pf2e.rulesSelections.craftingSkillpathChoice}",
+        "allowDuplicate": false,
+        "onDeleteActions": {
+          "granter": "cascade",
+          "grantee": "restrict"
+        }
+      }
+    ],
+    "slug": "skillpaths-crafting-base",
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "general",
+        "skill",
+        "skillpath"
+      ],
+      "rarity": "common"
+    },
+    "level": {
+      "value": 1
+    },
+    "category": "skill",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": [
+        {
+          "value": "trained in Crafting"
+        }
+      ]
+    },
+    "subfeatures": {
+      "proficiencies": {},
+      "senses": {},
+      "suppressedFeatures": []
+    }
+  },
+  "img": "icons/sundries/books/book-red-exclamation.webp",
+  "folder": "M5BKSrN6HVRwrNFo",
+  "flags": {},
+  "effects": [],
+  "_id": "ieDSFTKd99wEQYYS",
+  "_key": "!items!ieDSFTKd99wEQYYS"
+}

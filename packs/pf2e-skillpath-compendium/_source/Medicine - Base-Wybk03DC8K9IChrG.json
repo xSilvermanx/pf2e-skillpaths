@@ -1,0 +1,109 @@
+{
+  "name": "Medicine - Base",
+  "type": "feat",
+  "system": {
+    "description": {
+      "value": "<p>You have started to develop Medicine beyond other skills, delving deeper into its possibilities.</p><p><strong>Core Feats</strong></p><ul><li>@UUID[Compendium.pf2e.feats-srd.Item.wYerMk6F1RZb0Fwt]{Battle Medicine}, @UUID[Compendium.pf2e.feats-srd.Item.tnzZvaJ97t0N9g6y]{Godless Healing}</li></ul><p>Choose one Skill Path and gain that path's Trained feat.</p><p><strong>Available Skill Paths</strong></p><ul><li><strong>@UUID[Compendium.pf2e-skillpaths.pf2e-skillpath-compendium.Item.7KENK9X4t685gDut]{Remedies (Medicine) Path - Trained}</strong>: You are especially adept at crafting alchemical and magical healing potions.</li><li><strong>@UUID[Compendium.pf2e-skillpaths.pf2e-skillpath-compendium.Item.R9IYXOslNBhsUZqW]{Doctor Path - Trained}</strong>: You mastered the science of conventional medicine.</li><li><strong>@UUID[Compendium.pf2e-skillpaths.pf2e-skillpath-compendium.Item.6PuIkHZ5qcNKhBu0]{Anatomist Path - Trained}</strong>: Your knowledge of the humanoid body is immense as is your drive to change it.</li><li><strong>@UUID[Compendium.pf2e-skillpaths.pf2e-skillpath-compendium.Item.Hubev5EdycleCTBi]{Unconventional Treatment Path - Trained}</strong>: You are a strong advocate for alternative, esoteric treatments.</li></ul>",
+      "gm": ""
+    },
+    "publication": {
+      "title": "PF2e Skill Feat Revamp",
+      "authors": "Sebastian",
+      "license": "ORC",
+      "remaster": true
+    },
+    "rules": [
+      {
+        "key": "GrantItem",
+        "uuid": "Compendium.pf2e.feats-srd.Item.wYerMk6F1RZb0Fwt",
+        "allowDuplicate": false,
+        "onDeleteActions": {
+          "granter": "cascade",
+          "grantee": "restrict"
+        }
+      },
+      {
+        "key": "GrantItem",
+        "uuid": "Compendium.pf2e.feats-srd.Item.tnzZvaJ97t0N9g6y",
+        "allowDuplicate": false,
+        "onDeleteActions": {
+          "granter": "cascade",
+          "grantee": "restrict"
+        }
+      },
+      {
+        "key": "ChoiceSet",
+        "flag": "medicineSkillpathChoice",
+        "prompt": "Choose a skill path.",
+        "adjustName": false,
+        "choices": [
+          {
+            "label": "Remedies (Medicine)",
+            "value": "Compendium.pf2e-skillpaths.pf2e-skillpath-compendium.Item.7KENK9X4t685gDut"
+          },
+          {
+            "label": "Doctor",
+            "value": "Compendium.pf2e-skillpaths.pf2e-skillpath-compendium.Item.R9IYXOslNBhsUZqW"
+          },
+          {
+            "label": "Anatomist",
+            "value": "Compendium.pf2e-skillpaths.pf2e-skillpath-compendium.Item.6PuIkHZ5qcNKhBu0"
+          },
+          {
+            "label": "Unconventional Treatment",
+            "value": "Compendium.pf2e-skillpaths.pf2e-skillpath-compendium.Item.Hubev5EdycleCTBi"
+          }
+        ]
+      },
+      {
+        "key": "GrantItem",
+        "uuid": "{item|flags.pf2e.rulesSelections.medicineSkillpathChoice}",
+        "allowDuplicate": false,
+        "onDeleteActions": {
+          "granter": "cascade",
+          "grantee": "restrict"
+        }
+      }
+    ],
+    "slug": "skillpaths-medicine-base",
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "general",
+        "skill",
+        "skillpath"
+      ],
+      "rarity": "common"
+    },
+    "level": {
+      "value": 1
+    },
+    "category": "skill",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": [
+        {
+          "value": "trained in Medicine"
+        }
+      ]
+    },
+    "subfeatures": {
+      "proficiencies": {},
+      "senses": {},
+      "suppressedFeatures": []
+    }
+  },
+  "img": "icons/sundries/books/book-red-exclamation.webp",
+  "folder": "wuXEfcfvooGNZV29",
+  "flags": {},
+  "effects": [],
+  "_id": "Wybk03DC8K9IChrG",
+  "_key": "!items!Wybk03DC8K9IChrG"
+}

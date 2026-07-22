@@ -1,0 +1,79 @@
+{
+  "name": "Spellcraft (Occultism) Path - Trained",
+  "type": "feat",
+  "system": {
+    "description": {
+      "value": "<p><strong>Skill Path:</strong> Spellcraft (Occultism)</p><p>Your excellent knowledge of spells helps you identifying spells with great success.</p><hr /><p>While developing your skills in Occultism you chose to focus specifically on Spellcraft (Occultism), learning basic techniques.You gain the following trained feats: @UUID[Compendium.pf2e.feats-srd.Item.MjQyTcV8Jiv1Jtln]{Recognize Spell}, @UUID[Compendium.pf2e.feats-srd.Item.v7Bt6hjmzYnLFLeG]{Magical Shorthand}.</p><p>This path focuses on @UUID[Compendium.pf2e.actionspf2e.Item.Q5iIYCFdqJFM31GW]{Learn a Spell}.</p><p><strong>Path Progression</strong></p><ul><li><strong>Trained:</strong> @UUID[Compendium.pf2e.feats-srd.Item.MjQyTcV8Jiv1Jtln]{Recognize Spell}, @UUID[Compendium.pf2e.feats-srd.Item.v7Bt6hjmzYnLFLeG]{Magical Shorthand}</li><li><strong>Expert:</strong> @UUID[Compendium.pf2e-skillpaths.pf2e-skillpath-compendium.Item.9drUkZpowfoQe48W]{Spell Reconstruction}</li><li><strong>Master:</strong> @UUID[Compendium.pf2e.feats-srd.Item.2rSyTfPgAmNAo01r]{Quick Recognition}</li></ul>",
+      "gm": ""
+    },
+    "publication": {
+      "title": "PF2e Skill Feat Revamp",
+      "authors": "Sebastian",
+      "license": "ORC",
+      "remaster": true
+    },
+    "rules": [
+      {
+        "key": "GrantItem",
+        "uuid": "Compendium.pf2e.feats-srd.Item.MjQyTcV8Jiv1Jtln",
+        "allowDuplicate": false,
+        "onDeleteActions": {
+          "granter": "cascade",
+          "grantee": "restrict"
+        }
+      },
+      {
+        "key": "GrantItem",
+        "uuid": "Compendium.pf2e.feats-srd.Item.v7Bt6hjmzYnLFLeG",
+        "allowDuplicate": false,
+        "onDeleteActions": {
+          "granter": "cascade",
+          "grantee": "restrict"
+        }
+      }
+    ],
+    "slug": "skillpaths-occultism-spellcraft-trained",
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "general",
+        "skill",
+        "skillpath"
+      ],
+      "rarity": "common"
+    },
+    "level": {
+      "value": 1
+    },
+    "category": "skill",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": [
+        {
+          "value": "trained in Occultism"
+        },
+        {
+          "value": "Occultism - Base"
+        }
+      ]
+    },
+    "subfeatures": {
+      "proficiencies": {},
+      "senses": {},
+      "suppressedFeatures": []
+    }
+  },
+  "img": "icons/sundries/books/book-red-exclamation.webp",
+  "folder": "G7AF3O2QsYVPLQme",
+  "flags": {},
+  "effects": [],
+  "_id": "gopX1q8wdFmKSOYm",
+  "_key": "!items!gopX1q8wdFmKSOYm"
+}

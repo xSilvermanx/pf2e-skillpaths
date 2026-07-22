@@ -1,0 +1,131 @@
+{
+  "name": "Ghost Path - Master",
+  "type": "feat",
+  "system": {
+    "description": {
+      "value": "<p>Through long and intensive training you mastered Ghost. Few people in this world can match your capabilities in this area.</p><p>Gain the following master feats: choose one of @UUID[Compendium.pf2e.feats-srd.Item.Imvu2RV2ggjJ2HZt]{Swift Sneak}, @UUID[Compendium.pf2e.feats-srd.Item.tP9Hs6hHkeeCJctS]{Vanish Into the Land}.</p><p><strong>Skill Potency</strong></p><p>At 9th level, you gain a +2 item bonus to Stealth checks involving @UUID[Compendium.pf2e.actionspf2e.Item.VMozDqMMuK5kpoX4]{Sneak}, @UUID[Compendium.pf2e.actionspf2e.Item.XMcnh4cSI32tljXa]{Hide}. At 17th level, if you have @UUID[Compendium.pf2e.feats-srd.Item.n0urrOL8YlnVBVRQ]{Legendary Sneak}, this bonus increases to +3.</p>",
+      "gm": ""
+    },
+    "publication": {
+      "title": "PF2e Skill Feat Revamp",
+      "authors": "Sebastian",
+      "license": "ORC",
+      "remaster": true
+    },
+    "rules": [
+      {
+        "key": "FlatModifier",
+        "label": "Skill Potency - Sneak, Hide",
+        "slug": "skillpaths-stealth-ghost-potency-2",
+        "type": "item",
+        "value": 2,
+        "selector": "stealth",
+        "predicate": [
+          {
+            "or": [
+              "action:sneak",
+              "action:hide"
+            ]
+          },
+          {
+            "gte": [
+              "self:level",
+              9
+            ]
+          }
+        ]
+      },
+      {
+        "key": "FlatModifier",
+        "label": "Skill Potency - Sneak, Hide",
+        "slug": "skillpaths-stealth-ghost-potency-3",
+        "type": "item",
+        "value": 3,
+        "selector": "stealth",
+        "predicate": [
+          {
+            "or": [
+              "action:sneak",
+              "action:hide"
+            ]
+          },
+          "feat:legendary-sneak",
+          {
+            "gte": [
+              "self:level",
+              17
+            ]
+          }
+        ]
+      },
+      {
+        "key": "ChoiceSet",
+        "flag": "stealthghostMasterChoice",
+        "prompt": "Choose a master feat.",
+        "adjustName": false,
+        "choices": [
+          {
+            "label": "Swift Sneak",
+            "value": "Compendium.pf2e.feats-srd.Item.Imvu2RV2ggjJ2HZt"
+          },
+          {
+            "label": "Vanish into the Land",
+            "value": "Compendium.pf2e.feats-srd.Item.tP9Hs6hHkeeCJctS"
+          }
+        ]
+      },
+      {
+        "key": "GrantItem",
+        "uuid": "{item|flags.pf2e.rulesSelections.stealthghostMasterChoice}",
+        "allowDuplicate": false,
+        "onDeleteActions": {
+          "granter": "cascade",
+          "grantee": "restrict"
+        }
+      }
+    ],
+    "slug": "skillpaths-stealth-ghost-master",
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "general",
+        "skill",
+        "skillpath"
+      ],
+      "rarity": "common"
+    },
+    "level": {
+      "value": 7
+    },
+    "category": "skill",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": [
+        {
+          "value": "master in Stealth"
+        },
+        {
+          "value": "Ghost Path - Expert"
+        }
+      ]
+    },
+    "subfeatures": {
+      "proficiencies": {},
+      "senses": {},
+      "suppressedFeatures": []
+    }
+  },
+  "img": "icons/sundries/books/book-red-exclamation.webp",
+  "folder": "Sq8aLregSckvn0E4",
+  "flags": {},
+  "effects": [],
+  "_id": "7l9UDRI3R0Q0EAFC",
+  "_key": "!items!7l9UDRI3R0Q0EAFC"
+}

@@ -1,0 +1,78 @@
+{
+  "_id": "muMOxZyduEFv8UT6",
+  "folder": "LCegFaV93MxkKEKT",
+  "img": "icons/sundries/books/book-red-exclamation.webp",
+  "name": "A Home in Every Port",
+  "system": {
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "category": "skill",
+    "description": {
+      "value": "<p>You have a reputation in towns and villages you've visited, and residents are always willing to open their doors to you.</p>\n<p>When in a town or village, during downtime, you can spend 8 hours to locate a resident willing to provide lodging for you and up to six allies for up to 24 hours at no charge. The standard of living within the acquired lodging is comfortable, and square meals are provided at no cost.</p>\n<p>After 24 hours, you must pay standard prices for further lodging and meals or use this feat again to find a new resident willing to host you.</p>",
+      "gm": ""
+    },
+    "level": {
+      "value": 1
+    },
+    "prerequisites": {
+      "value": [
+        {
+          "value": "trained in Diplomacy"
+        }
+      ]
+    },
+    "publication": {
+      "license": "ORC",
+      "remaster": true,
+      "title": "Pathfinder Player Core 2",
+      "authors": ""
+    },
+    "rules": [],
+    "traits": {
+      "rarity": "common",
+      "value": [
+        "downtime",
+        "general",
+        "skillpath"
+      ],
+      "otherTags": []
+    },
+    "slug": "a-home-in-every-port",
+    "_migration": {
+      "version": 0.959,
+      "previous": null
+    },
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "subfeatures": {
+      "proficiencies": {},
+      "senses": {},
+      "suppressedFeatures": []
+    },
+    "location": null
+  },
+  "type": "feat",
+  "_stats": {
+    "coreVersion": "14.364",
+    "systemId": "pf2e",
+    "systemVersion": "8.2.0",
+    "compendiumSource": "Compendium.pf2e.feats-srd.Item.muMOxZyduEFv8UT6",
+    "createdTime": 1784373503814,
+    "modifiedTime": 1784373503814,
+    "lastModifiedBy": "cDVClG5j3LgTcqta",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "effects": [],
+  "ownership": {
+    "default": 0,
+    "cDVClG5j3LgTcqta": 3
+  },
+  "flags": {},
+  "sort": 150000,
+  "_key": "!items!muMOxZyduEFv8UT6"
+}

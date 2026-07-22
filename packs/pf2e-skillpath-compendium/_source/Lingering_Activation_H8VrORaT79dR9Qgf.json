@@ -1,0 +1,80 @@
+{
+  "folder": "S3hQctbIF7UtPgaH",
+  "name": "Lingering Activation",
+  "type": "spell",
+  "effects": [],
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p><strong>Trigger</strong>: Your last action was a successful Trick Magic Item check. You add a flourish to the trick, briefly stabilizing your false connection to the item. Attempt an check of the tradition you used for Trick Magic Item. The DC is usually a standard-difficulty DC of the item's level, but the GM can assign a different DC based on the circumstances. The effect depends on the result of your check.</p><p>This doesn't let you ignore the item's normal activation cost, frequency, charges, or other usage limits.</p><hr><p><strong>Critical Success</strong> As Success, with a duration of 4 rounds.</p><p><strong>Success</strong> For 3 rounds, whenever you Activate the item, you automatically succeed at the Trick Magic Item-check for that activation and don't need to spend an action to Trick the item.</p><p><strong>Failure</strong> You can activate the item for only 1 round, so until the end of this turn. You don't spend the Focus Point for casting this spell.</p>"
+    },
+    "rules": [],
+    "slug": null,
+    "_migration": {
+      "version": 0.959,
+      "lastMigration": null
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "concentrate",
+        "focus"
+      ],
+      "rarity": "common",
+      "traditions": []
+    },
+    "publication": {
+      "title": "",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 1
+    },
+    "requirements": "",
+    "target": {
+      "value": ""
+    },
+    "range": {
+      "value": ""
+    },
+    "area": null,
+    "time": {
+      "value": "free"
+    },
+    "duration": {
+      "value": "",
+      "sustained": false
+    },
+    "damage": {},
+    "defense": null,
+    "cost": {
+      "value": ""
+    },
+    "location": {
+      "value": null
+    },
+    "counteraction": false
+  },
+  "_id": "H8VrORaT79dR9Qgf",
+  "img": "icons/magic/time/hourglass-tilted-glowing-gold.webp",
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "cDVClG5j3LgTcqta": 3
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.364",
+    "systemId": "pf2e",
+    "systemVersion": "8.2.0",
+    "createdTime": 1784378041458,
+    "modifiedTime": 1784378041458,
+    "lastModifiedBy": "cDVClG5j3LgTcqta",
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!H8VrORaT79dR9Qgf"
+}

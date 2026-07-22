@@ -1,0 +1,79 @@
+{
+  "name": "Remedies (Crafting) Path - Trained",
+  "type": "feat",
+  "system": {
+    "description": {
+      "value": "<p><strong>Skill Path:</strong> Remedies (Crafting)</p><p>You are especially adept at crafting alchemical and magical healing potions.</p><hr /><p>While developing your skills in Crafting you chose to focus specifically on Remedies (Crafting), learning basic techniques.You gain the following trained feats: @UUID[Compendium.pf2e.feats-srd.Item.NMbOfl885pn0Yzu9]{Prepare Elemental Medicine}, @UUID[Compendium.pf2e-skillpaths.pf2e-skillpath-compendium.Item.Y4oyRkx6D8HrCTih]{Craft Remedies}.</p><p>This path focuses on Prepare Elemental Medicine.</p><p><strong>Path Progression</strong></p><ul><li><strong>Trained:</strong> @UUID[Compendium.pf2e.feats-srd.Item.NMbOfl885pn0Yzu9]{Prepare Elemental Medicine}, @UUID[Compendium.pf2e-skillpaths.pf2e-skillpath-compendium.Item.Y4oyRkx6D8HrCTih]{Craft Remedies}</li><li><strong>Expert:</strong> @UUID[Compendium.pf2e.feats-srd.Item.EmIV9haKFrBRB43E]{Pei Zing Adept}, @UUID[Compendium.pf2e-skillpaths.pf2e-skillpath-compendium.Item.7ROt6RmzC1mWDvRH]{Residual Remedy}</li><li><strong>Master:</strong> @UUID[Compendium.pf2e.feats-srd.Item.zzd2KYAqY1Ez6aBD]{Temperature Adjustment}</li><li><strong>Legendary:</strong> @UUID[Compendium.pf2e.feats-srd.Item.v62QzTwHOT3t86cL]{Craft Anything}, @UUID[Compendium.pf2e.feats-srd.Item.VRCBTEyrcBf7auGz]{Legendary Tattoo Artist}</li></ul>",
+      "gm": ""
+    },
+    "publication": {
+      "title": "PF2e Skill Feat Revamp",
+      "authors": "Sebastian",
+      "license": "ORC",
+      "remaster": true
+    },
+    "rules": [
+      {
+        "key": "GrantItem",
+        "uuid": "Compendium.pf2e.feats-srd.Item.NMbOfl885pn0Yzu9",
+        "allowDuplicate": false,
+        "onDeleteActions": {
+          "granter": "cascade",
+          "grantee": "restrict"
+        }
+      },
+      {
+        "key": "GrantItem",
+        "uuid": "Compendium.pf2e-skillpaths.pf2e-skillpath-compendium.Item.Y4oyRkx6D8HrCTih",
+        "allowDuplicate": false,
+        "onDeleteActions": {
+          "granter": "cascade",
+          "grantee": "restrict"
+        }
+      }
+    ],
+    "slug": "skillpaths-crafting-remedies-trained",
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "general",
+        "skill",
+        "skillpath"
+      ],
+      "rarity": "common"
+    },
+    "level": {
+      "value": 1
+    },
+    "category": "skill",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": [
+        {
+          "value": "trained in Crafting"
+        },
+        {
+          "value": "Crafting - Base"
+        }
+      ]
+    },
+    "subfeatures": {
+      "proficiencies": {},
+      "senses": {},
+      "suppressedFeatures": []
+    }
+  },
+  "img": "icons/sundries/books/book-red-exclamation.webp",
+  "folder": "M5BKSrN6HVRwrNFo",
+  "flags": {},
+  "effects": [],
+  "_id": "wE3LoKdcmVHramVM",
+  "_key": "!items!wE3LoKdcmVHramVM"
+}

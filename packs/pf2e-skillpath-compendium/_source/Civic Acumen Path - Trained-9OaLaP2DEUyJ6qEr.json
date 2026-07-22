@@ -1,0 +1,88 @@
+{
+  "name": "Civic Acumen Path - Trained",
+  "type": "feat",
+  "system": {
+    "description": {
+      "value": "<p><strong>Skill Path:</strong> Civic Acumen</p><p>Your sharp vision enables you to gain information others can't perceive.</p><hr /><p>While developing your skills in Society you chose to focus specifically on Civic Acumen, learning basic techniques.You gain the following trained feats: @UUID[Compendium.pf2e.feats-srd.Item.yUuU9xyotrpwpTyC]{Read Lips}, @UUID[Compendium.pf2e.feats-srd.Item.aAoFc10cOpxGypOY]{Sign Language}, @UUID[Compendium.pf2e.feats-srd.Item.WeQGWvlWdeLeOlCN]{Glean Contents}.</p><p>This path focuses on @UUID[Compendium.pf2e.actionspf2e.Item.d9gbpiQjChYDYA2L]{Decipher Writing}.</p><p><strong>Path Progression</strong></p><ul><li><strong>Trained:</strong> @UUID[Compendium.pf2e.feats-srd.Item.yUuU9xyotrpwpTyC]{Read Lips}, @UUID[Compendium.pf2e.feats-srd.Item.aAoFc10cOpxGypOY]{Sign Language}, @UUID[Compendium.pf2e.feats-srd.Item.WeQGWvlWdeLeOlCN]{Glean Contents}</li><li><strong>Expert:</strong> @UUID[Compendium.pf2e.feats-srd.Item.IyJyZ1VQxS58Nk6V]{Eyes of the City}</li><li><strong>Master:</strong> @UUID[Compendium.pf2e.feats-srd.Item.WqTqHPDbargixuej]{Biographical Eye}</li><li><strong>Legendary:</strong> @UUID[Compendium.pf2e.feats-srd.Item.Zf4yiLDdxHPovEQI]{Legendary Codebreaker}, @UUID[Compendium.pf2e.feats-srd.Item.n0S0tJiOJPQk0Rne]{Legendary Linguist}</li></ul>",
+      "gm": ""
+    },
+    "publication": {
+      "title": "PF2e Skill Feat Revamp",
+      "authors": "Sebastian",
+      "license": "ORC",
+      "remaster": true
+    },
+    "rules": [
+      {
+        "key": "GrantItem",
+        "uuid": "Compendium.pf2e.feats-srd.Item.yUuU9xyotrpwpTyC",
+        "allowDuplicate": false,
+        "onDeleteActions": {
+          "granter": "cascade",
+          "grantee": "restrict"
+        }
+      },
+      {
+        "key": "GrantItem",
+        "uuid": "Compendium.pf2e.feats-srd.Item.aAoFc10cOpxGypOY",
+        "allowDuplicate": false,
+        "onDeleteActions": {
+          "granter": "cascade",
+          "grantee": "restrict"
+        }
+      },
+      {
+        "key": "GrantItem",
+        "uuid": "Compendium.pf2e.feats-srd.Item.WeQGWvlWdeLeOlCN",
+        "allowDuplicate": false,
+        "onDeleteActions": {
+          "granter": "cascade",
+          "grantee": "restrict"
+        }
+      }
+    ],
+    "slug": "skillpaths-society-civic-acumen-trained",
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "general",
+        "skill",
+        "skillpath"
+      ],
+      "rarity": "common"
+    },
+    "level": {
+      "value": 1
+    },
+    "category": "skill",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": [
+        {
+          "value": "trained in Society"
+        },
+        {
+          "value": "Society - Base"
+        }
+      ]
+    },
+    "subfeatures": {
+      "proficiencies": {},
+      "senses": {},
+      "suppressedFeatures": []
+    }
+  },
+  "img": "icons/sundries/books/book-red-exclamation.webp",
+  "folder": "UhnhMwzUOs2XnNFx",
+  "flags": {},
+  "effects": [],
+  "_id": "9OaLaP2DEUyJ6qEr",
+  "_key": "!items!9OaLaP2DEUyJ6qEr"
+}

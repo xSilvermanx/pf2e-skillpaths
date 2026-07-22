@@ -1,0 +1,79 @@
+{
+  "name": "Operative Path - Trained",
+  "type": "feat",
+  "system": {
+    "description": {
+      "value": "<p><strong>Skill Path:</strong> Operative</p><p>Your specialty are covert operations in enemy territory.</p><hr /><p>While developing your skills in Stealth you chose to focus specifically on Operative, learning basic techniques.You gain the following trained feats: @UUID[Compendium.pf2e.feats-srd.Item.N7IsnLDFt73r7x56]{Shadow Mark}, @UUID[Compendium.pf2e.feats-srd.Item.t3btih0O5RUwWynt]{Experienced Smuggler}.</p><p>This path focuses on @UUID[Compendium.pf2e.actionspf2e.Item.IE2nThCmoyhQA0Jn]{Avoid Notice}, @UUID[Compendium.pf2e.actionspf2e.Item.qVNVSmsgpKFGk9hV]{Conceal an Object}.</p><p><strong>Path Progression</strong></p><ul><li><strong>Trained:</strong> @UUID[Compendium.pf2e.feats-srd.Item.N7IsnLDFt73r7x56]{Shadow Mark}, @UUID[Compendium.pf2e.feats-srd.Item.t3btih0O5RUwWynt]{Experienced Smuggler}</li><li><strong>Expert:</strong> @UUID[Compendium.pf2e.feats-srd.Item.pekKtubQTkG9m1xK]{Quiet Allies}</li><li><strong>Master:</strong> choose one of @UUID[Compendium.pf2e.feats-srd.Item.IJQJBnD5CjKvFYEx]{Foil Senses}, @UUID[Compendium.pf2e.feats-srd.Item.Imvu2RV2ggjJ2HZt]{Swift Sneak}</li><li><strong>Legendary:</strong> @UUID[Compendium.pf2e.feats-srd.Item.n0urrOL8YlnVBVRQ]{Legendary Sneak}</li></ul>",
+      "gm": ""
+    },
+    "publication": {
+      "title": "PF2e Skill Feat Revamp",
+      "authors": "Sebastian",
+      "license": "ORC",
+      "remaster": true
+    },
+    "rules": [
+      {
+        "key": "GrantItem",
+        "uuid": "Compendium.pf2e.feats-srd.Item.N7IsnLDFt73r7x56",
+        "allowDuplicate": false,
+        "onDeleteActions": {
+          "granter": "cascade",
+          "grantee": "restrict"
+        }
+      },
+      {
+        "key": "GrantItem",
+        "uuid": "Compendium.pf2e.feats-srd.Item.t3btih0O5RUwWynt",
+        "allowDuplicate": false,
+        "onDeleteActions": {
+          "granter": "cascade",
+          "grantee": "restrict"
+        }
+      }
+    ],
+    "slug": "skillpaths-stealth-operative-trained",
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "general",
+        "skill",
+        "skillpath"
+      ],
+      "rarity": "common"
+    },
+    "level": {
+      "value": 1
+    },
+    "category": "skill",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": [
+        {
+          "value": "trained in Stealth"
+        },
+        {
+          "value": "Stealth - Base"
+        }
+      ]
+    },
+    "subfeatures": {
+      "proficiencies": {},
+      "senses": {},
+      "suppressedFeatures": []
+    }
+  },
+  "img": "icons/sundries/books/book-red-exclamation.webp",
+  "folder": "Sq8aLregSckvn0E4",
+  "flags": {},
+  "effects": [],
+  "_id": "vNPUUwowNurRdW0O",
+  "_key": "!items!vNPUUwowNurRdW0O"
+}

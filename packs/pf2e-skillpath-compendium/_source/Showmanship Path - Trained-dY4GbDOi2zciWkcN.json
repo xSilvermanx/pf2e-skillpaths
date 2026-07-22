@@ -1,0 +1,79 @@
+{
+  "name": "Showmanship Path - Trained",
+  "type": "feat",
+  "system": {
+    "description": {
+      "value": "<p><strong>Skill Path:</strong> Showmanship</p><p>Your performances are awe-inspiring and fascinating.</p><hr /><p>While developing your skills in Performance you chose to focus specifically on Showmanship, learning basic techniques.You gain the following trained feats: @UUID[Compendium.pf2e.feats-srd.Item.7LB00jkh6JaJr3vS]{Fascinating Performance}, @UUID[Compendium.pf2e.feats-srd.Item.4UXyMtXLaOxuH6Js]{Distracting Performance}.</p><p>This path focuses on @UUID[Compendium.pf2e.actionspf2e.Item.EEDElIyin4z60PXx]{Perform}.</p><p><strong>Path Progression</strong></p><ul><li><strong>Trained:</strong> @UUID[Compendium.pf2e.feats-srd.Item.7LB00jkh6JaJr3vS]{Fascinating Performance}, @UUID[Compendium.pf2e.feats-srd.Item.4UXyMtXLaOxuH6Js]{Distracting Performance}</li><li><strong>Expert:</strong> @UUID[Compendium.pf2e.feats-srd.Item.NUHosufuAhQCnF7N]{Triumphant Boast}</li><li><strong>Master:</strong> @UUID[Compendium.pf2e.feats-srd.Item.RR6p9r8l1trcByl2]{Talent Envy}</li><li><strong>Legendary:</strong> @UUID[Compendium.pf2e.feats-srd.Item.467qQoiy6bjWU1G8]{Legendary Performer}</li></ul>",
+      "gm": ""
+    },
+    "publication": {
+      "title": "PF2e Skill Feat Revamp",
+      "authors": "Sebastian",
+      "license": "ORC",
+      "remaster": true
+    },
+    "rules": [
+      {
+        "key": "GrantItem",
+        "uuid": "Compendium.pf2e.feats-srd.Item.7LB00jkh6JaJr3vS",
+        "allowDuplicate": false,
+        "onDeleteActions": {
+          "granter": "cascade",
+          "grantee": "restrict"
+        }
+      },
+      {
+        "key": "GrantItem",
+        "uuid": "Compendium.pf2e.feats-srd.Item.4UXyMtXLaOxuH6Js",
+        "allowDuplicate": false,
+        "onDeleteActions": {
+          "granter": "cascade",
+          "grantee": "restrict"
+        }
+      }
+    ],
+    "slug": "skillpaths-performance-showmanship-trained",
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "general",
+        "skill",
+        "skillpath"
+      ],
+      "rarity": "common"
+    },
+    "level": {
+      "value": 1
+    },
+    "category": "skill",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": [
+        {
+          "value": "trained in Performance"
+        },
+        {
+          "value": "Performance - Base"
+        }
+      ]
+    },
+    "subfeatures": {
+      "proficiencies": {},
+      "senses": {},
+      "suppressedFeatures": []
+    }
+  },
+  "img": "icons/sundries/books/book-red-exclamation.webp",
+  "folder": "Xa54iFZZQhO1NcsA",
+  "flags": {},
+  "effects": [],
+  "_id": "dY4GbDOi2zciWkcN",
+  "_key": "!items!dY4GbDOi2zciWkcN"
+}

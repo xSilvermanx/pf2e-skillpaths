@@ -1,0 +1,74 @@
+{
+  "id": "pf2e-skillpaths",
+  "title": "PF2e Skillpaths",
+  "version": "1.0.0",
+  "compatibility": {
+    "minimum": "14",
+    "verified": "14"
+  },
+  "description": "<p>PF2e Skillpaths is a Skill and General Feat Revamp. The revamp aims to make choosing Skill Feats a matter of fulfilling your character fantasy instead of sifting through myriads of unfulfilling options.</p><p>Read all about the Revamp in the <a href=\"https://docs.google.com/document/d/1dmFsCZ64uKzRUc_fr-d4kvFwdjh0vfLk9fIADEn-gSE/edit?usp=sharing\">Google docs.</a></p>",
+  "authors": [
+    {
+      "name": "Sebastian",
+      "flags": {}
+    }
+  ],
+  "url": "https://github.com/xSilvermanx/pf2e-skillpaths",
+  "manifest": "",
+  "download": "",
+  "readme": "",
+  "packFolders": [
+	  {
+		  "name": "PF2e Skillpaths",
+		  "sorting": "m",
+		  "ownership": {
+			  "PLAYER": "OBSERVER",
+			  "ASSISTANT": "OWNER"
+		  },
+		  "packs": [
+			"pf2e-skillpath-compendium"
+		  ]
+	  }
+  ],
+  "esmodules": [
+    "scripts/setup.js"
+  ],
+  "packs": [
+    {
+      "name": "pf2e-skillpath-compendium",
+      "label": "PF2e Skillpath Compendium",
+      "path": "packs/pf2e-skillpath-compendium",
+      "type": "Item",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      },
+      "system": "pf2e",
+	  "package": "pf2e-skillpaths",
+	  "banner": "systems/pf2e/assets/compendium-banner/green.webp",
+      "flags": {}
+    }
+  ],
+  "relationships": {
+    "systems": [
+      {
+        "id": "pf2e",
+        "type": "system",
+        "compatibility": {}
+      }
+    ]
+  },
+  "flags": {
+	  "canUpload": true,
+	  "pf2e-skillpaths": {
+		  "pf2e-homebrew": {
+			 "featTraits": {
+				  "skillpath": {
+					  "label": "Skillpath",
+					  "description": "Feat from Skill Path feat revamp."
+				  }
+			 }				 
+		  }
+	  }
+  }
+}

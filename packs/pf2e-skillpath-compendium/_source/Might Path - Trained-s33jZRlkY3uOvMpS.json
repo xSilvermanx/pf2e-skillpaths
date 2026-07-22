@@ -1,0 +1,79 @@
+{
+  "name": "Might Path - Trained",
+  "type": "feat",
+  "system": {
+    "description": {
+      "value": "<p><strong>Skill Path:</strong> Might</p><p>As a martial artists you strive to master grappling and other hand to hand combat.</p><hr /><p>While developing your skills in Athletics you chose to focus specifically on Might, learning basic techniques.You gain the following trained feats: @UUID[Compendium.pf2e.feats-srd.Item.Lc4dJZivRwU3QEmT]{Armor Assist}, @UUID[Compendium.pf2e.feats-srd.Item.C0Tcelg3BAPhML6J]{Hefty Hauler}.</p><p>This path focuses on @UUID[Compendium.pf2e.actionspf2e.Item.PMbdMWc2QroouFGD]{Grapple}, @UUID[Compendium.pf2e.actionspf2e.Item.7blmbDrQFNfdT731]{Shove}.</p><p><strong>Path Progression</strong></p><ul><li><strong>Trained:</strong> @UUID[Compendium.pf2e.feats-srd.Item.Lc4dJZivRwU3QEmT]{Armor Assist}, @UUID[Compendium.pf2e.feats-srd.Item.C0Tcelg3BAPhML6J]{Hefty Hauler}</li><li><strong>Expert:</strong> @UUID[Compendium.pf2e.feats-srd.Item.5YlHrBCZJmb6Q4Lz]{Slippery Prey}</li><li><strong>Master:</strong> @UUID[Compendium.pf2e.feats-srd.Item.hAsaNx1dd3xvvAsE]{Say That Again!}</li></ul>",
+      "gm": ""
+    },
+    "publication": {
+      "title": "PF2e Skill Feat Revamp",
+      "authors": "Sebastian",
+      "license": "ORC",
+      "remaster": true
+    },
+    "rules": [
+      {
+        "key": "GrantItem",
+        "uuid": "Compendium.pf2e.feats-srd.Item.Lc4dJZivRwU3QEmT",
+        "allowDuplicate": false,
+        "onDeleteActions": {
+          "granter": "cascade",
+          "grantee": "restrict"
+        }
+      },
+      {
+        "key": "GrantItem",
+        "uuid": "Compendium.pf2e.feats-srd.Item.C0Tcelg3BAPhML6J",
+        "allowDuplicate": false,
+        "onDeleteActions": {
+          "granter": "cascade",
+          "grantee": "restrict"
+        }
+      }
+    ],
+    "slug": "skillpaths-athletics-might-trained",
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "general",
+        "skill",
+        "skillpath"
+      ],
+      "rarity": "common"
+    },
+    "level": {
+      "value": 1
+    },
+    "category": "skill",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": [
+        {
+          "value": "trained in Athletics"
+        },
+        {
+          "value": "Athletics - Base"
+        }
+      ]
+    },
+    "subfeatures": {
+      "proficiencies": {},
+      "senses": {},
+      "suppressedFeatures": []
+    }
+  },
+  "img": "icons/sundries/books/book-red-exclamation.webp",
+  "folder": "4a13FbltoiyxbOe2",
+  "flags": {},
+  "effects": [],
+  "_id": "s33jZRlkY3uOvMpS",
+  "_key": "!items!s33jZRlkY3uOvMpS"
+}

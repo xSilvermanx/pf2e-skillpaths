@@ -1,0 +1,79 @@
+{
+  "name": "Climbing Path - Trained",
+  "type": "feat",
+  "system": {
+    "description": {
+      "value": "<p><strong>Skill Path:</strong> Climbing</p><p>There are few people climbing as good as you do.</p><hr /><p>While developing your skills in Athletics you chose to focus specifically on Climbing, learning basic techniques.You gain the following trained feats: @UUID[Compendium.pf2e.feats-srd.Item.09PurtIanNUPfNRq]{Combat Climber}, @UUID[Compendium.pf2e.feats-srd.Item.FJK7JTLSgugRIlvS]{Rapid Mantel}.</p><p>This path focuses on @UUID[Compendium.pf2e.actionspf2e.Item.pprgrYQ1QnIDGZiy]{Climb}.</p><p><strong>Path Progression</strong></p><ul><li><strong>Trained:</strong> @UUID[Compendium.pf2e.feats-srd.Item.09PurtIanNUPfNRq]{Combat Climber}, @UUID[Compendium.pf2e.feats-srd.Item.FJK7JTLSgugRIlvS]{Rapid Mantel}</li><li><strong>Expert:</strong> @UUID[Compendium.pf2e.feats-srd.Item.vjQ3VUpYlTAAIx3b]{Lead Climber}</li><li><strong>Master:</strong> @UUID[Compendium.pf2e.feats-srd.Item.P04Hw8E6WAWARKHP]{Quick Climb}</li></ul>",
+      "gm": ""
+    },
+    "publication": {
+      "title": "PF2e Skill Feat Revamp",
+      "authors": "Sebastian",
+      "license": "ORC",
+      "remaster": true
+    },
+    "rules": [
+      {
+        "key": "GrantItem",
+        "uuid": "Compendium.pf2e.feats-srd.Item.09PurtIanNUPfNRq",
+        "allowDuplicate": false,
+        "onDeleteActions": {
+          "granter": "cascade",
+          "grantee": "restrict"
+        }
+      },
+      {
+        "key": "GrantItem",
+        "uuid": "Compendium.pf2e.feats-srd.Item.FJK7JTLSgugRIlvS",
+        "allowDuplicate": false,
+        "onDeleteActions": {
+          "granter": "cascade",
+          "grantee": "restrict"
+        }
+      }
+    ],
+    "slug": "skillpaths-athletics-climbing-trained",
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "general",
+        "skill",
+        "skillpath"
+      ],
+      "rarity": "common"
+    },
+    "level": {
+      "value": 1
+    },
+    "category": "skill",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": [
+        {
+          "value": "trained in Athletics"
+        },
+        {
+          "value": "Athletics - Base"
+        }
+      ]
+    },
+    "subfeatures": {
+      "proficiencies": {},
+      "senses": {},
+      "suppressedFeatures": []
+    }
+  },
+  "img": "icons/sundries/books/book-red-exclamation.webp",
+  "folder": "4a13FbltoiyxbOe2",
+  "flags": {},
+  "effects": [],
+  "_id": "S7m5LJNHDLnOJtnu",
+  "_key": "!items!S7m5LJNHDLnOJtnu"
+}

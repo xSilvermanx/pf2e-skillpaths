@@ -1,0 +1,118 @@
+{
+  "name": "Civic Acumen Path - Master",
+  "type": "feat",
+  "system": {
+    "description": {
+      "value": "<p>Through long and intensive training you mastered Civic Acumen. Few people in this world can match your capabilities in this area.</p><p>Gain the following master feats: @UUID[Compendium.pf2e.feats-srd.Item.WqTqHPDbargixuej]{Biographical Eye}.</p><p><strong>Skill Potency</strong></p><p>At 9th level, you gain a +2 item bonus to Society checks involving @UUID[Compendium.pf2e.actionspf2e.Item.d9gbpiQjChYDYA2L]{Decipher Writing}. At 17th level, if you have @UUID[Compendium.pf2e.feats-srd.Item.Zf4yiLDdxHPovEQI]{Legendary Codebreaker}, @UUID[Compendium.pf2e.feats-srd.Item.n0S0tJiOJPQk0Rne]{Legendary Linguist}, this bonus increases to +3.</p>",
+      "gm": ""
+    },
+    "publication": {
+      "title": "PF2e Skill Feat Revamp",
+      "authors": "Sebastian",
+      "license": "ORC",
+      "remaster": true
+    },
+    "rules": [
+      {
+        "key": "FlatModifier",
+        "label": "Skill Potency - Decipher Writing",
+        "slug": "skillpaths-society-civic-acumen-potency-2",
+        "type": "item",
+        "value": 2,
+        "selector": "society",
+        "predicate": [
+          {
+            "or": [
+              "action:decipher-writing"
+            ]
+          },
+          {
+            "gte": [
+              "self:level",
+              9
+            ]
+          }
+        ]
+      },
+      {
+        "key": "FlatModifier",
+        "label": "Skill Potency - Decipher Writing",
+        "slug": "skillpaths-society-civic-acumen-potency-3",
+        "type": "item",
+        "value": 3,
+        "selector": "society",
+        "predicate": [
+          {
+            "or": [
+              "action:decipher-writing"
+            ]
+          },
+          {
+            "or": [
+              "feat:legendary-codebreaker",
+              "feat:legendary-linguist"
+            ]
+          },
+          {
+            "gte": [
+              "self:level",
+              17
+            ]
+          }
+        ]
+      },
+      {
+        "key": "GrantItem",
+        "uuid": "Compendium.pf2e.feats-srd.Item.WqTqHPDbargixuej",
+        "allowDuplicate": false,
+        "onDeleteActions": {
+          "granter": "cascade",
+          "grantee": "restrict"
+        }
+      }
+    ],
+    "slug": "skillpaths-society-civic-acumen-master",
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "general",
+        "skill",
+        "skillpath"
+      ],
+      "rarity": "common"
+    },
+    "level": {
+      "value": 7
+    },
+    "category": "skill",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": [
+        {
+          "value": "master in Society"
+        },
+        {
+          "value": "Civic Acumen Path - Expert"
+        }
+      ]
+    },
+    "subfeatures": {
+      "proficiencies": {},
+      "senses": {},
+      "suppressedFeatures": []
+    }
+  },
+  "img": "icons/sundries/books/book-red-exclamation.webp",
+  "folder": "UhnhMwzUOs2XnNFx",
+  "flags": {},
+  "effects": [],
+  "_id": "MDLLLY9M73O7D0hm",
+  "_key": "!items!MDLLLY9M73O7D0hm"
+}

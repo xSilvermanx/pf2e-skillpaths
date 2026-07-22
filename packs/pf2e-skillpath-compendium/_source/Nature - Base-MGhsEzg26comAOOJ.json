@@ -1,0 +1,104 @@
+{
+  "name": "Nature - Base",
+  "type": "feat",
+  "system": {
+    "description": {
+      "value": "<p>You have started to develop Nature beyond other skills, delving deeper into its possibilities.</p><p><strong>Core Feats</strong></p><ul><li>@UUID[Compendium.pf2e.feats-srd.Item.TZDQM59QbGDLheEM]{Stifle Flames}</li></ul><p>Choose one Skill Path and gain that path's Trained feat.</p><p><strong>Available Skill Paths</strong></p><ul><li><strong>@UUID[Compendium.pf2e-skillpaths.pf2e-skillpath-compendium.Item.Dh10O2syMwv1jsoD]{Spellcraft (Nature) Path - Trained}</strong>: Your excellent knowledge of spells helps you identifying spells with great success.</li><li><strong>@UUID[Compendium.pf2e-skillpaths.pf2e-skillpath-compendium.Item.GQ1mBR00XTHPibAH]{Itemcraft (Nature) Path - Trained}</strong>: Your knowledge of magical items empowers you use them to beyond their limits.</li><li><strong>@UUID[Compendium.pf2e-skillpaths.pf2e-skillpath-compendium.Item.jWczwUsZJhvv4y7D]{Wild Communion Path - Trained}</strong>: You have the unmatched ability to commune with animals and spirits.</li><li><strong>@UUID[Compendium.pf2e-skillpaths.pf2e-skillpath-compendium.Item.UVI0W5YiTFi2j4LD]{Beast Handling Path - Trained}</strong>: You are a master in handling tamed beasts.</li><li><strong>@UUID[Compendium.pf2e-skillpaths.pf2e-skillpath-compendium.Item.f16NuLoCBkFgm2lE]{Naturalist Path - Trained}</strong>: You know most of natures' opportunities to heal.</li></ul>",
+      "gm": ""
+    },
+    "publication": {
+      "title": "PF2e Skill Feat Revamp",
+      "authors": "Sebastian",
+      "license": "ORC",
+      "remaster": true
+    },
+    "rules": [
+      {
+        "key": "GrantItem",
+        "uuid": "Compendium.pf2e.feats-srd.Item.TZDQM59QbGDLheEM",
+        "allowDuplicate": false,
+        "onDeleteActions": {
+          "granter": "cascade",
+          "grantee": "restrict"
+        }
+      },
+      {
+        "key": "ChoiceSet",
+        "flag": "natureSkillpathChoice",
+        "prompt": "Choose a skill path.",
+        "adjustName": false,
+        "choices": [
+          {
+            "label": "Spellcraft (Nature)",
+            "value": "Compendium.pf2e-skillpaths.pf2e-skillpath-compendium.Item.Dh10O2syMwv1jsoD"
+          },
+          {
+            "label": "Itemcraft (Nature)",
+            "value": "Compendium.pf2e-skillpaths.pf2e-skillpath-compendium.Item.GQ1mBR00XTHPibAH"
+          },
+          {
+            "label": "Wild Communion",
+            "value": "Compendium.pf2e-skillpaths.pf2e-skillpath-compendium.Item.jWczwUsZJhvv4y7D"
+          },
+          {
+            "label": "Beast Handling",
+            "value": "Compendium.pf2e-skillpaths.pf2e-skillpath-compendium.Item.UVI0W5YiTFi2j4LD"
+          },
+          {
+            "label": "Naturalist",
+            "value": "Compendium.pf2e-skillpaths.pf2e-skillpath-compendium.Item.f16NuLoCBkFgm2lE"
+          }
+        ]
+      },
+      {
+        "key": "GrantItem",
+        "uuid": "{item|flags.pf2e.rulesSelections.natureSkillpathChoice}",
+        "allowDuplicate": false,
+        "onDeleteActions": {
+          "granter": "cascade",
+          "grantee": "restrict"
+        }
+      }
+    ],
+    "slug": "skillpaths-nature-base",
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "general",
+        "skill",
+        "skillpath"
+      ],
+      "rarity": "common"
+    },
+    "level": {
+      "value": 1
+    },
+    "category": "skill",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": [
+        {
+          "value": "trained in Nature"
+        }
+      ]
+    },
+    "subfeatures": {
+      "proficiencies": {},
+      "senses": {},
+      "suppressedFeatures": []
+    }
+  },
+  "img": "icons/sundries/books/book-red-exclamation.webp",
+  "folder": "5L464p9NmJKVCxCV",
+  "flags": {},
+  "effects": [],
+  "_id": "MGhsEzg26comAOOJ",
+  "_key": "!items!MGhsEzg26comAOOJ"
+}

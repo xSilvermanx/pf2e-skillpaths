@@ -1,0 +1,79 @@
+{
+  "name": "Flow Path - Trained",
+  "type": "feat",
+  "system": {
+    "description": {
+      "value": "<p><strong>Skill Path:</strong> Flow</p><p>Your movements flow into one another, making you agile and hard to catch.</p><hr /><p>While developing your skills in Acrobatics you chose to focus specifically on Flow, learning basic techniques.You gain the following trained feats: @UUID[Compendium.pf2e.feats-srd.Item.5YlHrBCZJmb6Q4Lz]{Slippery Prey}, @UUID[Compendium.pf2e.feats-srd.Item.f0faBEUPtspdutKx]{Acrobatic Performer}.</p><p>This path focuses on @UUID[Compendium.pf2e.actionspf2e.Item.SkZAQRkLLkmBQNB9]{Escape}, @UUID[Compendium.pf2e.actionspf2e.Item.Qf1ylAbdVi1rkc8M]{Maneuver in Flight}.</p><p><strong>Path Progression</strong></p><ul><li><strong>Trained:</strong> @UUID[Compendium.pf2e.feats-srd.Item.5YlHrBCZJmb6Q4Lz]{Slippery Prey}, @UUID[Compendium.pf2e.feats-srd.Item.f0faBEUPtspdutKx]{Acrobatic Performer}</li><li><strong>Expert:</strong> @UUID[Compendium.pf2e.feats-srd.Item.5I97q0FfAeXcUQhs]{Nimble Crawl}, @UUID[Compendium.pf2e.feats-srd.Item.c9fHUSI5lRdXu1Ic]{Feather Step}</li><li><strong>Master:</strong> @UUID[Compendium.pf2e.feats-srd.Item.pKnX7MGZayqZui0Z]{Aerobatics Mastery}</li></ul>",
+      "gm": ""
+    },
+    "publication": {
+      "title": "PF2e Skill Feat Revamp",
+      "authors": "Sebastian",
+      "license": "ORC",
+      "remaster": true
+    },
+    "rules": [
+      {
+        "key": "GrantItem",
+        "uuid": "Compendium.pf2e.feats-srd.Item.5YlHrBCZJmb6Q4Lz",
+        "allowDuplicate": false,
+        "onDeleteActions": {
+          "granter": "cascade",
+          "grantee": "restrict"
+        }
+      },
+      {
+        "key": "GrantItem",
+        "uuid": "Compendium.pf2e.feats-srd.Item.f0faBEUPtspdutKx",
+        "allowDuplicate": false,
+        "onDeleteActions": {
+          "granter": "cascade",
+          "grantee": "restrict"
+        }
+      }
+    ],
+    "slug": "skillpaths-acrobatics-flow-trained",
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "general",
+        "skill",
+        "skillpath"
+      ],
+      "rarity": "common"
+    },
+    "level": {
+      "value": 1
+    },
+    "category": "skill",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": [
+        {
+          "value": "trained in Acrobatics"
+        },
+        {
+          "value": "Acrobatics - Base"
+        }
+      ]
+    },
+    "subfeatures": {
+      "proficiencies": {},
+      "senses": {},
+      "suppressedFeatures": []
+    }
+  },
+  "img": "icons/sundries/books/book-red-exclamation.webp",
+  "folder": "XOHWUlidsqZO4qpw",
+  "flags": {},
+  "effects": [],
+  "_id": "M2a2oBkildqF5EWO",
+  "_key": "!items!M2a2oBkildqF5EWO"
+}

@@ -1,0 +1,112 @@
+{
+  "name": "Wild Communion Path - Master",
+  "type": "feat",
+  "system": {
+    "description": {
+      "value": "<p>Through long and intensive training you mastered Wild Communion. Few people in this world can match your capabilities in this area.</p><p>Gain the following master feats: @UUID[Compendium.pf2e.feats-srd.Item.fvYwsHM9O1twQa5N]{Consult the Spirits}.</p><p><strong>Skill Potency</strong></p><p>At 9th level, you gain a +2 item bonus to Nature checks involving @UUID[Compendium.pf2e.actionspf2e.Item.1OagaWtBpVXExToo]{Recall Knowledge}. At 17th level, this bonus increases to +3.</p>",
+      "gm": ""
+    },
+    "publication": {
+      "title": "PF2e Skill Feat Revamp",
+      "authors": "Sebastian",
+      "license": "ORC",
+      "remaster": true
+    },
+    "rules": [
+      {
+        "key": "FlatModifier",
+        "label": "Skill Potency - Recall Knowledge",
+        "slug": "skillpaths-nature-wild-communion-potency-2",
+        "type": "item",
+        "value": 2,
+        "selector": "nature",
+        "predicate": [
+          {
+            "or": [
+              "action:recall-knowledge"
+            ]
+          },
+          {
+            "gte": [
+              "self:level",
+              9
+            ]
+          }
+        ]
+      },
+      {
+        "key": "FlatModifier",
+        "label": "Skill Potency - Recall Knowledge",
+        "slug": "skillpaths-nature-wild-communion-potency-3",
+        "type": "item",
+        "value": 3,
+        "selector": "nature",
+        "predicate": [
+          {
+            "or": [
+              "action:recall-knowledge"
+            ]
+          },
+          {
+            "gte": [
+              "self:level",
+              17
+            ]
+          }
+        ]
+      },
+      {
+        "key": "GrantItem",
+        "uuid": "Compendium.pf2e.feats-srd.Item.fvYwsHM9O1twQa5N",
+        "allowDuplicate": false,
+        "onDeleteActions": {
+          "granter": "cascade",
+          "grantee": "restrict"
+        }
+      }
+    ],
+    "slug": "skillpaths-nature-wild-communion-master",
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "general",
+        "skill",
+        "skillpath"
+      ],
+      "rarity": "common"
+    },
+    "level": {
+      "value": 7
+    },
+    "category": "skill",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": [
+        {
+          "value": "master in Nature"
+        },
+        {
+          "value": "Wild Communion Path - Expert"
+        }
+      ]
+    },
+    "subfeatures": {
+      "proficiencies": {},
+      "senses": {},
+      "suppressedFeatures": []
+    }
+  },
+  "img": "icons/sundries/books/book-red-exclamation.webp",
+  "folder": "5L464p9NmJKVCxCV",
+  "flags": {},
+  "effects": [],
+  "_id": "aX8A069weJaxW98k",
+  "_key": "!items!aX8A069weJaxW98k"
+}

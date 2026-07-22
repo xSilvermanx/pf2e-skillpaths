@@ -1,0 +1,79 @@
+{
+  "name": "Doctor Path - Trained",
+  "type": "feat",
+  "system": {
+    "description": {
+      "value": "<p><strong>Skill Path:</strong> Doctor</p><p>You mastered the science of conventional medicine.</p><hr /><p>While developing your skills in Medicine you chose to focus specifically on Doctor, learning basic techniques.You gain the following trained feats: @UUID[Compendium.pf2e.feats-srd.Item.sMCpihnBEpx18GBD]{Inoculation}, @UUID[Compendium.pf2e.feats-srd.Item.bkZgWFSFV4cAf5Ot]{Risky Surgery}.</p><p>This path focuses on @UUID[Compendium.pf2e.actionspf2e.Item.1kGNdIIhuglAjIp9]{Treat Wounds}, @UUID[Compendium.pf2e.actionspf2e.Item.TC7OcDa7JlWbqMaN]{Treat Disease}, @UUID[Compendium.pf2e.actionspf2e.Item.KjoCEEmPGTeFE4hh]{Treat Poison}.</p><p><strong>Path Progression</strong></p><ul><li><strong>Trained:</strong> @UUID[Compendium.pf2e.feats-srd.Item.sMCpihnBEpx18GBD]{Inoculation}, @UUID[Compendium.pf2e.feats-srd.Item.bkZgWFSFV4cAf5Ot]{Risky Surgery}</li><li><strong>Expert:</strong> @UUID[Compendium.pf2e.feats-srd.Item.c85a69mB1urW2Se2]{Continual Recovery}, @UUID[Compendium.pf2e.feats-srd.Item.8c61nOIr5AM3KxZi]{Ward Medic}</li><li><strong>Master:</strong> @UUID[Compendium.pf2e.feats-srd.Item.3ZerjLH8ls3JT6cD]{Robust Recovery}</li><li><strong>Legendary:</strong> @UUID[Compendium.pf2e.feats-srd.Item.Kk4AMZtpQnLEgN0b]{Legendary Medic}</li></ul>",
+      "gm": ""
+    },
+    "publication": {
+      "title": "PF2e Skill Feat Revamp",
+      "authors": "Sebastian",
+      "license": "ORC",
+      "remaster": true
+    },
+    "rules": [
+      {
+        "key": "GrantItem",
+        "uuid": "Compendium.pf2e.feats-srd.Item.sMCpihnBEpx18GBD",
+        "allowDuplicate": false,
+        "onDeleteActions": {
+          "granter": "cascade",
+          "grantee": "restrict"
+        }
+      },
+      {
+        "key": "GrantItem",
+        "uuid": "Compendium.pf2e.feats-srd.Item.bkZgWFSFV4cAf5Ot",
+        "allowDuplicate": false,
+        "onDeleteActions": {
+          "granter": "cascade",
+          "grantee": "restrict"
+        }
+      }
+    ],
+    "slug": "skillpaths-medicine-doctor-trained",
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "general",
+        "skill",
+        "skillpath"
+      ],
+      "rarity": "common"
+    },
+    "level": {
+      "value": 1
+    },
+    "category": "skill",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": [
+        {
+          "value": "trained in Medicine"
+        },
+        {
+          "value": "Medicine - Base"
+        }
+      ]
+    },
+    "subfeatures": {
+      "proficiencies": {},
+      "senses": {},
+      "suppressedFeatures": []
+    }
+  },
+  "img": "icons/sundries/books/book-red-exclamation.webp",
+  "folder": "wuXEfcfvooGNZV29",
+  "flags": {},
+  "effects": [],
+  "_id": "R9IYXOslNBhsUZqW",
+  "_key": "!items!R9IYXOslNBhsUZqW"
+}
