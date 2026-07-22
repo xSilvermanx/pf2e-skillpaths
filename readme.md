@@ -3,7 +3,7 @@ For further information please refer to:
 
 The Google Docs explaining the ideas: https://docs.google.com/document/d/1dmFsCZ64uKzRUc_fr-d4kvFwdjh0vfLk9fIADEn-gSE/edit?usp=sharing
 
-The reddit thread for discussion: [TBD]
+The reddit thread for discussion: https://www.reddit.com/r/Pathfinder2e/comments/1v3t86y/skill_and_general_feat_revamp_skillpaths/
 
 ORC Notice: This product is licensed under the ORC License located at the Library of Congress at TX 9-307-067 and available online at paizo.com/orclicense and other locations.
 
